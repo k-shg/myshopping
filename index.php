@@ -2,8 +2,11 @@
     <body>
         <?php require('header.php') ?>
 
-        <main>
+        <main id="contents" class="site-width">
+            <div class="search">
+                検索
 
+            </div>
         </main>
         <?php require('footer.php') ?>
 

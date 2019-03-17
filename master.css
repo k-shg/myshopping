@@ -122,10 +122,17 @@ header h1 a {
 ===================================  */
 
 .site-width {
-  margin: 0 auto;
+  margin: 20px auto;
   width: 980px;
 }
 
+
+main {
+    background: red;
+    width: 100%;
+    min-height: 600px;
+    margin: 20px 0;
+}
 
 /* ==================================
       ボタン
