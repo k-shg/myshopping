@@ -177,3 +177,12 @@ input[type="submit"] {
     float: right;
     margin: 10px 0;
 }
+
+form .area-msg {
+    color: red;
+    margin-bottom: 10px;
+}
+
+input[type="text"].error {
+    background: #f7dcd9;
+}
