@@ -165,3 +165,57 @@ Stack trace:
 [18-Mar-2019 18:53:00 Asia/Tokyo] デバッグ：バリデーション開始
 [18-Mar-2019 18:53:00 Asia/Tokyo] デバッグ：入力OK
 [18-Mar-2019 18:53:00 Asia/Tokyo] デバッグ：データベースを更新しました
+[18-Mar-2019 19:11:41 Asia/Tokyo] PHP Notice:  Undefined index: re_password in /Applications/MAMP/htdocs/myshopping/login.php on line 36
+[18-Mar-2019 19:11:41 Asia/Tokyo] デバッグ：バリデーション開始
+[18-Mar-2019 19:19:05 Asia/Tokyo] デバッグ：バリデーション開始
+[18-Mar-2019 19:19:17 Asia/Tokyo] デバッグ：バリデーション開始
+[18-Mar-2019 19:20:31 Asia/Tokyo] デバッグ：バリデーション開始
+[18-Mar-2019 19:20:38 Asia/Tokyo] デバッグ：バリデーション開始
+[18-Mar-2019 19:21:10 Asia/Tokyo] デバッグ：バリデーション開始
+[18-Mar-2019 19:21:10 Asia/Tokyo] デバッグ：入力チェックOK
+[18-Mar-2019 19:21:10 Asia/Tokyo] PHP Notice:  Undefined variable: re_pass in /Applications/MAMP/htdocs/myshopping/login.php on line 73
+[18-Mar-2019 19:21:43 Asia/Tokyo] デバッグ：バリデーション開始
+[18-Mar-2019 19:21:43 Asia/Tokyo] デバッグ：入力チェックOK
+[18-Mar-2019 19:21:43 Asia/Tokyo] デバッグ：SQL処理が成功しました
+[18-Mar-2019 19:22:40 Asia/Tokyo] デバッグ：バリデーション開始
+[18-Mar-2019 19:22:40 Asia/Tokyo] デバッグ：入力チェックOK
+[18-Mar-2019 19:22:40 Asia/Tokyo] デバッグ：SQL処理が成功しました
+[18-Mar-2019 19:22:47 Asia/Tokyo] デバッグ：バリデーション開始
+[18-Mar-2019 19:22:47 Asia/Tokyo] デバッグ：入力チェックOK
+[18-Mar-2019 19:28:33 Asia/Tokyo] デバッグ：バリデーション開始
+[18-Mar-2019 19:28:33 Asia/Tokyo] デバッグ：入力チェックOK
+[18-Mar-2019 19:29:40 Asia/Tokyo] PHP Notice:  Undefined variable: error_msg in /Applications/MAMP/htdocs/myshopping/login.php on line 13
+[18-Mar-2019 19:29:40 Asia/Tokyo] デバッグ：バリデーション開始
+[18-Mar-2019 19:29:40 Asia/Tokyo] デバッグ：入力チェックOK
+[18-Mar-2019 19:31:04 Asia/Tokyo] PHP Notice:  Undefined variable: error_msg in /Applications/MAMP/htdocs/myshopping/login.php on line 38
+[18-Mar-2019 19:31:04 Asia/Tokyo] デバッグ：バリデーション開始
+[18-Mar-2019 19:31:04 Asia/Tokyo] デバッグ：入力チェックOK
+[18-Mar-2019 19:31:45 Asia/Tokyo] デバッグ：バリデーション開始
+[18-Mar-2019 19:31:45 Asia/Tokyo] デバッグ：入力チェックOK
+[18-Mar-2019 19:32:55 Asia/Tokyo] PHP Notice:  Undefined variable: error_msg in /Applications/MAMP/htdocs/myshopping/login.php on line 13
+[18-Mar-2019 19:32:55 Asia/Tokyo] デバッグ：バリデーション開始
+[18-Mar-2019 19:32:55 Asia/Tokyo] デバッグ：入力チェックOK
+[18-Mar-2019 19:33:04 Asia/Tokyo] デバッグ：バリデーション開始
+[18-Mar-2019 19:33:04 Asia/Tokyo] デバッグ：入力チェックOK
+[18-Mar-2019 19:34:23 Asia/Tokyo] デバッグ：バリデーション開始
+[18-Mar-2019 19:34:23 Asia/Tokyo] デバッグ：入力チェックOK
+[18-Mar-2019 19:34:25 Asia/Tokyo] デバッグ：バリデーション開始
+[18-Mar-2019 19:34:25 Asia/Tokyo] デバッグ：入力チェックOK
+[18-Mar-2019 19:35:15 Asia/Tokyo] デバッグ：バリデーション開始
+[18-Mar-2019 19:35:15 Asia/Tokyo] デバッグ：入力チェックOK
+[18-Mar-2019 19:35:28 Asia/Tokyo] デバッグ：バリデーション開始
+[18-Mar-2019 19:35:28 Asia/Tokyo] デバッグ：入力チェックOK
+[18-Mar-2019 19:36:09 Asia/Tokyo] デバッグ：バリデーション開始
+[18-Mar-2019 19:36:09 Asia/Tokyo] デバッグ：入力チェックOK
+[18-Mar-2019 19:36:41 Asia/Tokyo] デバッグ：バリデーション開始
+[18-Mar-2019 19:36:41 Asia/Tokyo] デバッグ：入力チェックOK
+[18-Mar-2019 19:36:41 Asia/Tokyo] デバッグ：DB接続します
+[18-Mar-2019 19:36:41 Asia/Tokyo] 例外発生：SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected
+[18-Mar-2019 19:38:47 Asia/Tokyo] デバッグ：バリデーション開始
+[18-Mar-2019 19:38:47 Asia/Tokyo] デバッグ：入力チェックOK
+[18-Mar-2019 19:38:47 Asia/Tokyo] デバッグ：DB接続します
+[18-Mar-2019 19:38:47 Asia/Tokyo] 例外発生：SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected
+[18-Mar-2019 19:39:37 Asia/Tokyo] デバッグ：バリデーション開始
+[18-Mar-2019 19:39:37 Asia/Tokyo] デバッグ：入力チェックOK
+[18-Mar-2019 19:39:37 Asia/Tokyo] デバッグ：DB接続します
+[18-Mar-2019 19:39:37 Asia/Tokyo] デバッグ：SQL処理が成功しました
