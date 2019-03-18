@@ -18,13 +18,11 @@ if(!empty($_POST)) {
 
             //DB接続
             $dbh = dbConnect();
-
             //クエリ発行
-            $sql = 'SELECT * FROM users WHERE email = :email AND password = :pass';
+            $sql = 'SELECT * FROM users WHERE email = :email';
+
             $data = [
                 ':email' => $email,
-                ':pass' => $pass,
-                //':login_time' => date('Y-m-d H:i:s'),
                 ];
             //クエリ実行
             $stmt = postQuery($dbh, $sql, $data);
@@ -32,14 +30,14 @@ if(!empty($_POST)) {
             //結果を配列で取得
             $row = $stmt->fetch(PDO::FETCH_ASSOC);
 
-            //成功したらmypageへ飛ばす
-            if($row) {
-                debug('SQL処理が成功しました');
+            //パスワードが合っていればmypageへ飛ばす
+            if(password_verify($pass, $row['password'])) {
+                debug('パスワード一致');
                 header('Location: mypage.php');
             } else {
-                debug('SQL処理が失敗しました');
+                debug('パスワード合ってない');
+                $error_msg['common'] = MSG_LOGIN;
             }
-
         } catch (Exception $e) {
             error_log('例外発生：'.$e->getMessage());
             $error_msg['common'] = MGS_DB;
@@ -74,7 +72,7 @@ require('head.php') ?>
                     </div>
                     <label for="">
                         パスワード
-                        <input type="text" name="password"
+                        <input type="password" name="password"
                             value="<?php if(!empty($pass)) echo $pass?>"
                             class="<?php if(!empty($error_msg['pass'])) echo 'error'?>">
                     </label>

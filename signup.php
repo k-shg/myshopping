@@ -21,7 +21,7 @@ if(!empty($_POST)) {
             $sql = 'INSERT INTO users (email, password, login_time, create_date) VALUES (:email, :pass, :login_time, :create_date)';
             $data = [
                 ':email' => $email,
-                ':pass' => $pass,
+                ':pass' => password_hash($pass, PASSWORD_BCRYPT),
                 ':login_time' => date('Y-m-d H:i:s'),
                 ':create_date' => date('Y-m-d H:i:s')
                 ];
@@ -65,7 +65,7 @@ require('head.php') ?>
                     </div>
                     <label for="">
                         パスワード
-                        <input type="text" name="password"
+                        <input type="password" name="password"
                             value="<?php if(!empty($pass)) echo $pass?>"
                             class="<?php if(!empty($error_msg['pass'])) echo 'error'?>">
                     </label>

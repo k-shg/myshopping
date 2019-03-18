@@ -8,10 +8,6 @@ ini_set('error_log', 'php.log');
 error_reporting(E_ALL);
 
 
-
-dump($_POST);
-
-
 // ===========================
 //　グローバル変数定義
 //============================
@@ -28,6 +24,7 @@ const MSG_UNDER255 = '255以下で入力してください';
 const MSG_HALF_ALPHANUMERIC = '半角英数字で入力してください';
 const MSG_RETYPE = 'パスワード(再入力)が一致しません';
 const MGS_DB = 'データベースにエラーが発生しました。';
+const MSG_LOGIN = ' メールアドレスまたはパスワードが違います';
 
 
 
