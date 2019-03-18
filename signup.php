@@ -1,32 +1,5 @@
 <?php
-// display_errorsをONに設定
-ini_set('display_errors',1);
-
-ini_set('log_errors', 1);
-ini_set('error_log', 'php.log');
-// 全てのエラーを表示
-error_reporting(E_ALL);
-
-
-// ===========================
-//　エラーメッセージ用の定数
-//============================
-const MSG_EMPTY = '入力必須です';
-const MSG_EMAIL = 'emailの形式で入力してください';
-const MSG_OVER6 = '6文字以上で入力してください';
-const MSG_UNDER255 = '255以下で入力してください';
-const MSG_HALF_ALPHANUMERIC = '半角英数字で入力してください';
-const MSG_RETYPE = 'パスワード(再入力)が一致しません';
-
-function debug($str) {
-    error_log('デバッグ：'.$str);
-}
-
-function dump($str) {
-    echo('<pre>');
-    var_dump($str);
-    echo('</pre>');
-}
+require('function.php');
 
 if(!empty($_POST)) {
 
@@ -35,60 +8,14 @@ if(!empty($_POST)) {
     $pass = $_POST['password'];
     $re_pass = $_POST['re_password'];
 
-    //バリデーション
-    debug('バリデーション開始');
-    $error_msg = [];
+    //バリデーション開始
+    $error_msg = validation($email, $pass);
 
-    //入力チェック
-    if(empty($email)) {
-        $error_msg['email'] = MSG_EMPTY;
-    }
-    if(empty($pass)){
-        $error_msg['pass'] = MSG_EMPTY;
-    }
-    if(empty($re_pass)) {
-        $error_msg['re_pass'] = MSG_EMPTY;
-    }
 
-    if(empty($error_msg)) {
-        debug('入力OK');
-        //email形式チェック
-        if(!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-            $error_msg['email'] = MSG_EMAIL;
-        }
-
-        //文字数チェック
-        if(strlen($pass) < 6 ) {
-            $error_msg['pass'] = MSG_OVER6;
-        } else if(strlen($email) > 255) {
-            $error_msg['pass'] = MSG_UNDER255;
-        }
-
-        //半角英数チェック
-        if(!preg_match("/^[a-zA-Z0-9]+$/", $pass)) {
-            $error_msg['pass'] = MSG_HALF_ALPHANUMERIC;
-        }
-
-        //パスワード再入力チェック
-        if($pass !== $re_pass) {
-            $error_msg['re_pass'] = MSG_RETYPE;
-        }
-    }
-
-    dump($_POST);
     if(empty($error_msg)) {
         try {
             //DB接続
-            $dsn = 'mysql:dbname=myshopping;host=localhost;charset=utf8mb4';
-            $username = 'root';
-            $password = 'root';
-            $options = [
-                PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
-                PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
-                PDO::ATTR_EMULATE_PREPARES => false
-            ];
-
-            $dbh = new PDO($dsn, $username, $password, $options);
+            $dbh = dbConnect();
 
             //クエリ発行
             $sql = 'INSERT INTO users (email, password, login_time, create_date) VALUES (:email, :pass, :login_time, :create_date)';
@@ -99,15 +26,13 @@ if(!empty($_POST)) {
                 ':create_date' => date('Y-m-d H:i:s')
                 ];
 
-            //プリペアーステートメントを作成
-            $stmt = $dbh->prepare($sql);
-            //流し込んでDB実行
-            $result = $stmt->execute($data);
+            //クエリ実行
+            $stmt = postQuery($dbh, $sql, $data);
 
             //成功したらmypageへ飛ばす
-            if($result) {
+            if($stmt) {
                 debug('データベースを更新しました');
-                //header('Location: mypage.php');
+                header('Location: mypage.php');
             } else {
                 debug('データベースを更新できませんでした');
             }
@@ -118,8 +43,6 @@ if(!empty($_POST)) {
     }
 
 }
-
-
 
 
 

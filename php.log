@@ -219,3 +219,62 @@ Stack trace:
 [18-Mar-2019 19:39:37 Asia/Tokyo] デバッグ：入力チェックOK
 [18-Mar-2019 19:39:37 Asia/Tokyo] デバッグ：DB接続します
 [18-Mar-2019 19:39:37 Asia/Tokyo] デバッグ：SQL処理が成功しました
+[18-Mar-2019 19:47:04 Asia/Tokyo] デバッグ：バリデーション開始
+[18-Mar-2019 19:48:00 Asia/Tokyo] デバッグ：バリデーション開始
+[18-Mar-2019 19:48:00 Asia/Tokyo] デバッグ：入力チェックOK
+[18-Mar-2019 19:48:00 Asia/Tokyo] PHP Notice:  Undefined variable: error_msg in /Applications/MAMP/htdocs/myshopping/function.php on line 80
+[18-Mar-2019 19:48:00 Asia/Tokyo] デバッグ：DB接続します
+[18-Mar-2019 19:48:00 Asia/Tokyo] デバッグ：SQL処理が成功しました
+[18-Mar-2019 19:48:06 Asia/Tokyo] デバッグ：バリデーション開始
+[18-Mar-2019 19:48:10 Asia/Tokyo] デバッグ：バリデーション開始
+[18-Mar-2019 19:48:19 Asia/Tokyo] デバッグ：バリデーション開始
+[18-Mar-2019 19:48:19 Asia/Tokyo] デバッグ：入力チェックOK
+[18-Mar-2019 19:48:40 Asia/Tokyo] デバッグ：バリデーション開始
+[18-Mar-2019 19:48:53 Asia/Tokyo] デバッグ：バリデーション開始
+[18-Mar-2019 19:51:12 Asia/Tokyo] デバッグ：バリデーション開始
+[18-Mar-2019 19:51:21 Asia/Tokyo] デバッグ：バリデーション開始
+[18-Mar-2019 19:52:40 Asia/Tokyo] デバッグ：バリデーション開始
+[18-Mar-2019 19:52:40 Asia/Tokyo] PHP Notice:  Undefined variable: error_msg in /Applications/MAMP/htdocs/myshopping/function.php on line 82
+[18-Mar-2019 19:52:40 Asia/Tokyo] デバッグ：DB接続します
+[18-Mar-2019 19:52:40 Asia/Tokyo] デバッグ：SQL処理が成功しました
+[18-Mar-2019 20:01:25 Asia/Tokyo] デバッグ：バリデーション開始
+[18-Mar-2019 20:01:29 Asia/Tokyo] デバッグ：バリデーション開始
+[18-Mar-2019 20:01:35 Asia/Tokyo] デバッグ：バリデーション開始
+[18-Mar-2019 20:01:35 Asia/Tokyo] PHP Notice:  Undefined variable: error_msg in /Applications/MAMP/htdocs/myshopping/function.php on line 82
+[18-Mar-2019 20:01:35 Asia/Tokyo] デバッグ：DB接続します
+[18-Mar-2019 20:01:35 Asia/Tokyo] PHP Notice:  Undefined variable: dbh in /Applications/MAMP/htdocs/myshopping/function.php on line 107
+[18-Mar-2019 20:01:35 Asia/Tokyo] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /Applications/MAMP/htdocs/myshopping/function.php:107
+Stack trace:
+#0 /Applications/MAMP/htdocs/myshopping/login.php(30): postQuery('SELECT * FROM u...', Array)
+#1 {main}
+  thrown in /Applications/MAMP/htdocs/myshopping/function.php on line 107
+[18-Mar-2019 20:02:14 Asia/Tokyo] デバッグ：バリデーション開始
+[18-Mar-2019 20:02:14 Asia/Tokyo] デバッグ：DB接続します
+[18-Mar-2019 20:02:14 Asia/Tokyo] PHP Notice:  Undefined variable: dbh in /Applications/MAMP/htdocs/myshopping/function.php on line 108
+[18-Mar-2019 20:02:14 Asia/Tokyo] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /Applications/MAMP/htdocs/myshopping/function.php:108
+Stack trace:
+#0 /Applications/MAMP/htdocs/myshopping/login.php(30): postQuery('SELECT * FROM u...', Array)
+#1 {main}
+  thrown in /Applications/MAMP/htdocs/myshopping/function.php on line 108
+[18-Mar-2019 20:02:58 Asia/Tokyo] デバッグ：バリデーション開始
+[18-Mar-2019 20:02:58 Asia/Tokyo] デバッグ：DB接続します
+[18-Mar-2019 20:02:58 Asia/Tokyo] デバッグ：SQL処理が成功しました
+[18-Mar-2019 20:03:04 Asia/Tokyo] デバッグ：バリデーション開始
+[18-Mar-2019 20:03:04 Asia/Tokyo] デバッグ：DB接続します
+[18-Mar-2019 20:03:04 Asia/Tokyo] デバッグ：SQL処理が成功しました
+[18-Mar-2019 20:06:24 Asia/Tokyo] デバッグ：バリデーション開始
+[18-Mar-2019 20:06:24 Asia/Tokyo] デバッグ：入力OK
+[18-Mar-2019 20:06:24 Asia/Tokyo] PHP Fatal error:  Uncaught Error: Call to undefined function dbConnect() in /Applications/MAMP/htdocs/myshopping/signup.php:82
+Stack trace:
+#0 {main}
+  thrown in /Applications/MAMP/htdocs/myshopping/signup.php on line 82
+[18-Mar-2019 20:06:53 Asia/Tokyo] デバッグ：バリデーション開始
+[18-Mar-2019 20:06:53 Asia/Tokyo] デバッグ：入力OK
+[18-Mar-2019 20:06:53 Asia/Tokyo] デバッグ：データベースを更新しました
+[18-Mar-2019 20:07:52 Asia/Tokyo] デバッグ：バリデーション開始
+[18-Mar-2019 20:07:52 Asia/Tokyo] デバッグ：入力OK
+[18-Mar-2019 20:07:52 Asia/Tokyo] デバッグ：データベースを更新しました
+[18-Mar-2019 20:10:43 Asia/Tokyo] デバッグ：バリデーション開始
+[18-Mar-2019 20:10:43 Asia/Tokyo] デバッグ：バリデーションOKです
+[18-Mar-2019 20:10:43 Asia/Tokyo] デバッグ：DB接続します
+[18-Mar-2019 20:10:43 Asia/Tokyo] デバッグ：SQL処理が成功しました
