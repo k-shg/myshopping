@@ -27,9 +27,7 @@ h1,h2,h3,h4,h5,h6,p{
 /* ==================================
       リンク
 ===================================  */
-  a,
-  a:activie,
-  a:hover {
+  a {
       color: #b6a489;
 }
 
@@ -96,15 +94,41 @@ header h1 a {
 .site-width {
   width: 980px;
   margin: 0 auto;
+  /* background: grey;
+  height: 900px; */
+}
+.main-container {
+    overflow: hidden;
 }
 
-
 #contents {
-    /* background: red; */
     width: 100%;
     min-height: 600px;
     margin: 20px 0;
+    overflow: hidden;
 }
+
+
+#main {
+    width: 760px;
+    background: pink;
+    float: left;
+    min-height: 600px;
+}
+#sidebar {
+    width: 200px;
+    background: #f6f5f4;
+    float: right;
+    min-height: 500px;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+#sidebar a {
+    display: block;
+    margin-bottom: 10px;
+}
+
 
 /* ==================================
       ボタン
