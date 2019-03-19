@@ -1,5 +1,11 @@
 <?php
+
 require('function.php');
+
+debug('「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「');
+debug('「「「「「「「「「「「ログインページ「「「「「「「「「「「「「「「「');
+debug('「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「');
+
 
 
 if(!empty($_POST)) {
@@ -33,6 +39,13 @@ if(!empty($_POST)) {
             //パスワードが合っていればmypageへ飛ばす
             if(password_verify($pass, $row['password'])) {
                 debug('パスワード一致');
+                //セッションにユーザーidを保存
+                $_SESSION['user_id'] = $row['id'];
+                //セッションに現在のログイン時間を保存
+                $_SESSION['login_date'] = time();
+                //セッションに有効期限を保存
+                $_SESSION['login_limit'] = time() + 60*60;
+
                 header('Location: mypage.php');
             } else {
                 debug('パスワード合ってない');
@@ -45,9 +58,6 @@ if(!empty($_POST)) {
     }
 
 }
-
-
-
 
 
 $title = 'ログインページ';
