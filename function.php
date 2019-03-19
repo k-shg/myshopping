@@ -36,11 +36,12 @@ $error_msg = [];
 const MSG_EMPTY = '入力必須です';
 const MSG_EMAIL = 'emailの形式で入力してください';
 const MSG_OVER6 = '6文字以上で入力してください';
-const MSG_UNDER255 = '255以下で入力してください';
+const MSG_UNDER255 = '255文字以下で入力してください';
 const MSG_HALF_ALPHANUMERIC = '半角英数字で入力してください';
 const MSG_RETYPE = 'パスワード(再入力)が一致しません';
 const MGS_DB = 'データベースにエラーが発生しました。';
 const MSG_LOGIN = ' メールアドレスまたはパスワードが違います';
+const MSG_INT = '数値で入力してください';
 
 
 
@@ -67,7 +68,7 @@ function dump($str) {
 //　バリデーション
 //============================
 
-function validEmpty($str, $key) {
+function validRequired($str, $key) {
     global $error_msg;
 
     //入力チェック
@@ -106,10 +107,22 @@ function validHalfAlpha($str, $key) {
 function validMatch($pass, $re_pass) {
     global $error_msg;
     if($pass !== $re_pass) {
-        return $error_msg['pass'] = MSG_RETYPE;
+        $error_msg['pass'] = MSG_RETYPE;
+    }
+}
+function validMaxLen($str, $key) {
+    global $error_msg;
+    if(strlen($str) > 255) {
+         $error_msg[$key] = MSG_UNDER255;
     }
 }
 
+function validNumber($num, $key) {
+    global $error_msg;
+    if(!is_int($num)) {
+        $error_msg[$key] = MSG_INT;
+    }
+}
 
 
 // ===========================
@@ -117,27 +130,50 @@ function validMatch($pass, $re_pass) {
 //============================
 
 function dbConnect() {
-    $dsn = 'mysql:dbname=myshopping;host=localhost;charset=utf8mb4';
-    $username = 'root';
-    $password = 'root';
-    $options = [
-        PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
-        PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
-        PDO::ATTR_EMULATE_PREPARES => false
-    ];
-    $dbh = new PDO($dsn, $username, $password, $options);
-    return $dbh;
+    try {
+        $dsn = 'mysql:dbname=myshopping;host=localhost;charset=utf8mb4';
+        $username = 'root';
+        $password = 'root';
+        $options = [
+            PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+            PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
+            PDO::ATTR_EMULATE_PREPARES => false
+        ];
+        $dbh = new PDO($dsn, $username, $password, $options);
+        return $dbh;
+    } catch(Exception $e) {
+        debug('データベース接続エラー：'.$e->getMessage());
+    }
 }
 
 // ===========================
 //　クエリー実行
 //============================
 function postQuery($dbh, $sql, $data) {
+    debug('プリペアーステートメントを作成');
     //プリペアーステートメントを作成
     $stmt = $dbh->prepare($sql);
 
+
     //流し込んでDB実行
     $stmt->execute($data);
+    debug('クエリー実行しました');
     return $stmt;
 }
+
+
+
+// ===========================
+//　ユーザー取得
+//============================
+function getUser($user_id) {
+
+    $dbh = dbConnect();
+    $sql = 'SELECT * FROM users WHERE id = :user_id AND delete_flg = 0';
+    $data = [':user_id' => $user_id];
+    $stmt = postQuery($dbh, $sql, $data);
+    return $stmt->fetch();
+}
+
+
  ?>

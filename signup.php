@@ -23,9 +23,9 @@ if(!empty($_POST)) {
     validHalfAlpha($pass, 'pass');
 
 
-    validEmpty($email, 'email');
-    validEmpty($pass, 'pass');
-    validEmpty($re_pass, 're_pass');
+    validRequired($email, 'email');
+    validRequired($pass, 'pass');
+    validRequired($re_pass, 're_pass');
 
     validMatch($pass, $re_pass);
 

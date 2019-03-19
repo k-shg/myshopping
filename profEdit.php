@@ -12,16 +12,39 @@ debug('「「「「「「「「「「「「「「「「「「「「「「「「�
 require('auth.php');
 
 
-dump($_POST);
+//ユーザー情報を取得する
+$user = getUser($_SESSION['user_id']);
+debug('取得したユーザー情報：' .print_r($user, true));
+
+
+
+
 if(!empty($_POST)) {
     debug('POST送信があります');
+    debug('POST情報：'.print_r($_POST, true));
     //変数定義
-    $name = $_POST['name'];
-    $age = $_POST['age'];
+    $name = (isset($_POST['name'])) ? $_POST['name']: null;
+    $age = (isset($_POST['age'])) ? (int)$_POST['age']: null;
     $email = $_POST['email'];
     $pic = $_POST['pic'];
 
-    //バリデーション開始
+
+    //データベースとフォームの値が異なる場合に、バリデーションチェックを行う
+    if($user['name'] !== $name) {
+        //最大文字数チェック
+        validMaxLen($name, 'name');
+    }
+
+    if($user['age'] != $age) {
+        //数値チェック
+        validNumber($age, 'age');
+    }
+
+    if($user['email'] !== $email) {
+        validEmail($email, 'email');
+        validRequired($email, 'email');
+    }
+
 
     if(empty($error_msg)) {
         try {
@@ -29,33 +52,25 @@ if(!empty($_POST)) {
 
             //DB接続
             $dbh = dbConnect();
-            //クエリ発行
-            $sql = 'SELECT * FROM users WHERE email = :email AND delete_flg = 0';
 
+            //クエリ発行
+            $sql = 'UPDATE users SET name = :name, age = :age, email = :email, pic = :pic WHERE id = :user_id';
             $data = [
+                ':name' => $name,
+                ':age' => $age,
                 ':email' => $email,
+                ':pic' => $pic,
+                ':user_id' => $user['id']
                 ];
             //クエリ実行
             $stmt = postQuery($dbh, $sql, $data);
-
-            //結果を配列で取得
-            $row = $stmt->fetch(PDO::FETCH_ASSOC);
-
-            //パスワードが合っていればmypageへ飛ばす
-            if(password_verify($pass, $row['password'])) {
-                debug('パスワード一致');
-                //セッションにユーザーidを保存
-                $_SESSION['user_id'] = $row['id'];
-                //セッションに現在のログイン時間を保存
-                $_SESSION['login_date'] = time();
-                //セッションに有効期限を保存
-                $_SESSION['login_limit'] = time() + 60*60;
-
-                header('Location: mypage.php');
+            if($stmt) {
+                debug('DB情報を更新しました');
+                //header('Location: mypage.php');
             } else {
-                debug('パスワード合ってない');
-                $error_msg['common'] = MSG_LOGIN;
+                debug('DB情報を更新できませんでした');
             }
+
         } catch (Exception $e) {
             error_log('例外発生：'.$e->getMessage());
             $error_msg['common'] = MGS_DB;
@@ -82,38 +97,52 @@ require('head.php') ?>
                         <label>
                             名前
                             <input type="text" name="name"
-                                value="<?php if(!empty($email)) echo $email?>"
-                                class="<?php if(!empty($error_msg['email'])) echo 'error'?>">
+                                value="<?php
+                                if(!empty($name)){
+                                    echo $name;
+                                }
+                                elseif(!empty($user['name'])) {
+                                    echo $user['name'];
+                                }
+                                ?>"
+                                class="<?php if(!empty($error_msg['name'])) echo 'error'?>">
                         </label>
                         <div class="area-msg">
-                            <?php if(!empty($error_msg['email'])) echo $error_msg['email']?>
+                            <?php if(!empty($error_msg['name'])) echo $error_msg['name']?>
                         </div>
                         <label>
                             年齢
                             <input type="number" name="age"
-                                value="<?php if(!empty($email)) echo $email?>"
-                                class="<?php if(!empty($error_msg['email'])) echo 'error'?>">
+                                value="<?php if(isset($age)) echo $age?>"
+                                class="<?php if(!empty($error_msg['age'])) echo 'error'?>">
                         </label>
                         <div class="area-msg">
-                            <?php if(!empty($error_msg['email'])) echo $error_msg['email']?>
+                            <?php if(!empty($error_msg['age'])) echo $error_msg['age']?>
                         </div>
                         <label>
                             Email
                             <input type="text" name="email"
-                                value="<?php if(!empty($email)) echo $email?>"
-                                class="<?php if(!empty($error_msg['email'])) echo 'error'?>">
-                        </label>
-                        <div class="area-msg">
-                            <?php if(!empty($error_msg['pass'])) echo $error_msg['pass']?>
-                        </div>
-                        <label class="area-drop">
-                            プロフィール画像
-                            <input type="file" name="pic" class="input-file"
-                                value="<?php if(!empty($email)) echo $email?>"
+                                value="<?php
+                                if(!empty($email)){
+                                    echo $email;
+                                }
+                                elseif(!empty($user['email'])) {
+                                    echo $user['email'];
+                                }
+                                ?>"
                                 class="<?php if(!empty($error_msg['email'])) echo 'error'?>">
                         </label>
                         <div class="area-msg">
                             <?php if(!empty($error_msg['email'])) echo $error_msg['email']?>
+                        </div>
+                        <label class="area-drop">
+                            プロフィール画像
+                            <input type="file" name="pic" class="input-file"
+                                value="<?php if(!empty($pic)) echo $pic?>"
+                                class="<?php if(!empty($error_msg['email'])) echo 'error'?>">
+                        </label>
+                        <div class="area-msg">
+                            <?php if(!empty($error_msg['pic'])) echo $error_msg['pic']?>
                         </div>
                         <input type="submit" name="" value="変更する" class="btn btn-mid">
                     </form>

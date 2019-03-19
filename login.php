@@ -26,8 +26,8 @@ if(!empty($_POST)) {
 
     validHalfAlpha($pass, 'pass');
 
-    validEmpty($email, 'email');
-    validEmpty($pass, 'pass');
+    validRequired($email, 'email');
+    validRequired($pass, 'pass');
 
     dump($error_msg);
 
