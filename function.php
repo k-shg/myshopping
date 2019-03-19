@@ -66,37 +66,51 @@ function dump($str) {
 // ===========================
 //　バリデーション
 //============================
-function validation($email, $pass) {
-    debug('バリデーション開始');
+
+function validEmpty($str, $key) {
     global $error_msg;
 
-    //email形式チェック
-    if(!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        $error_msg['email'] = MSG_EMAIL;
-    }
-
-    //文字数チェック
-    if(strlen($pass) < 6 ) {
-        $error_msg['pass'] = MSG_OVER6;
-    } else if(strlen($email) > 255) {
-        $error_msg['pass'] = MSG_UNDER255;
-    }
-
-    //半角英数チェック
-    if(!preg_match("/^[a-zA-Z0-9]+$/", $pass)) {
-        $error_msg['pass'] = MSG_HALF_ALPHANUMERIC;
-    }
-
     //入力チェック
-    if(empty($email)) {
-        $error_msg['email'] = MSG_EMPTY;
+    if(empty($str)) {
+        $error_msg[$key] = MSG_EMPTY;
     }
-    if(empty($pass)){
-        $error_msg['pass'] = MSG_EMPTY;
-    }
-    debug('バリデーションOK');
     return $error_msg;
 }
+
+function validEmail($str, $key) {
+    global $error_msg;
+
+    if(!filter_var($str, FILTER_VALIDATE_EMAIL)) {
+        $error_msg[$key] = MSG_EMAIL;
+    }
+}
+
+function validLength($str, $key) {
+    global $error_msg;
+
+    if(strlen($str) < 6 ) {
+        $error_msg[$key] = MSG_OVER6;
+    } else if(strlen($str) > 255) {
+        $error_msg[$key] = MSG_UNDER255;
+    }
+}
+
+function validHalfAlpha($str, $key) {
+    global $error_msg;
+
+    if(!preg_match("/^[a-zA-Z0-9]+$/", $str)) {
+        $error_msg[$key] = MSG_HALF_ALPHANUMERIC;
+    }
+}
+
+function validMatch($pass, $re_pass) {
+    global $error_msg;
+    if($pass !== $re_pass) {
+        return $error_msg['pass'] = MSG_RETYPE;
+    }
+}
+
+
 
 // ===========================
 //　データベースへ接続

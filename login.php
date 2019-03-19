@@ -21,7 +21,15 @@ if(!empty($_POST)) {
     $pass = $_POST['password'];
 
     //バリデーション開始
-    $error_msg = validation($email, $pass);
+    validEmail($email, 'email');
+    validLength($pass, 'pass');
+
+    validHalfAlpha($pass, 'pass');
+
+    validEmpty($email, 'email');
+    validEmpty($pass, 'pass');
+
+    dump($error_msg);
 
 
     if(empty($error_msg)) {

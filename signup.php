@@ -17,7 +17,19 @@ if(!empty($_POST)) {
     $re_pass = $_POST['re_password'];
 
     //バリデーション開始
-    $error_msg = validation($email, $pass);
+    validEmail($email, 'email');
+
+    validLength($pass, 'pass');
+    validHalfAlpha($pass, 'pass');
+
+
+    validEmpty($email, 'email');
+    validEmpty($pass, 'pass');
+    validEmpty($re_pass, 're_pass');
+
+    validMatch($pass, $re_pass);
+
+    dump($error_msg);
 
 
     if(empty($error_msg)) {
@@ -41,7 +53,7 @@ if(!empty($_POST)) {
             if($stmt) {
                 debug('データベースを更新しました');
                 //セッションにユーザーidを保存
-                $_SESSION['user_id'] = $row['id'];
+                $_SESSION['user_id'] = $dbh->lastInsertId();
                 //セッションに現在のログイン時間を保存
                 $_SESSION['login_date'] = time();
                 //セッションに有効期限を保存
@@ -88,7 +100,7 @@ require('head.php') ?>
                     </div>
                     <label for="">
                         パスワード(再入力)
-                        <input type="text" name="re_password"
+                        <input type="password" name="re_password"
                             value="<?php if(!empty($re_pass)) echo $re_pass?>"
                             class="<?php if(!empty($error_msg['re_pass'])) echo 'error'?>">
                     </label>
