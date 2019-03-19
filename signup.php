@@ -40,6 +40,12 @@ if(!empty($_POST)) {
             //成功したらmypageへ飛ばす
             if($stmt) {
                 debug('データベースを更新しました');
+                //セッションにユーザーidを保存
+                $_SESSION['user_id'] = $row['id'];
+                //セッションに現在のログイン時間を保存
+                $_SESSION['login_date'] = time();
+                //セッションに有効期限を保存
+                $_SESSION['login_limit'] = time() + 60*60;
                 header('Location: mypage.php');
             } else {
                 debug('データベースを更新できませんでした');

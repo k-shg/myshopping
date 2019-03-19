@@ -15,9 +15,10 @@ error_reporting(E_ALL);
 debug('セッション開始');
 debug('ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー');
 session_start();
+session_regenerate_id();
 
-error_log('現在のセッションID：'.session_id());
-error_log('セッション変数の中身：'.print_r($_SESSION, true));
+debug('現在のセッションID：'.session_id());
+debug('セッション情報：'.print_r($_SESSION, true));
 
 
 
@@ -40,6 +41,7 @@ const MSG_HALF_ALPHANUMERIC = '半角英数字で入力してください';
 const MSG_RETYPE = 'パスワード(再入力)が一致しません';
 const MGS_DB = 'データベースにエラーが発生しました。';
 const MSG_LOGIN = ' メールアドレスまたはパスワードが違います';
+
 
 
 
