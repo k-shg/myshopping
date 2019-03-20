@@ -5,7 +5,7 @@ require('function.php');
 
 
 debug('「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「');
-debug('「「「「「「「「「「「プロフィール編集「「「「「「「「「「「「「「「');
+debug('「「「「「「「「「「「商品登録「「「「「「「「「「「「「「「');
 debug('「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「');
 
 
@@ -88,13 +88,13 @@ if(!empty($_POST)) {
 
 
 
-$title = 'プロフィール編集';
+$title = '商品登録';
 require('head.php') ?>
     <body>
         <?php require('header.php') ?>
         <main id="contents">
             <div class="main-container site-width">
-                <h1 class="site-title">プロフィール編集</h1>
+                <h1 class="site-title">商品登録</h1>
                 <section id="main" class="form-container">
                     <form method="post" enctype="multipart/form-data">
                         <div class="area-msg">
