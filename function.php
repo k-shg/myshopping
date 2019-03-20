@@ -175,5 +175,41 @@ function getUser($user_id) {
     return $stmt->fetch();
 }
 
+// ===========================
+//　カテゴリー取得
+//============================
+
+
+function getCategory() {
+    $result = '';
+
+    try {
+        debug('DB接続します');
+
+        //DB接続
+        $dbh = dbConnect();
+
+        //クエリ発行
+        $sql = 'SELECT id, name FROM category';
+        $data = [];
+        //クエリ実行
+        $stmt = postQuery($dbh, $sql, $data);
+        if($stmt) {
+            debug('クエリ成功');
+            $result = $stmt->fetchAll();
+            //header('Location: mypage.php');
+        } else {
+            debug('クエリ失敗');
+        }
+
+    } catch (Exception $e) {
+        error_log('例外発生：'.$e->getMessage());
+        $error_msg['common'] = MGS_DB;
+    }
+
+    return $result;
+}
+
+
 
  ?>
