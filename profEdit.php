@@ -18,15 +18,21 @@ debug('取得したユーザー情報：' .print_r($user, true));
 
 
 
-
 if(!empty($_POST)) {
     debug('POST送信があります');
     debug('POST情報：'.print_r($_POST, true));
+    debug('画像情報：'.print_r($_FILES, true));
     //変数定義
     $name = (isset($_POST['name'])) ? $_POST['name']: null;
     $age = (isset($_POST['age'])) ? (int)$_POST['age']: null;
     $email = $_POST['email'];
-    $pic = $_POST['pic'];
+
+
+    $pic = (isset($_FILES['pic']['name'])) ? 'img/'.$_FILES['pic']['name']: null;
+
+    //画像アップロード
+    move_uploaded_file($_FILES['pic']['tmp_name'], $pic);
+
 
 
     //データベースとフォームの値が異なる場合に、バリデーションチェックを行う
@@ -90,7 +96,7 @@ require('head.php') ?>
             <div class="main-container site-width">
                 <h1 class="site-title">プロフィール編集</h1>
                 <section id="main" class="form-container">
-                    <form method="post">
+                    <form method="post" enctype="multipart/form-data">
                         <div class="area-msg">
                             <?php if(!empty($error_msg['common'])) echo $error_msg['common']?>
                         </div>
@@ -135,16 +141,32 @@ require('head.php') ?>
                         <div class="area-msg">
                             <?php if(!empty($error_msg['email'])) echo $error_msg['email']?>
                         </div>
+                        プロフィール画像
                         <label class="area-drop">
-                            プロフィール画像
-                            <input type="file" name="pic" class="input-file"
-                                value="<?php if(!empty($pic)) echo $pic?>"
+                            <input type="file" name="pic" class="js-input-file"
+                                value=""
                                 class="<?php if(!empty($error_msg['email'])) echo 'error'?>">
+                            <img src="<?php
+
+                            //フォームにデータがあるとき
+                            if(!empty($pic) ){
+                                debug('two');
+                                echo $pic;
+                            }//データベースに画像があるとき
+                            elseif(!empty($user['pic'])) {
+                                debug('one');
+                                echo $user['pic'];
+                            }
+                             ?>"
+                            alt=""
+                            class="pre-img">
                         </label>
                         <div class="area-msg">
                             <?php if(!empty($error_msg['pic'])) echo $error_msg['pic']?>
                         </div>
-                        <input type="submit" name="" value="変更する" class="btn btn-mid">
+                        <div class="btn-container">
+                            <input type="submit" name="" value="変更する" class="btn btn-mid">
+                        </div>
                     </form>
                 </section>
                 <section id="sidebar">
