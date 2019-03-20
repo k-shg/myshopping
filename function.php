@@ -210,6 +210,19 @@ function getCategory() {
     return $result;
 }
 
+// ===========================
+//　ユーザー取得
+//============================
+
+function getProduct($product_id) {
+
+    $dbh = dbConnect();
+    $sql = 'SELECT * FROM product WHERE id = :product_id AND delete_flg = 0';
+    $data = [':product_id' => $product_id];
+    $stmt = postQuery($dbh, $sql, $data);
+    return $stmt->fetch();
+}
+
 
 
  ?>

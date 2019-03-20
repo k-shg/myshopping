@@ -10,9 +10,9 @@ debug('「「「「「「「「「「「「「「「「「「「「「「「「�
 
 
 require('auth.php');
+$title = '';
 
 //カテゴリーを取得
-
 $categoryData = getCategory();
 debug('カテゴリー情報：'.print_r($categoryData, true));
 
@@ -20,22 +20,98 @@ debug('カテゴリー情報：'.print_r($categoryData, true));
 //クエリパラメータの有無をチェック
 if(!empty($_GET)) {
     //あり→商品編集ページ
+    $title = '商品編集';
+
+    debug('GET送信があります');
+    debug('GET情報：'.print_r($_GET, true));
 
     //商品IDから商品情報を取得する
     $product_id = $_GET['product_id'];
+    $productData = getProduct($product_id);
+    debug('商品情報：'.print_r($productData, true));
+
+
 
     //POST送信がある
+    //POST送信がある
+    if(!empty($_POST)) {
+        debug('POST送信があります');
+        debug('POST情報：'.print_r($_POST, true));
+        debug('画像情報：'.print_r($_FILES, true));
 
-    //データベースとフォームの値が異なる場合に、バリデーションチェックを行う
+        //変数定義
+        $name = $_POST['name'];
+        $category_id = (int)$_POST['category'];
+        $comment = (isset($_POST['comment'])) ? $_POST['comment']: null;
+        $price = (isset($_POST['price']))? $_POST['price']: null;
+        $pic = (isset($_FILES['pic']['name'])) ? 'img/'.$_FILES['pic']['name']: $productData['pic1'];
 
-    //DBに登録
+        //画像アップロード
+        move_uploaded_file($_FILES['pic']['tmp_name'], $pic);
 
 
+        //データベースとフォームの値が異なる場合に、バリデーションチェックを行う
+        if($productData['name'] !== $name) {
+            //最大文字数チェック
+            validMaxLen($name, 'name');
+            validRequired($name, 'name');
+        }
+        if($productData['category_id'] !== $category_id) {
+            validRequired($category_id, 'category');
+        }
+
+        if($productData['comment'] !== $comment) {
+            validMaxLen($comment, 'comment');
+        }
+
+        if($productData['price'] !== $price) {
+            //入力が0であればバリデーションはしない
+            if($price != 0) {
+                //数値チェック
+                validNumber((int)$price, 'price');
+                validRequired($price, 'price');
+            }
+        }
+
+        if(empty($error_msg)) {
+            try {
+                debug('DB接続します');
+
+                //DB接続
+                $dbh = dbConnect();
+
+                //クエリ発行
+                $sql = 'UPDATE product SET name = :name, price = :price, comment = :comment, category_id = :category_id, user_id = :user_id, pic1 = :pic WHERE id = :product_id';
+                $data = [
+                    ':name' => $name,
+                    ':price' => $price,
+                    ':comment' => $comment,
+                    ':category_id' => $category_id,
+                    ':user_id' => $_SESSION['user_id'],
+                    ':pic' => $pic,
+                    ':product_id' => $productData['id'],
+                    ];
+                //クエリ実行
+                $stmt = postQuery($dbh, $sql, $data);
+                if($stmt) {
+                    debug('DB情報を更新しました');
+                    //header('Location: mypage.php');
+                } else {
+                    debug('DB情報を更新できませんでした');
+                }
+
+            } catch (Exception $e) {
+                error_log('例外発生：'.$e->getMessage());
+                $error_msg['common'] = MGS_DB;
+            }
+        }
 
 
+    }
 
 } else {
     //なし→新規登録ページ
+    $title = '商品登録';
 
     //POST送信がある
     if(!empty($_POST)) {
@@ -74,7 +150,6 @@ if(!empty($_GET)) {
             validRequired($price, 'price');
         }
 
-        dump($category_id);
 
 
         if(empty($error_msg)) {
@@ -112,22 +187,14 @@ if(!empty($_GET)) {
         }
     }
 
-        //DBに登録
-
-
-
 }
 
-
-
-
-$title = '商品登録';
 require('head.php') ?>
     <body>
         <?php require('header.php') ?>
         <main id="contents">
             <div class="main-container site-width">
-                <h1 class="site-title">商品登録</h1>
+                <h1 class="site-title"><?php echo $title ?></h1>
                 <section id="main" class="form-container">
                     <form method="post" enctype="multipart/form-data" style="width: 100%;">
                         <div class="area-msg">
@@ -140,8 +207,8 @@ require('head.php') ?>
                                 if(!empty($name)){
                                     echo $name;
                                 }
-                                elseif(!empty($product['name'])) {
-                                    echo $product['name'];
+                                elseif(!empty($productData['name'])) {
+                                    echo $productData['name'];
                                 }
                                 ?>"
                                 class="<?php if(!empty($error_msg['name'])) echo 'error'?>">
@@ -169,7 +236,13 @@ require('head.php') ?>
                             金額<span class="required">必須</span>
                             <div class="form-group">
                                 <input type="number" name="price"
-                                    value="<?php if(isset($price)) echo $price?>"
+                                    value="<?php
+                                    if(isset($price)) {
+                                        echo $price;
+                                    } elseif(isset($productData['price'])) {
+                                        echo $productData['price'];
+                                    }
+                                        ?>"
                                     class="<?php if(!empty($error_msg['price'])) echo 'error'?>">
                                     <span class="yen">円</span>
                             </div>
@@ -182,8 +255,8 @@ require('head.php') ?>
                             <textarea name="comment" class="<?php if(!empty($error_msg['comment'])) echo 'error'?>" style="height: 150px;"><?php
                             if(!empty($comment)){
                                 echo $comment;
-                            }elseif(!empty($product['comment'])) {
-                                echo $product['comment'];
+                            }elseif(!empty($productData['comment'])) {
+                                echo $productData['comment'];
                             }
                             ?></textarea>
                         </label>
@@ -199,12 +272,10 @@ require('head.php') ?>
 
                             //フォームにデータがあるとき
                             if(!empty($pic) ){
-                                debug('two');
                                 echo $pic;
                             }//データベースに画像があるとき
-                            elseif(!empty($product['pic'])) {
-                                debug('one');
-                                echo $product['pic'];
+                            elseif(!empty($productData['pic1'])) {
+                                echo $productData['pic1'];
                             }
                              ?>"
                             alt=""
