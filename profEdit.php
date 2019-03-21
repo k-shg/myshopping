@@ -27,13 +27,13 @@ if(!empty($_POST)) {
     $age = (isset($_POST['age'])) ? (int)$_POST['age']: null;
     $email = $_POST['email'];
 
-
-    $pic = (isset($_FILES['pic']['name'])) ? 'img/'.$_FILES['pic']['name']: null;
+    //画像が未選択の場合、データベースの情報を入れる
+    $pic = (!empty($_FILES['pic']['name'])) ? 'img/'.$_FILES['pic']['name']: $user['pic'];
 
     //画像アップロード
     move_uploaded_file($_FILES['pic']['tmp_name'], $pic);
 
-
+    dump($pic);
 
     //データベースとフォームの値が異なる場合に、バリデーションチェックを行う
     if($user['name'] !== $name) {
@@ -50,6 +50,9 @@ if(!empty($_POST)) {
         validEmail($email, 'email');
         validRequired($email, 'email');
     }
+
+
+
 
 
     if(empty($error_msg)) {
@@ -144,7 +147,11 @@ require('head.php') ?>
                         プロフィール画像
                         <label class="area-drop">
                             <input type="file" name="pic" class="js-input-file"
-                                value=""
+                                value="<?php
+                                if(!empty($user['pic'])) {
+                                    echo $user['pic'];
+                                }
+                                 ?>"
                                 class="<?php if(!empty($error_msg['email'])) echo 'error'?>">
                             <img src="<?php
 

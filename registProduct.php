@@ -44,10 +44,12 @@ if(!empty($_GET)) {
         $category_id = (int)$_POST['category'];
         $comment = (isset($_POST['comment'])) ? $_POST['comment']: null;
         $price = (isset($_POST['price']))? $_POST['price']: null;
-        $pic = (isset($_FILES['pic']['name'])) ? 'img/'.$_FILES['pic']['name']: $productData['pic1'];
+        //画像が未選択の場合、データベースの情報を入れる
+        $pic = (!empty($_FILES['pic']['name'])) ? 'img/'.$_FILES['pic']['name']: $productData['pic1'];
 
         //画像アップロード
         move_uploaded_file($_FILES['pic']['tmp_name'], $pic);
+
 
 
         //データベースとフォームの値が異なる場合に、バリデーションチェックを行う
@@ -124,8 +126,8 @@ if(!empty($_GET)) {
         $category_id = (int)$_POST['category'];
         $comment = (isset($_POST['comment'])) ? $_POST['comment']: null;
         $price = (isset($_POST['price']))?  (int)$_POST['price']: null;
-
-        $pic = (isset($_FILES['pic']['name'])) ? 'img/'.$_FILES['pic']['name']: null;
+        //画像が未選択の場合、データベースの情報を入れる
+        $pic = (!empty($_FILES['pic']['name'])) ? 'img/'.$_FILES['pic']['name']: $productData['pic1'];
 
         //画像アップロード
         move_uploaded_file($_FILES['pic']['tmp_name'], $pic);
@@ -222,7 +224,15 @@ require('head.php') ?>
                                 <option value="0">選択してください</option>
                                 <?php foreach ($categoryData as $key => $category): ?>
                                 <option value="<?php echo $category['id'] ?>"
-                                    <?php if(!empty($category_id)  &&$category_id === $category['id'] ) echo 'selected';?>>
+                                    <?php
+                                    //DBデータがある場合
+                                    if(!empty($productData['category_id']) && $productData['category_id'] ==  $category['id'] ) {
+                                        echo 'selected';
+                                    }  
+                                    //POSTされていた場合
+                                     else if(!empty($category_id)  && $category_id === $category['id'] ){
+                                        echo 'selected';
+                                    } ?>>
                                     <?php echo $category['name'] ?>
                                 </option>
                             <?php endforeach; ?>
