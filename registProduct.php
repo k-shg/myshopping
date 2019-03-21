@@ -27,8 +27,8 @@ if(!empty($_GET)) {
 
     //商品IDから商品情報を取得する
     $product_id = $_GET['product_id'];
-    $productData = getProduct($product_id);
-    debug('商品情報：'.print_r($productData, true));
+    $dbFormData = getProduct($product_id);
+    debug('商品情報：'.print_r($dbFormData, true));
 
 
 
@@ -41,34 +41,41 @@ if(!empty($_GET)) {
 
         //変数定義
         $name = $_POST['name'];
-        $category_id = (int)$_POST['category'];
+        $category_id = $_POST['category'];
         $comment = (isset($_POST['comment'])) ? $_POST['comment']: null;
         $price = (isset($_POST['price']))? $_POST['price']: null;
         //画像が未選択の場合、データベースの情報を入れる
-        $pic = (!empty($_FILES['pic']['name'])) ? 'img/'.$_FILES['pic']['name']: $productData['pic1'];
+        $pic = (!empty($_FILES['pic']['name'])) ? 'img/'.$_FILES['pic']['name']: $dbFormData['pic1'];
 
         //画像アップロード
         move_uploaded_file($_FILES['pic']['tmp_name'], $pic);
 
 
 
+
         //データベースとフォームの値が異なる場合に、バリデーションチェックを行う
-        if($productData['name'] !== $name) {
+        if($dbFormData['name'] !== $name) {
             //最大文字数チェック
             validMaxLen($name, 'name');
             validRequired($name, 'name');
         }
-        if($productData['category_id'] !== $category_id) {
-            validRequired($category_id, 'category');
+        dump($dbFormData['category_id']);
+        dump($category_id);
+
+
+        if($dbFormData['category_id'] !== $category_id) {
+            dump('カテゴリのバリデーション');
+            //セレクトボックスチェック
+            validSelectBox($category_id, 'category');
         }
 
-        if($productData['comment'] !== $comment) {
+        if($dbFormData['comment'] !== $comment) {
             validMaxLen($comment, 'comment');
         }
 
-        if($productData['price'] !== $price) {
+        if($dbFormData['price'] !== $price) {
             //入力が0であればバリデーションはしない
-            if($price != 0) {
+            if($price !== 0) {//未入力の場合は空白チェックに引っかかる
                 //数値チェック
                 validNumber((int)$price, 'price');
                 validRequired($price, 'price');
@@ -91,7 +98,7 @@ if(!empty($_GET)) {
                     ':category_id' => $category_id,
                     ':user_id' => $_SESSION['user_id'],
                     ':pic' => $pic,
-                    ':product_id' => $productData['id'],
+                    ':product_id' => $dbFormData['id'],
                     ];
                 //クエリ実行
                 $stmt = postQuery($dbh, $sql, $data);
@@ -124,10 +131,11 @@ if(!empty($_GET)) {
         //変数定義
         $name = $_POST['name'];
         $category_id = (int)$_POST['category'];
+
         $comment = (isset($_POST['comment'])) ? $_POST['comment']: null;
         $price = (isset($_POST['price']))?  (int)$_POST['price']: null;
         //画像が未選択の場合、データベースの情報を入れる
-        $pic = (!empty($_FILES['pic']['name'])) ? 'img/'.$_FILES['pic']['name']: $productData['pic1'];
+        $pic = (!empty($_FILES['pic']['name'])) ? 'img/'.$_FILES['pic']['name']: $dbFormData['pic1'];
 
         //画像アップロード
         move_uploaded_file($_FILES['pic']['tmp_name'], $pic);
@@ -140,7 +148,6 @@ if(!empty($_GET)) {
         if(!empty($comment)) {
             validMaxLen($comment, 'comment');
         }
-        dump($price);
         //数値チェック
         validNumber($price, 'price');//必須項目
 
@@ -209,8 +216,8 @@ require('head.php') ?>
                                 if(!empty($name)){
                                     echo $name;
                                 }
-                                elseif(!empty($productData['name'])) {
-                                    echo $productData['name'];
+                                elseif(!empty($dbFormData['name'])) {
+                                    echo $dbFormData['name'];
                                 }
                                 ?>"
                                 class="<?php if(!empty($error_msg['name'])) echo 'error'?>">
@@ -221,18 +228,33 @@ require('head.php') ?>
                         <label>
                             カテゴリー<span class="required">必須</span>
                             <select name="category" id="">
-                                <option value="0">選択してください</option>
+                                <option value="0"
+                                <?php
+
+                                if(isset($category_id)) {
+                                    if($category_id == 0) {
+                                        echo 'selected';
+                                    }
+
+                                } ?>>選択してください</option>
                                 <?php foreach ($categoryData as $key => $category): ?>
                                 <option value="<?php echo $category['id'] ?>"
                                     <?php
-                                    //DBデータがある場合
-                                    if(!empty($productData['category_id']) && $productData['category_id'] ==  $category['id'] ) {
-                                        echo 'selected';
-                                    }  
+
                                     //POSTされていた場合
-                                     else if(!empty($category_id)  && $category_id === $category['id'] ){
-                                        echo 'selected';
-                                    } ?>>
+                                     if(isset($category_id)){
+                                         if($category_id === $category['id']){
+                                                echo 'selected';
+                                         }
+                                    }//DBデータがある場合
+                                    else if(!empty($dbFormData['category_id']) && $dbFormData['category_id'] ==  $category['id'] ) {
+                                        if(isset($category_id)) {
+                                            if($category_id != 0) {
+                                                echo 'selected';
+                                            }
+                                        }
+                                    }
+                                    ?>>
                                     <?php echo $category['name'] ?>
                                 </option>
                             <?php endforeach; ?>
@@ -249,8 +271,8 @@ require('head.php') ?>
                                     value="<?php
                                     if(isset($price)) {
                                         echo $price;
-                                    } elseif(isset($productData['price'])) {
-                                        echo $productData['price'];
+                                    } elseif(isset($dbFormData['price'])) {
+                                        echo $dbFormData['price'];
                                     }
                                         ?>"
                                     class="<?php if(!empty($error_msg['price'])) echo 'error'?>">
@@ -265,8 +287,8 @@ require('head.php') ?>
                             <textarea name="comment" class="<?php if(!empty($error_msg['comment'])) echo 'error'?>" style="height: 150px;"><?php
                             if(!empty($comment)){
                                 echo $comment;
-                            }elseif(!empty($productData['comment'])) {
-                                echo $productData['comment'];
+                            }elseif(!empty($dbFormData['comment'])) {
+                                echo $dbFormData['comment'];
                             }
                             ?></textarea>
                         </label>
@@ -284,8 +306,8 @@ require('head.php') ?>
                             if(!empty($pic) ){
                                 echo $pic;
                             }//データベースに画像があるとき
-                            elseif(!empty($productData['pic1'])) {
-                                echo $productData['pic1'];
+                            elseif(!empty($dbFormData['pic1'])) {
+                                echo $dbFormData['pic1'];
                             }
                              ?>"
                             alt=""

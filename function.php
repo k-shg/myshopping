@@ -42,8 +42,8 @@ const MSG_RETYPE = 'パスワード(再入力)が一致しません';
 const MGS_DB = 'データベースにエラーが発生しました。';
 const MSG_LOGIN = ' メールアドレスまたはパスワードが違います';
 const MSG_INT = '数値で入力してください';
-
-
+const MSG_SELECTBOX = '選択値が間違っています';
+const MSG_SELECTBOX_EMPTY = '選択必須です';
 
 
 // ===========================
@@ -121,6 +121,17 @@ function validNumber($num, $key) {
     global $error_msg;
     if(!is_int($num)) {
         $error_msg[$key] = MSG_INT;
+    }
+}
+
+function validSelectBox($str, $key) {
+    global $error_msg;
+
+    //未選択の場合
+    if($str == 0) {
+        $error_msg[$key] = MSG_SELECTBOX_EMPTY;
+    }else if(!preg_match("/^[0-9]+$/", $str)) {
+        $error_msg[$key] = MSG_SELECTBOX;
     }
 }
 
@@ -222,6 +233,67 @@ function getProduct($product_id) {
     $stmt = postQuery($dbh, $sql, $data);
     return $stmt->fetch();
 }
+
+
+// ===========================
+//　フォーム入力保持
+//============================
+function getFormData($str, $flg = false) {
+
+    global $dbFormData;
+
+    if($flg) {
+        $method = $_GET;
+    } else {
+        $method = $_POST;
+    }
+    debug($str);
+
+    //POSTされているとき
+    if($method) {
+        //データベースとPOST情報がちがうとき
+        if($dbFormData[$str] !== $method[$str]) {
+            debug(2);
+            return $method[$str];
+        }
+        debug(3);
+        return $dbFormData[$str];
+
+    //データベースに情報があるとき
+    } elseif(!empty($dbFormData[$str])) {
+        debug(4);
+        return $dbFormData[$str];
+    } else {
+        debug(5);
+    }
+
+}
+
+
+
+// ===========================
+//　画像フォーム入力保持
+//============================
+function getFormImageData($str) {
+
+    global $dbFormData;
+
+    //新しく画像が選択されているとき
+    if(!empty($_FILES['pic']['name'])) {
+        debug(2);
+        return 'img/'.$_FILES['pic']['name'];
+
+    //データベースに情報があるとき
+    } elseif(!empty($dbFormData[$str])) {
+        debug(4);
+        return $dbFormData[$str];
+    } else {
+        debug(5);
+    }
+
+}
+
+
 
 
 

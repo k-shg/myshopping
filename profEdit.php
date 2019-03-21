@@ -13,8 +13,8 @@ require('auth.php');
 
 
 //ユーザー情報を取得する
-$user = getUser($_SESSION['user_id']);
-debug('取得したユーザー情報：' .print_r($user, true));
+$dbFormData = getUser($_SESSION['user_id']);
+debug('取得したユーザー情報：' .print_r($dbFormData, true));
 
 
 
@@ -23,30 +23,29 @@ if(!empty($_POST)) {
     debug('POST情報：'.print_r($_POST, true));
     debug('画像情報：'.print_r($_FILES, true));
     //変数定義
-    $name = (isset($_POST['name'])) ? $_POST['name']: null;
+    $name = (!empty($_POST['name'])) ? $_POST['name']: null;
     $age = (isset($_POST['age'])) ? (int)$_POST['age']: null;
     $email = $_POST['email'];
 
     //画像が未選択の場合、データベースの情報を入れる
-    $pic = (!empty($_FILES['pic']['name'])) ? 'img/'.$_FILES['pic']['name']: $user['pic'];
-
+    $pic = (!empty($_FILES['pic']['name'])) ? 'img/'.$_FILES['pic']['name']: $dbFormData['pic'];
     //画像アップロード
     move_uploaded_file($_FILES['pic']['tmp_name'], $pic);
 
-    dump($pic);
+
 
     //データベースとフォームの値が異なる場合に、バリデーションチェックを行う
-    if($user['name'] !== $name) {
+    if($dbFormData['name'] !== $name) {
         //最大文字数チェック
         validMaxLen($name, 'name');
     }
 
-    if($user['age'] != $age) {
+    if($dbFormData['age'] != $age) {
         //数値チェック
         validNumber($age, 'age');
     }
 
-    if($user['email'] !== $email) {
+    if($dbFormData['email'] !== $email) {
         validEmail($email, 'email');
         validRequired($email, 'email');
     }
@@ -69,7 +68,7 @@ if(!empty($_POST)) {
                 ':age' => $age,
                 ':email' => $email,
                 ':pic' => $pic,
-                ':user_id' => $user['id']
+                ':user_id' => $dbFormData['id']
                 ];
             //クエリ実行
             $stmt = postQuery($dbh, $sql, $data);
@@ -106,14 +105,7 @@ require('head.php') ?>
                         <label>
                             名前
                             <input type="text" name="name"
-                                value="<?php
-                                if(!empty($name)){
-                                    echo $name;
-                                }
-                                elseif(!empty($user['name'])) {
-                                    echo $user['name'];
-                                }
-                                ?>"
+                                value="<?php echo getFormData('name') ?>"
                                 class="<?php if(!empty($error_msg['name'])) echo 'error'?>">
                         </label>
                         <div class="area-msg">
@@ -122,7 +114,7 @@ require('head.php') ?>
                         <label>
                             年齢
                             <input type="number" name="age"
-                                value="<?php if(isset($age)) echo $age?>"
+                                value="<?php echo getFormData('age')?>"
                                 class="<?php if(!empty($error_msg['age'])) echo 'error'?>">
                         </label>
                         <div class="area-msg">
@@ -131,14 +123,7 @@ require('head.php') ?>
                         <label>
                             Email
                             <input type="text" name="email"
-                                value="<?php
-                                if(!empty($email)){
-                                    echo $email;
-                                }
-                                elseif(!empty($user['email'])) {
-                                    echo $user['email'];
-                                }
-                                ?>"
+                                value="<?php echo getFormData('email')?>"
                                 class="<?php if(!empty($error_msg['email'])) echo 'error'?>">
                         </label>
                         <div class="area-msg">
@@ -147,24 +132,9 @@ require('head.php') ?>
                         プロフィール画像
                         <label class="area-drop">
                             <input type="file" name="pic" class="js-input-file"
-                                value="<?php
-                                if(!empty($user['pic'])) {
-                                    echo $user['pic'];
-                                }
-                                 ?>"
-                                class="<?php if(!empty($error_msg['email'])) echo 'error'?>">
-                            <img src="<?php
-
-                            //フォームにデータがあるとき
-                            if(!empty($pic) ){
-                                debug('two');
-                                echo $pic;
-                            }//データベースに画像があるとき
-                            elseif(!empty($user['pic'])) {
-                                debug('one');
-                                echo $user['pic'];
-                            }
-                             ?>"
+                                value="<?php echo getFormImageData('pic')?>"
+                                class="<?php if(!empty($error_msg['pic'])) echo 'error'?>">
+                            <img src="<?php echo getFormImageData('pic')?>"
                             alt=""
                             class="pre-img">
                         </label>
