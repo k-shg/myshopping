@@ -278,19 +278,35 @@ function getFormData($str, $flg = false) {
 function getFormImageData($str) {
 
     global $dbFormData;
+    global $error_msg;
     debug($str);
 
     //新しく画像が選択されているとき
     if(!empty($_FILES['pic']['name'])) {
-        debug(2);
-        return 'img/'.$_FILES['pic']['name'];
+        debug(1);
+        //他の入力フォームにエラーがないとき
+        if(empty($error_msg)){
+            debug(2);
+            return 'img/'.$_FILES['pic']['name'];
+        }//他の入力フォームにエラーがあれば画像は未選択状態にする
+        else {
+            debug(3);
+            return '';
+        }
+
 
     //データベースに情報があるとき
     } elseif(!empty($dbFormData[$str])) {
         debug(4);
         return $dbFormData[$str];
-    } else {
+    }  else if(!empty($error_msg)) {//画像は選択されているが、他の入力フォームでエラーが起きたとき
         debug(5);
+        return 'img/'.$_FILES['pic']['name'];
+    }
+    else {
+        debug(6);
+        return 'img/'.$_FILES['pic']['name'];
+
     }
 
 }

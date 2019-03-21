@@ -132,7 +132,6 @@ require('head.php') ?>
                         プロフィール画像
                         <label class="area-drop">
                             <input type="file" name="pic" class="js-input-file"
-                                value="<?php echo getFormImageData('pic')?>"
                                 class="<?php if(!empty($error_msg['pic'])) echo 'error'?>">
                             <img src="<?php echo getFormImageData('pic')?>"
                             alt=""

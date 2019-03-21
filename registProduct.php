@@ -131,15 +131,28 @@ if(!empty($_GET)) {
 
         //変数定義
         $name = $_POST['name'];
-        $category_id = (int)$_POST['category'];
-
+        $category_id = $_POST['category_id'];
         $comment = (isset($_POST['comment'])) ? $_POST['comment']: null;
-        $price = (isset($_POST['price']))?  (int)$_POST['price']: null;
+        $price = $_POST['price'];
         //画像が未選択の場合、データベースの情報を入れる
-        $pic = (!empty($_FILES['pic']['name'])) ? 'img/'.$_FILES['pic']['name']: $dbFormData['pic1'];
+        $pic = (!empty($_FILES['pic']['name'])) ? 'img/'.$_FILES['pic']['name']: '';
+
 
         //画像アップロード
         move_uploaded_file($_FILES['pic']['tmp_name'], $pic);
+
+
+        // //変数定義
+        // $name = $_POST['name'];
+        // $category_id = (int)$_POST['category'];
+        //
+        // $comment = (isset($_POST['comment'])) ? $_POST['comment']: null;
+        // $price = (isset($_POST['price']))?  (int)$_POST['price']: null;
+        // //画像が未選択の場合、データベースの情報を入れる
+        // $pic = (!empty($_FILES['pic']['name'])) ? 'img/'.$_FILES['pic']['name']: $dbFormData['pic1'];
+        //
+        // //画像アップロード
+        // move_uploaded_file($_FILES['pic']['tmp_name'], $pic);
 
 
         //バリデーションチェック
@@ -150,7 +163,7 @@ if(!empty($_GET)) {
             validMaxLen($comment, 'comment');
         }
         //数値チェック
-        validNumber($price, 'price');//必須項目
+        validNumber((int)$price, 'price');//必須項目
 
 
         //空文字チェック
@@ -170,11 +183,12 @@ if(!empty($_GET)) {
                 $dbh = dbConnect();
 
                 //クエリ発行
-                $sql = 'INSERT INTO product (name, price, comment, category_id, user_id, create_date) VALUES (:name, :price, :comment, :category_id, :user_id, :create_date)';
+                $sql = 'INSERT INTO product (name, price, comment, pic1, category_id, user_id, create_date) VALUES (:name, :price, :comment, :pic1, :category_id, :user_id, :create_date)';
                 $data = [
                     ':name' => $name,
                     ':price' => $price,
                     ':comment' => $comment,
+                    ':pic1' => $pic,
                     ':category_id' => $category_id,
                     ':user_id' => $_SESSION['user_id'],
                     ':create_date' => date('Y-m-d H:i:s')
@@ -223,9 +237,7 @@ require('head.php') ?>
                             カテゴリー<span class="required">必須</span>
                             <select name="category_id" style="<?php if(!empty($error_msg['category'])) echo 'background: #f7dcd9;'?>">
                                 <option value="0"
-                                <?php
-
-                                if(getFormData('category_id') == 0 ) echo 'selected'?>>選択してください</option>
+                                <?php if(getFormData('category_id') == 0 ) echo 'selected'?>>選択してください</option>
                                 <?php foreach ($categoryData as $key => $category): ?>
                                 <option value="<?php echo $category['id'] ?>"
                                     <?php
@@ -262,7 +274,6 @@ require('head.php') ?>
                         商品画像
                         <label class="area-drop">
                             <input type="file" name="pic" class="js-input-file"
-                                value="<?php echo getFormImageData('pic1') ?>"
                                 class="<?php if(!empty($error_msg['pic'])) echo 'error'?>">
                             <img src="<?php echo getFormImageData('pic1')?>"
                             alt=""
