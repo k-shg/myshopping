@@ -231,9 +231,13 @@ form .area-msg {
 
 }
 
-input[type="text"].error {
+.errr {
+	background: #f7dcd9;
+}
+input[type="text"].error,input[type="number"].error {
     background: #f7dcd9;
 }
+
 
 
 /* 透明度を下げると背景色も消えてしまうため後で修正が必要 */

@@ -41,9 +41,9 @@ if(!empty($_GET)) {
 
         //変数定義
         $name = $_POST['name'];
-        $category_id = $_POST['category'];
+        $category_id = $_POST['category_id'];
         $comment = (isset($_POST['comment'])) ? $_POST['comment']: null;
-        $price = (isset($_POST['price']))? $_POST['price']: null;
+        $price = $_POST['price'];
         //画像が未選択の場合、データベースの情報を入れる
         $pic = (!empty($_FILES['pic']['name'])) ? 'img/'.$_FILES['pic']['name']: $dbFormData['pic1'];
 
@@ -59,12 +59,9 @@ if(!empty($_GET)) {
             validMaxLen($name, 'name');
             validRequired($name, 'name');
         }
-        dump($dbFormData['category_id']);
-        dump($category_id);
 
 
         if($dbFormData['category_id'] !== $category_id) {
-            dump('カテゴリのバリデーション');
             //セレクトボックスチェック
             validSelectBox($category_id, 'category');
         }
@@ -74,13 +71,17 @@ if(!empty($_GET)) {
         }
 
         if($dbFormData['price'] !== $price) {
-            //入力が0であればバリデーションはしない
-            if($price !== 0) {//未入力の場合は空白チェックに引っかかる
-                //数値チェック
-                validNumber((int)$price, 'price');
+            //数値チェック
+            //POSTされると文字列になるためキャスト
+            validNumber((int)$price, 'price');
+            //金額未入力の場合
+            if($price === '') {
                 validRequired($price, 'price');
             }
         }
+
+
+
 
         if(empty($error_msg)) {
             try {
@@ -93,7 +94,7 @@ if(!empty($_GET)) {
                 $sql = 'UPDATE product SET name = :name, price = :price, comment = :comment, category_id = :category_id, user_id = :user_id, pic1 = :pic WHERE id = :product_id';
                 $data = [
                     ':name' => $name,
-                    ':price' => $price,
+                    ':price' => (int)$price,
                     ':comment' => $comment,
                     ':category_id' => $category_id,
                     ':user_id' => $_SESSION['user_id'],
@@ -212,14 +213,7 @@ require('head.php') ?>
                         <label>
                             商品名<span class="required">必須</span>
                             <input type="text" name="name"
-                                value="<?php
-                                if(!empty($name)){
-                                    echo $name;
-                                }
-                                elseif(!empty($dbFormData['name'])) {
-                                    echo $dbFormData['name'];
-                                }
-                                ?>"
+                                value="<?php echo getFormData('name')?>"
                                 class="<?php if(!empty($error_msg['name'])) echo 'error'?>">
                         </label>
                         <div class="area-msg">
@@ -227,34 +221,16 @@ require('head.php') ?>
                         </div>
                         <label>
                             カテゴリー<span class="required">必須</span>
-                            <select name="category" id="">
+                            <select name="category_id" style="<?php if(!empty($error_msg['category'])) echo 'background: #f7dcd9;'?>">
                                 <option value="0"
                                 <?php
 
-                                if(isset($category_id)) {
-                                    if($category_id == 0) {
-                                        echo 'selected';
-                                    }
-
-                                } ?>>選択してください</option>
+                                if(getFormData('category_id') == 0 ) echo 'selected'?>>選択してください</option>
                                 <?php foreach ($categoryData as $key => $category): ?>
                                 <option value="<?php echo $category['id'] ?>"
                                     <?php
-
-                                    //POSTされていた場合
-                                     if(isset($category_id)){
-                                         if($category_id === $category['id']){
-                                                echo 'selected';
-                                         }
-                                    }//DBデータがある場合
-                                    else if(!empty($dbFormData['category_id']) && $dbFormData['category_id'] ==  $category['id'] ) {
-                                        if(isset($category_id)) {
-                                            if($category_id != 0) {
-                                                echo 'selected';
-                                            }
-                                        }
-                                    }
-                                    ?>>
+                                    //DBの型はint、フォームの型はstringなので、ゆるい比較をする
+                                    if(getFormData('category_id') == $category['id']) echo 'selected' ?>>
                                     <?php echo $category['name'] ?>
                                 </option>
                             <?php endforeach; ?>
@@ -268,13 +244,7 @@ require('head.php') ?>
                             金額<span class="required">必須</span>
                             <div class="form-group">
                                 <input type="number" name="price"
-                                    value="<?php
-                                    if(isset($price)) {
-                                        echo $price;
-                                    } elseif(isset($dbFormData['price'])) {
-                                        echo $dbFormData['price'];
-                                    }
-                                        ?>"
+                                    value="<?php echo (getFormData('price'))? getFormData('price') : 0; ?>"
                                     class="<?php if(!empty($error_msg['price'])) echo 'error'?>">
                                     <span class="yen">円</span>
                             </div>
@@ -284,13 +254,7 @@ require('head.php') ?>
                         </div>
                         <label>
                             詳細
-                            <textarea name="comment" class="<?php if(!empty($error_msg['comment'])) echo 'error'?>" style="height: 150px;"><?php
-                            if(!empty($comment)){
-                                echo $comment;
-                            }elseif(!empty($dbFormData['comment'])) {
-                                echo $dbFormData['comment'];
-                            }
-                            ?></textarea>
+                            <textarea name="comment" class="<?php if(!empty($error_msg['comment'])) echo 'error'?>" style="height: 150px;"><?php echo getFormData('comment')?></textarea>
                         </label>
                         <div class="area-msg">
                             <?php if(!empty($error_msg['comment'])) echo $error_msg['comment']?>
@@ -298,18 +262,9 @@ require('head.php') ?>
                         商品画像
                         <label class="area-drop">
                             <input type="file" name="pic" class="js-input-file"
-                                value=""
+                                value="<?php echo getFormImageData('pic1') ?>"
                                 class="<?php if(!empty($error_msg['pic'])) echo 'error'?>">
-                            <img src="<?php
-
-                            //フォームにデータがあるとき
-                            if(!empty($pic) ){
-                                echo $pic;
-                            }//データベースに画像があるとき
-                            elseif(!empty($dbFormData['pic1'])) {
-                                echo $dbFormData['pic1'];
-                            }
-                             ?>"
+                            <img src="<?php echo getFormImageData('pic1')?>"
                             alt=""
                             class="pre-img">
                         </label>

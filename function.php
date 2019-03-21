@@ -222,12 +222,13 @@ function getCategory() {
 }
 
 // ===========================
-//　ユーザー取得
+//　商品データ取得
 //============================
 
 function getProduct($product_id) {
 
     $dbh = dbConnect();
+
     $sql = 'SELECT * FROM product WHERE id = :product_id AND delete_flg = 0';
     $data = [':product_id' => $product_id];
     $stmt = postQuery($dbh, $sql, $data);
@@ -277,6 +278,7 @@ function getFormData($str, $flg = false) {
 function getFormImageData($str) {
 
     global $dbFormData;
+    debug($str);
 
     //新しく画像が選択されているとき
     if(!empty($_FILES['pic']['name'])) {
