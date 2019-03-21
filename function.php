@@ -28,6 +28,7 @@ debug('セッション情報：'.print_r($_SESSION, true));
 //　グローバル変数定義
 //============================
 $error_msg = [];
+$dbFormData = [];
 
 
 // ===========================
@@ -165,7 +166,6 @@ function postQuery($dbh, $sql, $data) {
     //プリペアーステートメントを作成
     $stmt = $dbh->prepare($sql);
 
-
     //流し込んでDB実行
     $stmt->execute($data);
     debug('クエリー実行しました');
@@ -234,6 +234,21 @@ function getProduct($product_id) {
     $stmt = postQuery($dbh, $sql, $data);
     return $stmt->fetch();
 }
+
+// ===========================
+//　商品詳細データ取得
+//============================
+
+function getProductDetail($product_id) {
+
+    $dbh = dbConnect();
+
+    $sql = 'SELECT p.id, p.name, p.price, p.comment, p.pic1, p.category_id, c.name as category_name, p.user_id FROM product as p INNER JOIN category as c on p.category_id = c.id WHERE p.id = :product_id AND p.delete_flg = 0';
+    $data = [':product_id' => $product_id];
+    $stmt = postQuery($dbh, $sql, $data);
+    return $stmt->fetch();
+}
+
 
 
 // ===========================
@@ -310,8 +325,6 @@ function getFormImageData($str) {
     }
 
 }
-
-
 
 
 

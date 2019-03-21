@@ -142,18 +142,6 @@ if(!empty($_GET)) {
         move_uploaded_file($_FILES['pic']['tmp_name'], $pic);
 
 
-        // //変数定義
-        // $name = $_POST['name'];
-        // $category_id = (int)$_POST['category'];
-        //
-        // $comment = (isset($_POST['comment'])) ? $_POST['comment']: null;
-        // $price = (isset($_POST['price']))?  (int)$_POST['price']: null;
-        // //画像が未選択の場合、データベースの情報を入れる
-        // $pic = (!empty($_FILES['pic']['name'])) ? 'img/'.$_FILES['pic']['name']: $dbFormData['pic1'];
-        //
-        // //画像アップロード
-        // move_uploaded_file($_FILES['pic']['tmp_name'], $pic);
-
 
         //バリデーションチェック
 
@@ -283,7 +271,9 @@ require('head.php') ?>
                             <?php if(!empty($error_msg['pic'])) echo $error_msg['pic']?>
                         </div>
                         <div class="btn-container">
-                            <input type="submit" name="" value="出品する" class="btn btn-mid">
+                            <form method="post">
+                                <input type="submit" name="" value="出品する" class="btn btn-mid">
+                            </form>
                         </div>
                     </form>
                 </section>

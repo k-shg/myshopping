@@ -83426,3 +83426,5214 @@ Stack trace:
 [21-Mar-2019 19:42:26 Asia/Tokyo] デバッグ：3
 [21-Mar-2019 19:42:26 Asia/Tokyo] デバッグ：pic1
 [21-Mar-2019 19:42:26 Asia/Tokyo] デバッグ：4
+[21-Mar-2019 19:44:14 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 19:44:14 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 19:44:14 Asia/Tokyo] デバッグ：現在のセッションID：cv358ghpkgtl3ckjfdk79kf56n
+[21-Mar-2019 19:44:14 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553161609
+    [login_limit] => 1553165209
+)
+
+[21-Mar-2019 19:44:14 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 19:44:14 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品登録「「「「「「「「「「「「「「「
+[21-Mar-2019 19:44:14 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 19:44:14 Asia/Tokyo] デバッグ：ログインユーザーです
+[21-Mar-2019 19:44:14 Asia/Tokyo] デバッグ：セッション有効期限内です
+[21-Mar-2019 19:44:14 Asia/Tokyo] デバッグ：DB接続します
+[21-Mar-2019 19:44:14 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 19:44:14 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 19:44:14 Asia/Tokyo] デバッグ：クエリ成功
+[21-Mar-2019 19:44:14 Asia/Tokyo] デバッグ：カテゴリー情報：Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [name] => スマホ
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [name] => パソコン
+        )
+
+    [2] => Array
+        (
+            [id] => 3
+            [name] => 自転車
+        )
+
+    [3] => Array
+        (
+            [id] => 4
+            [name] => ファッション
+        )
+
+    [4] => Array
+        (
+            [id] => 5
+            [name] => ゲーム
+        )
+
+)
+
+[21-Mar-2019 19:44:14 Asia/Tokyo] デバッグ：name
+[21-Mar-2019 19:44:14 Asia/Tokyo] デバッグ：5
+[21-Mar-2019 19:44:14 Asia/Tokyo] デバッグ：category_id
+[21-Mar-2019 19:44:14 Asia/Tokyo] デバッグ：5
+[21-Mar-2019 19:44:14 Asia/Tokyo] デバッグ：category_id
+[21-Mar-2019 19:44:14 Asia/Tokyo] デバッグ：5
+[21-Mar-2019 19:44:14 Asia/Tokyo] デバッグ：category_id
+[21-Mar-2019 19:44:14 Asia/Tokyo] デバッグ：5
+[21-Mar-2019 19:44:14 Asia/Tokyo] デバッグ：category_id
+[21-Mar-2019 19:44:14 Asia/Tokyo] デバッグ：5
+[21-Mar-2019 19:44:14 Asia/Tokyo] デバッグ：category_id
+[21-Mar-2019 19:44:14 Asia/Tokyo] デバッグ：5
+[21-Mar-2019 19:44:14 Asia/Tokyo] デバッグ：category_id
+[21-Mar-2019 19:44:14 Asia/Tokyo] デバッグ：5
+[21-Mar-2019 19:44:14 Asia/Tokyo] デバッグ：price
+[21-Mar-2019 19:44:14 Asia/Tokyo] デバッグ：5
+[21-Mar-2019 19:44:14 Asia/Tokyo] デバッグ：comment
+[21-Mar-2019 19:44:14 Asia/Tokyo] デバッグ：5
+[21-Mar-2019 19:44:14 Asia/Tokyo] デバッグ：pic1
+[21-Mar-2019 19:44:14 Asia/Tokyo] デバッグ：6
+[21-Mar-2019 19:44:14 Asia/Tokyo] PHP Notice:  Undefined index: pic in /Applications/MAMP/htdocs/myshopping/function.php on line 308
+[21-Mar-2019 19:44:16 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 19:44:16 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 19:44:16 Asia/Tokyo] デバッグ：現在のセッションID：mmnhtlstmkta2oe6ha2u0lru1e
+[21-Mar-2019 19:44:16 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553161609
+    [login_limit] => 1553165209
+)
+
+[21-Mar-2019 19:44:16 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 19:44:16 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品登録「「「「「「「「「「「「「「「
+[21-Mar-2019 19:44:16 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 19:44:16 Asia/Tokyo] デバッグ：ログインユーザーです
+[21-Mar-2019 19:44:16 Asia/Tokyo] デバッグ：セッション有効期限内です
+[21-Mar-2019 19:44:16 Asia/Tokyo] デバッグ：DB接続します
+[21-Mar-2019 19:44:16 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 19:44:16 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 19:44:16 Asia/Tokyo] デバッグ：クエリ成功
+[21-Mar-2019 19:44:16 Asia/Tokyo] デバッグ：カテゴリー情報：Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [name] => スマホ
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [name] => パソコン
+        )
+
+    [2] => Array
+        (
+            [id] => 3
+            [name] => 自転車
+        )
+
+    [3] => Array
+        (
+            [id] => 4
+            [name] => ファッション
+        )
+
+    [4] => Array
+        (
+            [id] => 5
+            [name] => ゲーム
+        )
+
+)
+
+[21-Mar-2019 19:44:16 Asia/Tokyo] デバッグ：POST送信があります
+[21-Mar-2019 19:44:16 Asia/Tokyo] デバッグ：POST情報：Array
+(
+    [name] => 
+    [category_id] => 0
+    [price] => 0
+    [comment] => 
+)
+
+[21-Mar-2019 19:44:16 Asia/Tokyo] デバッグ：画像情報：Array
+(
+    [pic] => Array
+        (
+            [name] => 
+            [type] => 
+            [tmp_name] => 
+            [error] => 4
+            [size] => 0
+        )
+
+)
+
+[21-Mar-2019 19:44:16 Asia/Tokyo] デバッグ：name
+[21-Mar-2019 19:44:16 Asia/Tokyo] デバッグ：2
+[21-Mar-2019 19:44:16 Asia/Tokyo] デバッグ：category_id
+[21-Mar-2019 19:44:16 Asia/Tokyo] デバッグ：2
+[21-Mar-2019 19:44:16 Asia/Tokyo] デバッグ：category_id
+[21-Mar-2019 19:44:16 Asia/Tokyo] デバッグ：2
+[21-Mar-2019 19:44:16 Asia/Tokyo] デバッグ：category_id
+[21-Mar-2019 19:44:16 Asia/Tokyo] デバッグ：2
+[21-Mar-2019 19:44:16 Asia/Tokyo] デバッグ：category_id
+[21-Mar-2019 19:44:16 Asia/Tokyo] デバッグ：2
+[21-Mar-2019 19:44:16 Asia/Tokyo] デバッグ：category_id
+[21-Mar-2019 19:44:16 Asia/Tokyo] デバッグ：2
+[21-Mar-2019 19:44:16 Asia/Tokyo] デバッグ：category_id
+[21-Mar-2019 19:44:16 Asia/Tokyo] デバッグ：2
+[21-Mar-2019 19:44:16 Asia/Tokyo] デバッグ：price
+[21-Mar-2019 19:44:16 Asia/Tokyo] デバッグ：2
+[21-Mar-2019 19:44:16 Asia/Tokyo] デバッグ：comment
+[21-Mar-2019 19:44:16 Asia/Tokyo] デバッグ：2
+[21-Mar-2019 19:44:16 Asia/Tokyo] デバッグ：pic1
+[21-Mar-2019 19:44:16 Asia/Tokyo] デバッグ：5
+[21-Mar-2019 19:44:22 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 19:44:22 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 19:44:22 Asia/Tokyo] デバッグ：現在のセッションID：orc2botf35k343inlg9p1r11h7
+[21-Mar-2019 19:44:22 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553161609
+    [login_limit] => 1553165209
+)
+
+[21-Mar-2019 19:44:22 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 19:44:22 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品登録「「「「「「「「「「「「「「「
+[21-Mar-2019 19:44:22 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 19:44:22 Asia/Tokyo] デバッグ：ログインユーザーです
+[21-Mar-2019 19:44:22 Asia/Tokyo] デバッグ：セッション有効期限内です
+[21-Mar-2019 19:44:22 Asia/Tokyo] デバッグ：DB接続します
+[21-Mar-2019 19:44:22 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 19:44:22 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 19:44:22 Asia/Tokyo] デバッグ：クエリ成功
+[21-Mar-2019 19:44:22 Asia/Tokyo] デバッグ：カテゴリー情報：Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [name] => スマホ
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [name] => パソコン
+        )
+
+    [2] => Array
+        (
+            [id] => 3
+            [name] => 自転車
+        )
+
+    [3] => Array
+        (
+            [id] => 4
+            [name] => ファッション
+        )
+
+    [4] => Array
+        (
+            [id] => 5
+            [name] => ゲーム
+        )
+
+)
+
+[21-Mar-2019 19:44:22 Asia/Tokyo] デバッグ：GET送信があります
+[21-Mar-2019 19:44:22 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 19:44:22 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 19:44:22 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 19:44:22 Asia/Tokyo] デバッグ：商品情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [pic2] => 
+    [pic3] => 
+    [category_id] => 2
+    [user_id] => 27
+    [delete_flg] => 0
+    [create_date] => 2019-03-20 18:16:07
+    [update_date] => 2019-03-21 19:42:26
+)
+
+[21-Mar-2019 19:44:22 Asia/Tokyo] デバッグ：name
+[21-Mar-2019 19:44:22 Asia/Tokyo] デバッグ：4
+[21-Mar-2019 19:44:22 Asia/Tokyo] デバッグ：category_id
+[21-Mar-2019 19:44:22 Asia/Tokyo] デバッグ：4
+[21-Mar-2019 19:44:22 Asia/Tokyo] デバッグ：category_id
+[21-Mar-2019 19:44:22 Asia/Tokyo] デバッグ：4
+[21-Mar-2019 19:44:22 Asia/Tokyo] デバッグ：category_id
+[21-Mar-2019 19:44:22 Asia/Tokyo] デバッグ：4
+[21-Mar-2019 19:44:22 Asia/Tokyo] デバッグ：category_id
+[21-Mar-2019 19:44:22 Asia/Tokyo] デバッグ：4
+[21-Mar-2019 19:44:22 Asia/Tokyo] デバッグ：category_id
+[21-Mar-2019 19:44:22 Asia/Tokyo] デバッグ：4
+[21-Mar-2019 19:44:22 Asia/Tokyo] デバッグ：category_id
+[21-Mar-2019 19:44:22 Asia/Tokyo] デバッグ：4
+[21-Mar-2019 19:44:22 Asia/Tokyo] デバッグ：price
+[21-Mar-2019 19:44:22 Asia/Tokyo] デバッグ：4
+[21-Mar-2019 19:44:22 Asia/Tokyo] デバッグ：price
+[21-Mar-2019 19:44:22 Asia/Tokyo] デバッグ：4
+[21-Mar-2019 19:44:22 Asia/Tokyo] デバッグ：comment
+[21-Mar-2019 19:44:22 Asia/Tokyo] デバッグ：4
+[21-Mar-2019 19:44:22 Asia/Tokyo] デバッグ：pic1
+[21-Mar-2019 19:44:22 Asia/Tokyo] デバッグ：4
+[21-Mar-2019 19:44:24 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 19:44:24 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 19:44:24 Asia/Tokyo] デバッグ：現在のセッションID：eu2sepk2mv8tj3fpt4r4ctu2d5
+[21-Mar-2019 19:44:24 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553161609
+    [login_limit] => 1553165209
+)
+
+[21-Mar-2019 19:44:24 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 19:44:24 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品登録「「「「「「「「「「「「「「「
+[21-Mar-2019 19:44:24 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 19:44:24 Asia/Tokyo] デバッグ：ログインユーザーです
+[21-Mar-2019 19:44:24 Asia/Tokyo] デバッグ：セッション有効期限内です
+[21-Mar-2019 19:44:24 Asia/Tokyo] デバッグ：DB接続します
+[21-Mar-2019 19:44:24 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 19:44:24 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 19:44:24 Asia/Tokyo] デバッグ：クエリ成功
+[21-Mar-2019 19:44:24 Asia/Tokyo] デバッグ：カテゴリー情報：Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [name] => スマホ
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [name] => パソコン
+        )
+
+    [2] => Array
+        (
+            [id] => 3
+            [name] => 自転車
+        )
+
+    [3] => Array
+        (
+            [id] => 4
+            [name] => ファッション
+        )
+
+    [4] => Array
+        (
+            [id] => 5
+            [name] => ゲーム
+        )
+
+)
+
+[21-Mar-2019 19:44:24 Asia/Tokyo] デバッグ：GET送信があります
+[21-Mar-2019 19:44:24 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 19:44:24 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 19:44:24 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 19:44:24 Asia/Tokyo] デバッグ：商品情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [pic2] => 
+    [pic3] => 
+    [category_id] => 2
+    [user_id] => 27
+    [delete_flg] => 0
+    [create_date] => 2019-03-20 18:16:07
+    [update_date] => 2019-03-21 19:42:26
+)
+
+[21-Mar-2019 19:44:24 Asia/Tokyo] デバッグ：POST送信があります
+[21-Mar-2019 19:44:24 Asia/Tokyo] デバッグ：POST情報：Array
+(
+    [name] => カーディガン
+    [category_id] => 2
+    [price] => 4444
+    [comment] => 僕の洋服です！
+)
+
+[21-Mar-2019 19:44:24 Asia/Tokyo] デバッグ：画像情報：Array
+(
+    [pic] => Array
+        (
+            [name] => 
+            [type] => 
+            [tmp_name] => 
+            [error] => 4
+            [size] => 0
+        )
+
+)
+
+[21-Mar-2019 19:44:24 Asia/Tokyo] デバッグ：DB接続します
+[21-Mar-2019 19:44:24 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 19:44:24 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 19:44:24 Asia/Tokyo] デバッグ：DB情報を更新しました
+[21-Mar-2019 19:44:24 Asia/Tokyo] デバッグ：name
+[21-Mar-2019 19:44:24 Asia/Tokyo] デバッグ：3
+[21-Mar-2019 19:44:24 Asia/Tokyo] デバッグ：category_id
+[21-Mar-2019 19:44:24 Asia/Tokyo] デバッグ：2
+[21-Mar-2019 19:44:24 Asia/Tokyo] デバッグ：category_id
+[21-Mar-2019 19:44:24 Asia/Tokyo] デバッグ：2
+[21-Mar-2019 19:44:24 Asia/Tokyo] デバッグ：category_id
+[21-Mar-2019 19:44:24 Asia/Tokyo] デバッグ：2
+[21-Mar-2019 19:44:24 Asia/Tokyo] デバッグ：category_id
+[21-Mar-2019 19:44:24 Asia/Tokyo] デバッグ：2
+[21-Mar-2019 19:44:24 Asia/Tokyo] デバッグ：category_id
+[21-Mar-2019 19:44:24 Asia/Tokyo] デバッグ：2
+[21-Mar-2019 19:44:24 Asia/Tokyo] デバッグ：category_id
+[21-Mar-2019 19:44:24 Asia/Tokyo] デバッグ：2
+[21-Mar-2019 19:44:24 Asia/Tokyo] デバッグ：price
+[21-Mar-2019 19:44:24 Asia/Tokyo] デバッグ：2
+[21-Mar-2019 19:44:24 Asia/Tokyo] デバッグ：price
+[21-Mar-2019 19:44:24 Asia/Tokyo] デバッグ：2
+[21-Mar-2019 19:44:24 Asia/Tokyo] デバッグ：comment
+[21-Mar-2019 19:44:24 Asia/Tokyo] デバッグ：3
+[21-Mar-2019 19:44:24 Asia/Tokyo] デバッグ：pic1
+[21-Mar-2019 19:44:24 Asia/Tokyo] デバッグ：4
+[21-Mar-2019 19:44:47 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 19:44:47 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 19:44:47 Asia/Tokyo] デバッグ：現在のセッションID：b6e48vfkeag5qmnempqp0ab0gr
+[21-Mar-2019 19:44:47 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553161609
+    [login_limit] => 1553165209
+)
+
+[21-Mar-2019 19:44:47 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 19:44:47 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「トップページ「「「「「「「「「「「「「「「「
+[21-Mar-2019 19:44:47 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 19:44:49 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 19:44:49 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 19:44:49 Asia/Tokyo] デバッグ：現在のセッションID：gahmv0kff55abftlujhhosmtq5
+[21-Mar-2019 19:44:49 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553161609
+    [login_limit] => 1553165209
+)
+
+[21-Mar-2019 19:44:49 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 19:44:49 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「マイページ「「「「「「「「「「「「「「「「
+[21-Mar-2019 19:44:49 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 19:44:49 Asia/Tokyo] デバッグ：ログインユーザーです
+[21-Mar-2019 19:44:49 Asia/Tokyo] デバッグ：セッション有効期限内です
+[21-Mar-2019 19:44:51 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 19:44:51 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 19:44:51 Asia/Tokyo] デバッグ：現在のセッションID：c9rd6mikov5v1q13iulcn7uj9j
+[21-Mar-2019 19:44:51 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553161609
+    [login_limit] => 1553165209
+)
+
+[21-Mar-2019 19:44:51 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 19:44:51 Asia/Tokyo] デバッグ：「「「「「「「「「「「プロフィール編集「「「「「「「「「「「「「「「
+[21-Mar-2019 19:44:51 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 19:44:51 Asia/Tokyo] デバッグ：ログインユーザーです
+[21-Mar-2019 19:44:51 Asia/Tokyo] デバッグ：セッション有効期限内です
+[21-Mar-2019 19:44:51 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 19:44:51 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 19:44:51 Asia/Tokyo] デバッグ：取得したユーザー情報：Array
+(
+    [id] => 27
+    [name] => B太郎
+    [age] => 0
+    [email] => bbb@b.com
+    [pic] => img/cc81653aa59f06cf2e4127a805752047s.png
+    [password] => $2y$10$/h0s8voNAraPW9sbc2J8a.OPBpPan/3P62grLJyuhpBFaBPU0U7Ye
+    [login_time] => 2019-03-19 12:26:01
+    [delete_flg] => 0
+    [create_date] => 2019-03-19 12:26:01
+    [update_date] => 2019-03-21 19:33:09
+)
+
+[21-Mar-2019 19:44:51 Asia/Tokyo] デバッグ：name
+[21-Mar-2019 19:44:51 Asia/Tokyo] デバッグ：4
+[21-Mar-2019 19:44:51 Asia/Tokyo] デバッグ：age
+[21-Mar-2019 19:44:51 Asia/Tokyo] デバッグ：5
+[21-Mar-2019 19:44:51 Asia/Tokyo] デバッグ：email
+[21-Mar-2019 19:44:51 Asia/Tokyo] デバッグ：4
+[21-Mar-2019 19:44:51 Asia/Tokyo] デバッグ：pic
+[21-Mar-2019 19:44:51 Asia/Tokyo] デバッグ：4
+[21-Mar-2019 19:44:53 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 19:44:53 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 19:44:53 Asia/Tokyo] デバッグ：現在のセッションID：e3skj7jfd0m1m1lae4lscq4fns
+[21-Mar-2019 19:44:53 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553161609
+    [login_limit] => 1553165209
+)
+
+[21-Mar-2019 19:44:53 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 19:44:53 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品登録「「「「「「「「「「「「「「「
+[21-Mar-2019 19:44:53 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 19:44:53 Asia/Tokyo] デバッグ：ログインユーザーです
+[21-Mar-2019 19:44:53 Asia/Tokyo] デバッグ：セッション有効期限内です
+[21-Mar-2019 19:44:53 Asia/Tokyo] デバッグ：DB接続します
+[21-Mar-2019 19:44:53 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 19:44:53 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 19:44:53 Asia/Tokyo] デバッグ：クエリ成功
+[21-Mar-2019 19:44:53 Asia/Tokyo] デバッグ：カテゴリー情報：Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [name] => スマホ
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [name] => パソコン
+        )
+
+    [2] => Array
+        (
+            [id] => 3
+            [name] => 自転車
+        )
+
+    [3] => Array
+        (
+            [id] => 4
+            [name] => ファッション
+        )
+
+    [4] => Array
+        (
+            [id] => 5
+            [name] => ゲーム
+        )
+
+)
+
+[21-Mar-2019 19:44:53 Asia/Tokyo] デバッグ：name
+[21-Mar-2019 19:44:53 Asia/Tokyo] デバッグ：5
+[21-Mar-2019 19:44:53 Asia/Tokyo] デバッグ：category_id
+[21-Mar-2019 19:44:53 Asia/Tokyo] デバッグ：5
+[21-Mar-2019 19:44:53 Asia/Tokyo] デバッグ：category_id
+[21-Mar-2019 19:44:53 Asia/Tokyo] デバッグ：5
+[21-Mar-2019 19:44:53 Asia/Tokyo] デバッグ：category_id
+[21-Mar-2019 19:44:53 Asia/Tokyo] デバッグ：5
+[21-Mar-2019 19:44:53 Asia/Tokyo] デバッグ：category_id
+[21-Mar-2019 19:44:53 Asia/Tokyo] デバッグ：5
+[21-Mar-2019 19:44:53 Asia/Tokyo] デバッグ：category_id
+[21-Mar-2019 19:44:53 Asia/Tokyo] デバッグ：5
+[21-Mar-2019 19:44:53 Asia/Tokyo] デバッグ：category_id
+[21-Mar-2019 19:44:53 Asia/Tokyo] デバッグ：5
+[21-Mar-2019 19:44:53 Asia/Tokyo] デバッグ：price
+[21-Mar-2019 19:44:53 Asia/Tokyo] デバッグ：5
+[21-Mar-2019 19:44:53 Asia/Tokyo] デバッグ：comment
+[21-Mar-2019 19:44:53 Asia/Tokyo] デバッグ：5
+[21-Mar-2019 19:44:53 Asia/Tokyo] デバッグ：pic1
+[21-Mar-2019 19:44:53 Asia/Tokyo] デバッグ：6
+[21-Mar-2019 19:44:53 Asia/Tokyo] PHP Notice:  Undefined index: pic in /Applications/MAMP/htdocs/myshopping/function.php on line 308
+[21-Mar-2019 19:44:55 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 19:44:55 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 19:44:55 Asia/Tokyo] デバッグ：現在のセッションID：c4q1te9vvd2dt48asoaoutp20k
+[21-Mar-2019 19:44:55 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553161609
+    [login_limit] => 1553165209
+)
+
+[21-Mar-2019 19:44:55 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 19:44:55 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「トップページ「「「「「「「「「「「「「「「「
+[21-Mar-2019 19:44:55 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 19:50:02 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 19:50:02 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 19:50:02 Asia/Tokyo] デバッグ：現在のセッションID：thjep515ba0l4m3b2pieili1km
+[21-Mar-2019 19:50:02 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553161609
+    [login_limit] => 1553165209
+)
+
+[21-Mar-2019 19:50:02 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 19:50:02 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「「
+[21-Mar-2019 19:50:02 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 19:51:00 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 19:51:00 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 19:51:00 Asia/Tokyo] デバッグ：現在のセッションID：etn8m3po0kfmomdu1687gv0r13
+[21-Mar-2019 19:51:00 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553161609
+    [login_limit] => 1553165209
+)
+
+[21-Mar-2019 19:51:00 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 19:51:00 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「商品詳細「「「「「「「「「「「「「「「「
+[21-Mar-2019 19:51:00 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 19:51:10 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 19:51:10 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 19:51:10 Asia/Tokyo] デバッグ：現在のセッションID：3pivq142aa4u3uintae8jk2pm8
+[21-Mar-2019 19:51:10 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553161609
+    [login_limit] => 1553165209
+)
+
+[21-Mar-2019 19:51:10 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 19:51:10 Asia/Tokyo] デバッグ：「「「「「「「「「「「プロフィール編集「「「「「「「「「「「「「「「
+[21-Mar-2019 19:51:10 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 19:51:10 Asia/Tokyo] デバッグ：ログインユーザーです
+[21-Mar-2019 19:51:10 Asia/Tokyo] デバッグ：セッション有効期限が切れています
+[21-Mar-2019 19:51:10 Asia/Tokyo] デバッグ：有効期限：1553165209
+[21-Mar-2019 19:51:10 Asia/Tokyo] デバッグ：現在時刻1553165470
+[21-Mar-2019 19:51:10 Asia/Tokyo] PHP Notice:  Undefined index: user_id in /Applications/MAMP/htdocs/myshopping/profEdit.php on line 16
+[21-Mar-2019 19:51:10 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 19:51:10 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 19:51:10 Asia/Tokyo] デバッグ：取得したユーザー情報：
+[21-Mar-2019 19:51:10 Asia/Tokyo] デバッグ：name
+[21-Mar-2019 19:51:10 Asia/Tokyo] デバッグ：5
+[21-Mar-2019 19:51:10 Asia/Tokyo] デバッグ：age
+[21-Mar-2019 19:51:10 Asia/Tokyo] デバッグ：5
+[21-Mar-2019 19:51:10 Asia/Tokyo] デバッグ：email
+[21-Mar-2019 19:51:10 Asia/Tokyo] デバッグ：5
+[21-Mar-2019 19:51:10 Asia/Tokyo] デバッグ：pic
+[21-Mar-2019 19:51:10 Asia/Tokyo] デバッグ：6
+[21-Mar-2019 19:51:10 Asia/Tokyo] PHP Notice:  Undefined index: pic in /Applications/MAMP/htdocs/myshopping/function.php on line 308
+[21-Mar-2019 19:51:10 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 19:51:10 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 19:51:10 Asia/Tokyo] デバッグ：現在のセッションID：vqq2ggte1sfhd91u53g8l9sqtl
+[21-Mar-2019 19:51:10 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+)
+
+[21-Mar-2019 19:51:10 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 19:51:10 Asia/Tokyo] デバッグ：「「「「「「「「「「「ログインページ「「「「「「「「「「「「「「「「
+[21-Mar-2019 19:51:10 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 19:51:18 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 19:51:18 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 19:51:18 Asia/Tokyo] デバッグ：現在のセッションID：92h2v28jh27c0l0rrotsn8u4tu
+[21-Mar-2019 19:51:18 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+)
+
+[21-Mar-2019 19:51:18 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 19:51:18 Asia/Tokyo] デバッグ：「「「「「「「「「「「ログインページ「「「「「「「「「「「「「「「「
+[21-Mar-2019 19:51:18 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 19:51:18 Asia/Tokyo] デバッグ：DB接続します
+[21-Mar-2019 19:51:18 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 19:51:18 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 19:51:18 Asia/Tokyo] デバッグ：パスワード一致
+[21-Mar-2019 19:51:18 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 19:51:18 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 19:51:18 Asia/Tokyo] デバッグ：現在のセッションID：atsvnv3pq656ejaaflu8rrb5lp
+[21-Mar-2019 19:51:18 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553165478
+    [login_limit] => 1553169078
+)
+
+[21-Mar-2019 19:51:18 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 19:51:18 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「マイページ「「「「「「「「「「「「「「「「
+[21-Mar-2019 19:51:18 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 19:51:18 Asia/Tokyo] デバッグ：ログインユーザーです
+[21-Mar-2019 19:51:18 Asia/Tokyo] デバッグ：セッション有効期限内です
+[21-Mar-2019 19:51:20 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 19:51:20 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 19:51:20 Asia/Tokyo] デバッグ：現在のセッションID：qo6bi8d712m1d01n5btoamrg31
+[21-Mar-2019 19:51:20 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553165478
+    [login_limit] => 1553169078
+)
+
+[21-Mar-2019 19:51:20 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 19:51:20 Asia/Tokyo] デバッグ：「「「「「「「「「「「プロフィール編集「「「「「「「「「「「「「「「
+[21-Mar-2019 19:51:20 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 19:51:20 Asia/Tokyo] デバッグ：ログインユーザーです
+[21-Mar-2019 19:51:20 Asia/Tokyo] デバッグ：セッション有効期限内です
+[21-Mar-2019 19:51:20 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 19:51:20 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 19:51:20 Asia/Tokyo] デバッグ：取得したユーザー情報：Array
+(
+    [id] => 27
+    [name] => B太郎
+    [age] => 0
+    [email] => bbb@b.com
+    [pic] => img/cc81653aa59f06cf2e4127a805752047s.png
+    [password] => $2y$10$/h0s8voNAraPW9sbc2J8a.OPBpPan/3P62grLJyuhpBFaBPU0U7Ye
+    [login_time] => 2019-03-19 12:26:01
+    [delete_flg] => 0
+    [create_date] => 2019-03-19 12:26:01
+    [update_date] => 2019-03-21 19:33:09
+)
+
+[21-Mar-2019 19:51:20 Asia/Tokyo] デバッグ：name
+[21-Mar-2019 19:51:20 Asia/Tokyo] デバッグ：4
+[21-Mar-2019 19:51:20 Asia/Tokyo] デバッグ：age
+[21-Mar-2019 19:51:20 Asia/Tokyo] デバッグ：5
+[21-Mar-2019 19:51:20 Asia/Tokyo] デバッグ：email
+[21-Mar-2019 19:51:20 Asia/Tokyo] デバッグ：4
+[21-Mar-2019 19:51:20 Asia/Tokyo] デバッグ：pic
+[21-Mar-2019 19:51:20 Asia/Tokyo] デバッグ：4
+[21-Mar-2019 19:52:44 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 19:52:44 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 19:52:44 Asia/Tokyo] デバッグ：現在のセッションID：3apk7e9irsajd11q69tbommpuh
+[21-Mar-2019 19:52:44 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553165478
+    [login_limit] => 1553169078
+)
+
+[21-Mar-2019 19:52:44 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 19:52:44 Asia/Tokyo] デバッグ：「「「「「「「「「「「プロフィール編集「「「「「「「「「「「「「「「
+[21-Mar-2019 19:52:44 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 19:52:44 Asia/Tokyo] デバッグ：ログインユーザーです
+[21-Mar-2019 19:52:44 Asia/Tokyo] デバッグ：セッション有効期限内です
+[21-Mar-2019 19:52:44 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 19:52:44 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 19:52:44 Asia/Tokyo] デバッグ：取得したユーザー情報：Array
+(
+    [id] => 27
+    [name] => B太郎
+    [age] => 0
+    [email] => bbb@b.com
+    [pic] => img/cc81653aa59f06cf2e4127a805752047s.png
+    [password] => $2y$10$/h0s8voNAraPW9sbc2J8a.OPBpPan/3P62grLJyuhpBFaBPU0U7Ye
+    [login_time] => 2019-03-19 12:26:01
+    [delete_flg] => 0
+    [create_date] => 2019-03-19 12:26:01
+    [update_date] => 2019-03-21 19:33:09
+)
+
+[21-Mar-2019 19:52:44 Asia/Tokyo] デバッグ：name
+[21-Mar-2019 19:52:44 Asia/Tokyo] デバッグ：4
+[21-Mar-2019 19:52:44 Asia/Tokyo] デバッグ：age
+[21-Mar-2019 19:52:44 Asia/Tokyo] デバッグ：5
+[21-Mar-2019 19:52:44 Asia/Tokyo] デバッグ：email
+[21-Mar-2019 19:52:44 Asia/Tokyo] デバッグ：4
+[21-Mar-2019 19:52:44 Asia/Tokyo] デバッグ：pic
+[21-Mar-2019 19:52:44 Asia/Tokyo] デバッグ：4
+[21-Mar-2019 19:52:55 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 19:52:55 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 19:52:55 Asia/Tokyo] デバッグ：現在のセッションID：54rjjseh4amtcchfkknplhj01r
+[21-Mar-2019 19:52:55 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553165478
+    [login_limit] => 1553169078
+)
+
+[21-Mar-2019 19:52:55 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 19:52:55 Asia/Tokyo] デバッグ：「「「「「「「「「「「プロフィール編集「「「「「「「「「「「「「「「
+[21-Mar-2019 19:52:55 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 19:52:55 Asia/Tokyo] デバッグ：ログインユーザーです
+[21-Mar-2019 19:52:55 Asia/Tokyo] デバッグ：セッション有効期限内です
+[21-Mar-2019 19:53:59 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 19:53:59 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 19:53:59 Asia/Tokyo] デバッグ：現在のセッションID：mjraaut8m91jnuc573sjr2q93c
+[21-Mar-2019 19:53:59 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553165478
+    [login_limit] => 1553169078
+)
+
+[21-Mar-2019 19:53:59 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 19:53:59 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 19:53:59 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 19:54:20 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 19:54:20 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 19:54:20 Asia/Tokyo] デバッグ：現在のセッションID：jg8f1p7nlbrjdd0fsg519eqfr1
+[21-Mar-2019 19:54:20 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553165478
+    [login_limit] => 1553169078
+)
+
+[21-Mar-2019 19:54:20 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 19:54:20 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 19:54:20 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 19:54:20 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 19:54:20 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 19:54:20 Asia/Tokyo] デバッグ：現在のセッションID：30mqh168ug5s1bfvua1k0d6aqq
+[21-Mar-2019 19:54:20 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553165478
+    [login_limit] => 1553169078
+)
+
+[21-Mar-2019 19:54:20 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 19:54:20 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 19:54:20 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 19:54:21 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 19:54:21 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 19:54:21 Asia/Tokyo] デバッグ：現在のセッションID：783etntb4ipco2s737tkj7opu6
+[21-Mar-2019 19:54:21 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553165478
+    [login_limit] => 1553169078
+)
+
+[21-Mar-2019 19:54:21 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 19:54:21 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 19:54:21 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 19:54:27 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 19:54:27 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 19:54:27 Asia/Tokyo] デバッグ：現在のセッションID：eodil448tia504aq4uphhelsch
+[21-Mar-2019 19:54:27 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553165478
+    [login_limit] => 1553169078
+)
+
+[21-Mar-2019 19:54:27 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 19:54:27 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 19:54:27 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 19:56:07 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 19:56:07 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 19:56:07 Asia/Tokyo] デバッグ：現在のセッションID：1cj7a4mi3l54olsih4a0tmpm3k
+[21-Mar-2019 19:56:07 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553165478
+    [login_limit] => 1553169078
+)
+
+[21-Mar-2019 19:56:07 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 19:56:07 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 19:56:07 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 19:56:07 Asia/Tokyo] デバッグ：GET送信があります
+[21-Mar-2019 19:56:07 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 
+)
+
+[21-Mar-2019 19:56:07 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 19:56:07 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 19:56:07 Asia/Tokyo] デバッグ：商品情報：
+[21-Mar-2019 19:56:10 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 19:56:10 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 19:56:10 Asia/Tokyo] デバッグ：現在のセッションID：9eijg6odb08amn27v4c778hqn3
+[21-Mar-2019 19:56:10 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553165478
+    [login_limit] => 1553169078
+)
+
+[21-Mar-2019 19:56:10 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 19:56:10 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 19:56:10 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 19:56:10 Asia/Tokyo] デバッグ：GET送信があります
+[21-Mar-2019 19:56:10 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 19:56:10 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 19:56:10 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 19:56:10 Asia/Tokyo] デバッグ：商品情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [pic2] => 
+    [pic3] => 
+    [category_id] => 2
+    [user_id] => 27
+    [delete_flg] => 0
+    [create_date] => 2019-03-20 18:16:07
+    [update_date] => 2019-03-21 19:42:26
+)
+
+[21-Mar-2019 21:07:04 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 21:07:04 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 21:07:04 Asia/Tokyo] デバッグ：現在のセッションID：r0u9kv8euiv5rh5ecqokh9i9fu
+[21-Mar-2019 21:07:04 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553165478
+    [login_limit] => 1553169078
+)
+
+[21-Mar-2019 21:07:04 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:07:04 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 21:07:04 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:07:04 Asia/Tokyo] デバッグ：GET送信があります
+[21-Mar-2019 21:07:04 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 21:07:04 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 21:07:04 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 21:07:04 Asia/Tokyo] デバッグ：商品情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [pic2] => 
+    [pic3] => 
+    [category_id] => 2
+    [user_id] => 27
+    [delete_flg] => 0
+    [create_date] => 2019-03-20 18:16:07
+    [update_date] => 2019-03-21 19:42:26
+)
+
+[21-Mar-2019 21:13:01 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 21:13:01 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 21:13:01 Asia/Tokyo] デバッグ：現在のセッションID：n3q8jfftjqqlhqvdcujflhp09s
+[21-Mar-2019 21:13:01 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553165478
+    [login_limit] => 1553169078
+)
+
+[21-Mar-2019 21:13:01 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:13:01 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 21:13:01 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:13:01 Asia/Tokyo] デバッグ：GET送信があります
+[21-Mar-2019 21:13:01 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 21:13:01 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 21:13:01 Asia/Tokyo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id' in where clause is ambiguous in /Applications/MAMP/htdocs/myshopping/function.php:166
+Stack trace:
+#0 /Applications/MAMP/htdocs/myshopping/function.php(166): PDO->prepare('SELECT * FROM p...')
+#1 /Applications/MAMP/htdocs/myshopping/function.php(248): postQuery(Object(PDO), 'SELECT * FROM p...', Array)
+#2 /Applications/MAMP/htdocs/myshopping/productDetail.php(18): getProductDetail('3')
+#3 {main}
+  thrown in /Applications/MAMP/htdocs/myshopping/function.php on line 166
+[21-Mar-2019 21:14:57 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 21:14:57 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 21:14:57 Asia/Tokyo] デバッグ：現在のセッションID：cma18ll6tmf8181kvio7bts8of
+[21-Mar-2019 21:14:57 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553165478
+    [login_limit] => 1553169078
+)
+
+[21-Mar-2019 21:14:57 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:14:57 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 21:14:57 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:14:57 Asia/Tokyo] デバッグ：GET送信があります
+[21-Mar-2019 21:14:57 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 21:14:57 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 21:14:57 Asia/Tokyo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id' in where clause is ambiguous in /Applications/MAMP/htdocs/myshopping/function.php:166
+Stack trace:
+#0 /Applications/MAMP/htdocs/myshopping/function.php(166): PDO->prepare('SELECT * FROM p...')
+#1 /Applications/MAMP/htdocs/myshopping/function.php(248): postQuery(Object(PDO), 'SELECT * FROM p...', Array)
+#2 /Applications/MAMP/htdocs/myshopping/productDetail.php(18): getProductDetail('3')
+#3 {main}
+  thrown in /Applications/MAMP/htdocs/myshopping/function.php on line 166
+[21-Mar-2019 21:14:58 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 21:14:58 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 21:14:58 Asia/Tokyo] デバッグ：現在のセッションID：88o9t0l2hmjhkpkjq4ed3h56fb
+[21-Mar-2019 21:14:58 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553165478
+    [login_limit] => 1553169078
+)
+
+[21-Mar-2019 21:14:58 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:14:58 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 21:14:58 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:14:58 Asia/Tokyo] デバッグ：GET送信があります
+[21-Mar-2019 21:14:58 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 
+)
+
+[21-Mar-2019 21:14:58 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 21:14:58 Asia/Tokyo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id' in where clause is ambiguous in /Applications/MAMP/htdocs/myshopping/function.php:166
+Stack trace:
+#0 /Applications/MAMP/htdocs/myshopping/function.php(166): PDO->prepare('SELECT * FROM p...')
+#1 /Applications/MAMP/htdocs/myshopping/function.php(248): postQuery(Object(PDO), 'SELECT * FROM p...', Array)
+#2 /Applications/MAMP/htdocs/myshopping/productDetail.php(18): getProductDetail('')
+#3 {main}
+  thrown in /Applications/MAMP/htdocs/myshopping/function.php on line 166
+[21-Mar-2019 21:15:00 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 21:15:00 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 21:15:00 Asia/Tokyo] デバッグ：現在のセッションID：v5nlt39cro7mmf48glvtbvruhd
+[21-Mar-2019 21:15:00 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553165478
+    [login_limit] => 1553169078
+)
+
+[21-Mar-2019 21:15:00 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:15:00 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 21:15:00 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:15:00 Asia/Tokyo] デバッグ：GET送信があります
+[21-Mar-2019 21:15:00 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 
+)
+
+[21-Mar-2019 21:15:00 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 21:15:00 Asia/Tokyo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id' in where clause is ambiguous in /Applications/MAMP/htdocs/myshopping/function.php:166
+Stack trace:
+#0 /Applications/MAMP/htdocs/myshopping/function.php(166): PDO->prepare('SELECT * FROM p...')
+#1 /Applications/MAMP/htdocs/myshopping/function.php(248): postQuery(Object(PDO), 'SELECT * FROM p...', Array)
+#2 /Applications/MAMP/htdocs/myshopping/productDetail.php(18): getProductDetail('')
+#3 {main}
+  thrown in /Applications/MAMP/htdocs/myshopping/function.php on line 166
+[21-Mar-2019 21:16:46 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 21:16:46 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 21:16:46 Asia/Tokyo] デバッグ：現在のセッションID：i5ktqu1cog0f0kuvu9nd9kjlmh
+[21-Mar-2019 21:16:46 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553165478
+    [login_limit] => 1553169078
+)
+
+[21-Mar-2019 21:16:46 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:16:46 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 21:16:46 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:16:46 Asia/Tokyo] デバッグ：GET送信があります
+[21-Mar-2019 21:16:46 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 
+)
+
+[21-Mar-2019 21:16:46 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 21:16:46 Asia/Tokyo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'delete_flg' in where clause is ambiguous in /Applications/MAMP/htdocs/myshopping/function.php:166
+Stack trace:
+#0 /Applications/MAMP/htdocs/myshopping/function.php(166): PDO->prepare('SELECT * FROM p...')
+#1 /Applications/MAMP/htdocs/myshopping/function.php(247): postQuery(Object(PDO), 'SELECT * FROM p...', Array)
+#2 /Applications/MAMP/htdocs/myshopping/productDetail.php(18): getProductDetail('')
+#3 {main}
+  thrown in /Applications/MAMP/htdocs/myshopping/function.php on line 166
+[21-Mar-2019 21:16:47 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 21:16:47 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 21:16:47 Asia/Tokyo] デバッグ：現在のセッションID：9uvd04m4g47ue6u5t7opreajgl
+[21-Mar-2019 21:16:47 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553165478
+    [login_limit] => 1553169078
+)
+
+[21-Mar-2019 21:16:47 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:16:47 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 21:16:47 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:16:47 Asia/Tokyo] PHP Notice:  Undefined variable: dbFormData in /Applications/MAMP/htdocs/myshopping/productDetail.php on line 37
+[21-Mar-2019 21:16:48 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 21:16:48 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 21:16:48 Asia/Tokyo] デバッグ：現在のセッションID：16p2avdckj030g6rkhde45ige3
+[21-Mar-2019 21:16:48 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553165478
+    [login_limit] => 1553169078
+)
+
+[21-Mar-2019 21:16:48 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:16:48 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 21:16:48 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:16:48 Asia/Tokyo] PHP Notice:  Undefined variable: dbFormData in /Applications/MAMP/htdocs/myshopping/productDetail.php on line 37
+[21-Mar-2019 21:17:18 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 21:17:18 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 21:17:18 Asia/Tokyo] デバッグ：現在のセッションID：9vlssbfp46fn2hltjug81emuei
+[21-Mar-2019 21:17:18 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553165478
+    [login_limit] => 1553169078
+)
+
+[21-Mar-2019 21:17:18 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:17:18 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 21:17:18 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:17:18 Asia/Tokyo] デバッグ：GET送信があります
+[21-Mar-2019 21:17:18 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 21:17:18 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 21:17:18 Asia/Tokyo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'delete_flg' in where clause is ambiguous in /Applications/MAMP/htdocs/myshopping/function.php:166
+Stack trace:
+#0 /Applications/MAMP/htdocs/myshopping/function.php(166): PDO->prepare('SELECT * FROM p...')
+#1 /Applications/MAMP/htdocs/myshopping/function.php(247): postQuery(Object(PDO), 'SELECT * FROM p...', Array)
+#2 /Applications/MAMP/htdocs/myshopping/productDetail.php(18): getProductDetail('3')
+#3 {main}
+  thrown in /Applications/MAMP/htdocs/myshopping/function.php on line 166
+[21-Mar-2019 21:17:53 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 21:17:53 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 21:17:53 Asia/Tokyo] デバッグ：現在のセッションID：tfcdbjhkukcob935lm1ij5huj8
+[21-Mar-2019 21:17:53 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553165478
+    [login_limit] => 1553169078
+)
+
+[21-Mar-2019 21:17:53 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:17:53 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 21:17:53 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:17:53 Asia/Tokyo] デバッグ：GET送信があります
+[21-Mar-2019 21:17:53 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 21:17:53 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 21:17:53 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 21:17:53 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 2
+    [name] => パソコン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [pic2] => 
+    [pic3] => 
+    [category_id] => 2
+    [user_id] => 27
+    [delete_flg] => 0
+    [create_date] => 2019-03-20 00:00:00
+    [update_date] => 2019-03-20 13:41:32
+)
+
+[21-Mar-2019 21:18:45 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 21:18:45 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 21:18:45 Asia/Tokyo] デバッグ：現在のセッションID：l0fp8l6nhcg4sol3jao5tpmf04
+[21-Mar-2019 21:18:45 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553165478
+    [login_limit] => 1553169078
+)
+
+[21-Mar-2019 21:18:45 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:18:45 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 21:18:45 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:18:45 Asia/Tokyo] デバッグ：GET送信があります
+[21-Mar-2019 21:18:45 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 21:18:45 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 21:18:45 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 21:18:45 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 2
+    [name] => パソコン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [pic2] => 
+    [pic3] => 
+    [category_id] => 2
+    [user_id] => 27
+    [delete_flg] => 0
+    [create_date] => 2019-03-20 00:00:00
+    [update_date] => 2019-03-20 13:41:32
+)
+
+[21-Mar-2019 21:18:51 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 21:18:51 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 21:18:51 Asia/Tokyo] デバッグ：現在のセッションID：um7od8jjvuovi85g5mkdo4fv34
+[21-Mar-2019 21:18:51 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553165478
+    [login_limit] => 1553169078
+)
+
+[21-Mar-2019 21:18:51 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:18:51 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 21:18:51 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:18:51 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/myshopping/productDetail.php on line 37
+[21-Mar-2019 21:19:01 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 21:19:01 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 21:19:01 Asia/Tokyo] デバッグ：現在のセッションID：e8m8vejk97gs64448etd0lunkt
+[21-Mar-2019 21:19:01 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553165478
+    [login_limit] => 1553169078
+)
+
+[21-Mar-2019 21:19:01 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:19:01 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 21:19:01 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:19:01 Asia/Tokyo] デバッグ：GET送信があります
+[21-Mar-2019 21:19:01 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 21:19:01 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 21:19:01 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 21:19:01 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 2
+    [name] => パソコン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [pic2] => 
+    [pic3] => 
+    [category_id] => 2
+    [user_id] => 27
+    [delete_flg] => 0
+    [create_date] => 2019-03-20 00:00:00
+    [update_date] => 2019-03-20 13:41:32
+)
+
+[21-Mar-2019 21:20:20 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 21:20:20 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 21:20:20 Asia/Tokyo] デバッグ：現在のセッションID：5k1n5robhvb5sqbcj1kcimaq4k
+[21-Mar-2019 21:20:20 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553165478
+    [login_limit] => 1553169078
+)
+
+[21-Mar-2019 21:20:20 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:20:20 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 21:20:20 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:20:20 Asia/Tokyo] デバッグ：GET送信があります
+[21-Mar-2019 21:20:20 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 21:20:20 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 21:20:20 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 21:20:20 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 2
+    [name] => パソコン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [pic2] => 
+    [pic3] => 
+    [category_id] => 2
+    [user_id] => 27
+    [delete_flg] => 0
+    [create_date] => 2019-03-20 00:00:00
+    [update_date] => 2019-03-20 13:41:32
+)
+
+[21-Mar-2019 21:20:23 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 21:20:23 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 21:20:23 Asia/Tokyo] デバッグ：現在のセッションID：k1dg15pbmf4q3p23oea320f8pq
+[21-Mar-2019 21:20:23 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553165478
+    [login_limit] => 1553169078
+)
+
+[21-Mar-2019 21:20:23 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:20:23 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 21:20:23 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:20:23 Asia/Tokyo] デバッグ：GET送信がありません
+[21-Mar-2019 21:20:23 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/myshopping/productDetail.php on line 41
+[21-Mar-2019 21:20:23 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 21:20:23 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 21:20:23 Asia/Tokyo] デバッグ：現在のセッションID：3vfe8ve7v89mgpb17l6pcom264
+[21-Mar-2019 21:20:23 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553165478
+    [login_limit] => 1553169078
+)
+
+[21-Mar-2019 21:20:23 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:20:23 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「トップページ「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:20:23 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:20:24 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 21:20:24 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 21:20:24 Asia/Tokyo] デバッグ：現在のセッションID：9hflqj4hi721ltl1jf98922gpl
+[21-Mar-2019 21:20:24 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553165478
+    [login_limit] => 1553169078
+)
+
+[21-Mar-2019 21:20:24 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:20:24 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 21:20:24 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:20:24 Asia/Tokyo] デバッグ：GET送信があります
+[21-Mar-2019 21:20:24 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 21:20:24 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 21:20:24 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 21:20:24 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 2
+    [name] => パソコン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [pic2] => 
+    [pic3] => 
+    [category_id] => 2
+    [user_id] => 27
+    [delete_flg] => 0
+    [create_date] => 2019-03-20 00:00:00
+    [update_date] => 2019-03-20 13:41:32
+)
+
+[21-Mar-2019 21:24:31 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 21:24:31 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 21:24:31 Asia/Tokyo] デバッグ：現在のセッションID：j4sgdc27ng1vdh03e07qpce028
+[21-Mar-2019 21:24:31 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553165478
+    [login_limit] => 1553169078
+)
+
+[21-Mar-2019 21:24:31 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:24:31 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 21:24:31 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:24:31 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 21:24:31 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 21:24:31 Asia/Tokyo] デバッグ：GET送信ないか、不正な値が入力されました
+[21-Mar-2019 21:24:31 Asia/Tokyo] デバッグ：GET送信があります
+[21-Mar-2019 21:24:31 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 21:24:31 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 2
+    [name] => パソコン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [pic2] => 
+    [pic3] => 
+    [category_id] => 2
+    [user_id] => 27
+    [delete_flg] => 0
+    [create_date] => 2019-03-20 00:00:00
+    [update_date] => 2019-03-20 13:41:32
+)
+
+[21-Mar-2019 21:24:31 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 21:24:31 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 21:24:31 Asia/Tokyo] デバッグ：現在のセッションID：73cbgc5c9ctirptsq1id3uk525
+[21-Mar-2019 21:24:31 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553165478
+    [login_limit] => 1553169078
+)
+
+[21-Mar-2019 21:24:31 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:24:31 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「トップページ「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:24:31 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:24:45 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 21:24:45 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 21:24:45 Asia/Tokyo] デバッグ：現在のセッションID：f4b4hpqnkd50k2760p3v9rq9c0
+[21-Mar-2019 21:24:45 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553165478
+    [login_limit] => 1553169078
+)
+
+[21-Mar-2019 21:24:45 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:24:45 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 21:24:45 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:24:45 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 21:24:45 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 21:24:45 Asia/Tokyo] デバッグ：GET送信ないか、不正な値が入力されました
+[21-Mar-2019 21:24:45 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 21:24:45 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 21:24:45 Asia/Tokyo] デバッグ：現在のセッションID：ra5k1qolhkp96s24d9r8k1phkt
+[21-Mar-2019 21:24:45 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553165478
+    [login_limit] => 1553169078
+)
+
+[21-Mar-2019 21:24:45 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:24:45 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「トップページ「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:24:45 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:24:46 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 21:24:46 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 21:24:46 Asia/Tokyo] デバッグ：現在のセッションID：hma6tevjc551bailvpbna867ga
+[21-Mar-2019 21:24:46 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553165478
+    [login_limit] => 1553169078
+)
+
+[21-Mar-2019 21:24:46 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:24:46 Asia/Tokyo] デバッグ：「「「「「「「「「「「プロフィール編集「「「「「「「「「「「「「「「
+[21-Mar-2019 21:24:46 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:24:46 Asia/Tokyo] デバッグ：ログインユーザーです
+[21-Mar-2019 21:24:46 Asia/Tokyo] デバッグ：セッション有効期限が切れています
+[21-Mar-2019 21:24:46 Asia/Tokyo] デバッグ：有効期限：1553169078
+[21-Mar-2019 21:24:46 Asia/Tokyo] デバッグ：現在時刻1553171086
+[21-Mar-2019 21:24:46 Asia/Tokyo] PHP Notice:  Undefined index: user_id in /Applications/MAMP/htdocs/myshopping/profEdit.php on line 16
+[21-Mar-2019 21:24:46 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 21:24:46 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 21:24:46 Asia/Tokyo] デバッグ：取得したユーザー情報：
+[21-Mar-2019 21:24:46 Asia/Tokyo] デバッグ：name
+[21-Mar-2019 21:24:46 Asia/Tokyo] デバッグ：5
+[21-Mar-2019 21:24:46 Asia/Tokyo] デバッグ：age
+[21-Mar-2019 21:24:46 Asia/Tokyo] デバッグ：5
+[21-Mar-2019 21:24:46 Asia/Tokyo] デバッグ：email
+[21-Mar-2019 21:24:46 Asia/Tokyo] デバッグ：5
+[21-Mar-2019 21:24:46 Asia/Tokyo] デバッグ：pic
+[21-Mar-2019 21:24:46 Asia/Tokyo] デバッグ：6
+[21-Mar-2019 21:24:46 Asia/Tokyo] PHP Notice:  Undefined index: pic in /Applications/MAMP/htdocs/myshopping/function.php on line 323
+[21-Mar-2019 21:24:46 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 21:24:46 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 21:24:46 Asia/Tokyo] デバッグ：現在のセッションID：lq8b31rbq7u6l9tlropdav68o9
+[21-Mar-2019 21:24:46 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+)
+
+[21-Mar-2019 21:24:46 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:24:46 Asia/Tokyo] デバッグ：「「「「「「「「「「「ログインページ「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:24:46 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:24:51 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 21:24:51 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 21:24:51 Asia/Tokyo] デバッグ：現在のセッションID：qgbtht1bri599j5a8hebrgqiea
+[21-Mar-2019 21:24:51 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+)
+
+[21-Mar-2019 21:24:51 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:24:51 Asia/Tokyo] デバッグ：「「「「「「「「「「「ログインページ「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:24:51 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:24:51 Asia/Tokyo] デバッグ：DB接続します
+[21-Mar-2019 21:24:51 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 21:24:52 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 21:24:52 Asia/Tokyo] デバッグ：パスワード一致
+[21-Mar-2019 21:24:52 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 21:24:52 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 21:24:52 Asia/Tokyo] デバッグ：現在のセッションID：v4pjmpltkun7254thgj57ko9cm
+[21-Mar-2019 21:24:52 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 21:24:52 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:24:52 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「マイページ「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:24:52 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:24:52 Asia/Tokyo] デバッグ：ログインユーザーです
+[21-Mar-2019 21:24:52 Asia/Tokyo] デバッグ：セッション有効期限内です
+[21-Mar-2019 21:25:25 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 21:25:25 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 21:25:25 Asia/Tokyo] デバッグ：現在のセッションID：at68jdaoopto27omi8uoq11mpb
+[21-Mar-2019 21:25:25 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 21:25:25 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:25:25 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 21:25:25 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:25:25 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 21:25:25 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 21:25:25 Asia/Tokyo] デバッグ：GET送信があります
+[21-Mar-2019 21:25:25 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 21:25:25 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 2
+    [name] => パソコン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [pic2] => 
+    [pic3] => 
+    [category_id] => 2
+    [user_id] => 27
+    [delete_flg] => 0
+    [create_date] => 2019-03-20 00:00:00
+    [update_date] => 2019-03-20 13:41:32
+)
+
+[21-Mar-2019 21:25:28 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 21:25:28 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 21:25:28 Asia/Tokyo] デバッグ：現在のセッションID：pcfcmvvo9hmuch58cea9fc44hi
+[21-Mar-2019 21:25:28 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 21:25:28 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:25:28 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 21:25:28 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:25:28 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 21:25:28 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 21:25:28 Asia/Tokyo] デバッグ：GET送信があります
+[21-Mar-2019 21:25:28 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 21:25:28 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 2
+    [name] => パソコン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [pic2] => 
+    [pic3] => 
+    [category_id] => 2
+    [user_id] => 27
+    [delete_flg] => 0
+    [create_date] => 2019-03-20 00:00:00
+    [update_date] => 2019-03-20 13:41:32
+)
+
+[21-Mar-2019 21:25:31 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 21:25:31 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 21:25:31 Asia/Tokyo] デバッグ：現在のセッションID：n9q5v9nfk4067ksh2g2f4umdmc
+[21-Mar-2019 21:25:31 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 21:25:31 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:25:31 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 21:25:31 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:25:31 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 21:25:31 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 21:25:31 Asia/Tokyo] デバッグ：GET送信ないか、不正な値が入力されました
+[21-Mar-2019 21:25:31 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 21:25:31 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 21:25:31 Asia/Tokyo] デバッグ：現在のセッションID：k1966c7ao9342t7u6ado432gog
+[21-Mar-2019 21:25:31 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 21:25:31 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:25:31 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「トップページ「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:25:31 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:25:37 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 21:25:37 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 21:25:37 Asia/Tokyo] デバッグ：現在のセッションID：b53q1r95s4msdmnnfg65ajcd2r
+[21-Mar-2019 21:25:37 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 21:25:37 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:25:37 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 21:25:37 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:25:37 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 21:25:37 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 21:25:37 Asia/Tokyo] デバッグ：GET送信があります
+[21-Mar-2019 21:25:37 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 21:25:37 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 2
+    [name] => パソコン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [pic2] => 
+    [pic3] => 
+    [category_id] => 2
+    [user_id] => 27
+    [delete_flg] => 0
+    [create_date] => 2019-03-20 00:00:00
+    [update_date] => 2019-03-20 13:41:32
+)
+
+[21-Mar-2019 21:30:08 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 21:30:08 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 21:30:08 Asia/Tokyo] デバッグ：現在のセッションID：bkkps0t9j4a98vjne0onu1lvvu
+[21-Mar-2019 21:30:08 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 21:30:08 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:30:08 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 21:30:08 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:30:08 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 21:30:08 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 21:30:08 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 21:30:08 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 2
+    [name] => パソコン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [pic2] => 
+    [pic3] => 
+    [category_id] => 2
+    [user_id] => 27
+    [delete_flg] => 0
+    [create_date] => 2019-03-20 00:00:00
+    [update_date] => 2019-03-20 13:41:32
+)
+
+[21-Mar-2019 21:33:31 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 21:33:31 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 21:33:31 Asia/Tokyo] デバッグ：現在のセッションID：kvlqb4euapih3u4jid535i4la7
+[21-Mar-2019 21:33:31 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 21:33:31 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:33:31 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 21:33:31 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:33:31 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 21:33:31 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 21:33:31 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 21:33:31 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 3
+    [name] => パソコン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [category_id] => 2
+    [user_id] => 27
+)
+
+[21-Mar-2019 21:34:58 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 21:34:58 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 21:34:58 Asia/Tokyo] デバッグ：現在のセッションID：s5hqb4o52m7dkt0co5j1lgmbb6
+[21-Mar-2019 21:34:58 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 21:34:58 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:34:58 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 21:34:58 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:34:58 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 21:34:58 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 21:34:58 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 21:34:58 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [name] => パソコン
+)
+
+[21-Mar-2019 21:34:58 Asia/Tokyo] PHP Notice:  Undefined index: category_id in /Applications/MAMP/htdocs/myshopping/productDetail.php on line 34
+[21-Mar-2019 21:35:36 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 21:35:36 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 21:35:36 Asia/Tokyo] デバッグ：現在のセッションID：jorlsqm1rko4g5m74f6fjdddu8
+[21-Mar-2019 21:35:36 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 21:35:36 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:35:36 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 21:35:36 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:35:36 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 21:35:36 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 21:35:36 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 21:35:36 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 3
+    [name] => パソコン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [category_id] => 2
+    [user_id] => 27
+)
+
+[21-Mar-2019 21:36:11 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 21:36:11 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 21:36:11 Asia/Tokyo] デバッグ：現在のセッションID：91ouhlgnofst952kaf2dtljit0
+[21-Mar-2019 21:36:11 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 21:36:11 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:36:11 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 21:36:11 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:36:11 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 21:36:11 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 21:36:11 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 21:36:11 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [category_id] => 2
+    [category_name] => パソコン
+    [user_id] => 27
+)
+
+[21-Mar-2019 21:38:40 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 21:38:40 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 21:38:40 Asia/Tokyo] デバッグ：現在のセッションID：2t5ihrqkn080o3jv8qtcmg8jmd
+[21-Mar-2019 21:38:40 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 21:38:40 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:38:40 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 21:38:40 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:38:40 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 21:38:40 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 21:38:40 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 21:38:40 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [category_id] => 2
+    [category_name] => パソコン
+    [user_id] => 27
+)
+
+[21-Mar-2019 21:39:31 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 21:39:31 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 21:39:31 Asia/Tokyo] デバッグ：現在のセッションID：j31s330u3eheacepvr95gmu0f8
+[21-Mar-2019 21:39:31 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 21:39:31 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:39:31 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 21:39:31 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:39:31 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 21:39:31 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 21:39:31 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 21:39:31 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [category_id] => 2
+    [category_name] => パソコン
+    [user_id] => 27
+)
+
+[21-Mar-2019 21:41:10 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 21:41:10 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 21:41:10 Asia/Tokyo] デバッグ：現在のセッションID：8rqehblmfgr0l9blh124qp3uo9
+[21-Mar-2019 21:41:10 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 21:41:10 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:41:10 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 21:41:10 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:41:10 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 21:41:10 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 21:41:10 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 21:41:10 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [category_id] => 2
+    [category_name] => パソコン
+    [user_id] => 27
+)
+
+[21-Mar-2019 21:41:22 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 21:41:22 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 21:41:22 Asia/Tokyo] デバッグ：現在のセッションID：mdq9ohbfr5s4o6pt0ea5ls1pmm
+[21-Mar-2019 21:41:22 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 21:41:22 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:41:22 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 21:41:22 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:41:22 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 21:41:22 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 21:41:22 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 21:41:22 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [category_id] => 2
+    [category_name] => パソコン
+    [user_id] => 27
+)
+
+[21-Mar-2019 21:42:11 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 21:42:11 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 21:42:11 Asia/Tokyo] デバッグ：現在のセッションID：af06h1m9q19475e0fqj3hkgq7h
+[21-Mar-2019 21:42:11 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 21:42:11 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:42:11 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 21:42:11 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:42:11 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 21:42:11 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 21:42:11 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 21:42:11 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [category_id] => 2
+    [category_name] => パソコン
+    [user_id] => 27
+)
+
+[21-Mar-2019 21:42:40 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 21:42:40 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 21:42:40 Asia/Tokyo] デバッグ：現在のセッションID：sjs62ej8i2psv11cm8cgosk3bd
+[21-Mar-2019 21:42:40 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 21:42:40 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:42:40 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 21:42:40 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:42:40 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 21:42:40 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 21:42:40 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 21:42:40 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [category_id] => 2
+    [category_name] => パソコン
+    [user_id] => 27
+)
+
+[21-Mar-2019 21:43:16 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 21:43:16 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 21:43:16 Asia/Tokyo] デバッグ：現在のセッションID：prsbvp0l6oj6p60k315omngrp3
+[21-Mar-2019 21:43:16 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 21:43:16 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:43:16 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 21:43:16 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:43:16 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 21:43:16 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 21:43:16 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 21:43:16 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [category_id] => 2
+    [category_name] => パソコン
+    [user_id] => 27
+)
+
+[21-Mar-2019 21:47:30 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 21:47:30 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 21:47:30 Asia/Tokyo] デバッグ：現在のセッションID：3muesgo4g2hddmhshgi6cbu6id
+[21-Mar-2019 21:47:30 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 21:47:30 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:47:30 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 21:47:30 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:47:30 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 21:47:30 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 21:47:30 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 21:47:30 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [category_id] => 2
+    [category_name] => パソコン
+    [user_id] => 27
+)
+
+[21-Mar-2019 21:47:38 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 21:47:38 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 21:47:38 Asia/Tokyo] デバッグ：現在のセッションID：dethk6m32v637et5jlf2efv4pv
+[21-Mar-2019 21:47:38 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 21:47:38 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:47:38 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 21:47:38 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:47:38 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 21:47:38 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 21:47:38 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 21:47:38 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [category_id] => 2
+    [category_name] => パソコン
+    [user_id] => 27
+)
+
+[21-Mar-2019 21:48:00 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 21:48:00 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 21:48:00 Asia/Tokyo] デバッグ：現在のセッションID：svtsrgrust967f93vjlg8erkm7
+[21-Mar-2019 21:48:00 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 21:48:00 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:48:00 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 21:48:00 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:48:00 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 21:48:00 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 21:48:00 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 21:48:00 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [category_id] => 2
+    [category_name] => パソコン
+    [user_id] => 27
+)
+
+[21-Mar-2019 21:48:48 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 21:48:48 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 21:48:48 Asia/Tokyo] デバッグ：現在のセッションID：4i4k36fob31mkr1p2addpu2i0l
+[21-Mar-2019 21:48:48 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 21:48:48 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:48:48 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 21:48:48 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:48:48 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 21:48:48 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 21:48:48 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 21:48:48 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [category_id] => 2
+    [category_name] => パソコン
+    [user_id] => 27
+)
+
+[21-Mar-2019 21:49:17 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 21:49:17 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 21:49:17 Asia/Tokyo] デバッグ：現在のセッションID：9fbq19lr6tek0am2ev7d5egjpi
+[21-Mar-2019 21:49:17 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 21:49:17 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:49:17 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「トップページ「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:49:17 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:49:18 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 21:49:18 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 21:49:18 Asia/Tokyo] デバッグ：現在のセッションID：tt347k4d8gjhu74h43fvic2211
+[21-Mar-2019 21:49:18 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 21:49:18 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:49:18 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 21:49:18 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:49:18 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 21:49:18 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 21:49:18 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 21:49:18 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [category_id] => 2
+    [category_name] => パソコン
+    [user_id] => 27
+)
+
+[21-Mar-2019 21:50:27 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 21:50:27 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 21:50:27 Asia/Tokyo] デバッグ：現在のセッションID：qf8io1ulbtcng9botkank9488e
+[21-Mar-2019 21:50:27 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 21:50:27 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:50:27 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 21:50:27 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:50:27 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 21:50:27 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 21:50:27 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 21:50:27 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [category_id] => 2
+    [category_name] => パソコン
+    [user_id] => 27
+)
+
+[21-Mar-2019 21:50:40 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 21:50:40 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 21:50:40 Asia/Tokyo] デバッグ：現在のセッションID：lhpqa771tcq6e6cs76u6r0dog8
+[21-Mar-2019 21:50:40 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 21:50:40 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:50:40 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 21:50:40 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:50:40 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 21:50:40 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 21:50:40 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 21:50:40 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [category_id] => 2
+    [category_name] => パソコン
+    [user_id] => 27
+)
+
+[21-Mar-2019 21:52:58 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 21:52:58 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 21:52:58 Asia/Tokyo] デバッグ：現在のセッションID：15g5kusa1t3vb6tr70qqk91phk
+[21-Mar-2019 21:52:58 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 21:52:58 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:52:58 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 21:52:58 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:52:58 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 21:52:58 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 21:52:58 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 21:52:58 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [category_id] => 2
+    [category_name] => パソコン
+    [user_id] => 27
+)
+
+[21-Mar-2019 21:53:03 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 21:53:03 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 21:53:03 Asia/Tokyo] デバッグ：現在のセッションID：scmk5icdn4bsen1cqovkjild6a
+[21-Mar-2019 21:53:03 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 21:53:03 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:53:03 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 21:53:03 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:53:03 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 21:53:03 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 21:53:03 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 21:53:03 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [category_id] => 2
+    [category_name] => パソコン
+    [user_id] => 27
+)
+
+[21-Mar-2019 21:53:48 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 21:53:48 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 21:53:48 Asia/Tokyo] デバッグ：現在のセッションID：nbmuncpgjve4okpe3uem0kl9hi
+[21-Mar-2019 21:53:48 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 21:53:48 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:53:48 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「マイページ「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:53:48 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:53:48 Asia/Tokyo] デバッグ：ログインユーザーです
+[21-Mar-2019 21:53:48 Asia/Tokyo] デバッグ：セッション有効期限内です
+[21-Mar-2019 21:53:50 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 21:53:50 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 21:53:50 Asia/Tokyo] デバッグ：現在のセッションID：2128iu7q98u9e2t0insje0e4k2
+[21-Mar-2019 21:53:50 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 21:53:50 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:53:50 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品登録「「「「「「「「「「「「「「「
+[21-Mar-2019 21:53:50 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:53:50 Asia/Tokyo] デバッグ：ログインユーザーです
+[21-Mar-2019 21:53:50 Asia/Tokyo] デバッグ：セッション有効期限内です
+[21-Mar-2019 21:53:50 Asia/Tokyo] デバッグ：DB接続します
+[21-Mar-2019 21:53:50 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 21:53:50 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 21:53:50 Asia/Tokyo] デバッグ：クエリ成功
+[21-Mar-2019 21:53:50 Asia/Tokyo] デバッグ：カテゴリー情報：Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [name] => スマホ
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [name] => パソコン
+        )
+
+    [2] => Array
+        (
+            [id] => 3
+            [name] => 自転車
+        )
+
+    [3] => Array
+        (
+            [id] => 4
+            [name] => ファッション
+        )
+
+    [4] => Array
+        (
+            [id] => 5
+            [name] => ゲーム
+        )
+
+)
+
+[21-Mar-2019 21:53:50 Asia/Tokyo] デバッグ：name
+[21-Mar-2019 21:53:50 Asia/Tokyo] デバッグ：5
+[21-Mar-2019 21:53:50 Asia/Tokyo] デバッグ：category_id
+[21-Mar-2019 21:53:50 Asia/Tokyo] デバッグ：5
+[21-Mar-2019 21:53:50 Asia/Tokyo] デバッグ：category_id
+[21-Mar-2019 21:53:50 Asia/Tokyo] デバッグ：5
+[21-Mar-2019 21:53:50 Asia/Tokyo] デバッグ：category_id
+[21-Mar-2019 21:53:50 Asia/Tokyo] デバッグ：5
+[21-Mar-2019 21:53:50 Asia/Tokyo] デバッグ：category_id
+[21-Mar-2019 21:53:50 Asia/Tokyo] デバッグ：5
+[21-Mar-2019 21:53:50 Asia/Tokyo] デバッグ：category_id
+[21-Mar-2019 21:53:50 Asia/Tokyo] デバッグ：5
+[21-Mar-2019 21:53:50 Asia/Tokyo] デバッグ：category_id
+[21-Mar-2019 21:53:50 Asia/Tokyo] デバッグ：5
+[21-Mar-2019 21:53:50 Asia/Tokyo] デバッグ：price
+[21-Mar-2019 21:53:50 Asia/Tokyo] デバッグ：5
+[21-Mar-2019 21:53:50 Asia/Tokyo] デバッグ：comment
+[21-Mar-2019 21:53:50 Asia/Tokyo] デバッグ：5
+[21-Mar-2019 21:53:50 Asia/Tokyo] デバッグ：pic1
+[21-Mar-2019 21:53:50 Asia/Tokyo] デバッグ：6
+[21-Mar-2019 21:53:50 Asia/Tokyo] PHP Notice:  Undefined index: pic in /Applications/MAMP/htdocs/myshopping/function.php on line 323
+[21-Mar-2019 21:54:20 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 21:54:20 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 21:54:20 Asia/Tokyo] デバッグ：現在のセッションID：nnib09lqco4f3oc5ivr54sbjbh
+[21-Mar-2019 21:54:20 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 21:54:20 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:54:20 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「マイページ「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:54:20 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:54:20 Asia/Tokyo] デバッグ：ログインユーザーです
+[21-Mar-2019 21:54:20 Asia/Tokyo] デバッグ：セッション有効期限内です
+[21-Mar-2019 21:55:00 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 21:55:00 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 21:55:00 Asia/Tokyo] デバッグ：現在のセッションID：h2dj47u20qpt8t6t3ls32h8tee
+[21-Mar-2019 21:55:00 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 21:55:00 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:55:00 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「マイページ「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:55:00 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:55:00 Asia/Tokyo] デバッグ：ログインユーザーです
+[21-Mar-2019 21:55:00 Asia/Tokyo] デバッグ：セッション有効期限内です
+[21-Mar-2019 21:55:04 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 21:55:04 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 21:55:04 Asia/Tokyo] デバッグ：現在のセッションID：due33pksgfnd11078h27l3alkt
+[21-Mar-2019 21:55:04 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 21:55:04 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:55:04 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品登録「「「「「「「「「「「「「「「
+[21-Mar-2019 21:55:04 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:55:04 Asia/Tokyo] デバッグ：ログインユーザーです
+[21-Mar-2019 21:55:04 Asia/Tokyo] デバッグ：セッション有効期限内です
+[21-Mar-2019 21:55:04 Asia/Tokyo] デバッグ：DB接続します
+[21-Mar-2019 21:55:04 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 21:55:04 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 21:55:04 Asia/Tokyo] デバッグ：クエリ成功
+[21-Mar-2019 21:55:04 Asia/Tokyo] デバッグ：カテゴリー情報：Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [name] => スマホ
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [name] => パソコン
+        )
+
+    [2] => Array
+        (
+            [id] => 3
+            [name] => 自転車
+        )
+
+    [3] => Array
+        (
+            [id] => 4
+            [name] => ファッション
+        )
+
+    [4] => Array
+        (
+            [id] => 5
+            [name] => ゲーム
+        )
+
+)
+
+[21-Mar-2019 21:55:04 Asia/Tokyo] デバッグ：name
+[21-Mar-2019 21:55:04 Asia/Tokyo] デバッグ：5
+[21-Mar-2019 21:55:04 Asia/Tokyo] デバッグ：category_id
+[21-Mar-2019 21:55:04 Asia/Tokyo] デバッグ：5
+[21-Mar-2019 21:55:04 Asia/Tokyo] デバッグ：category_id
+[21-Mar-2019 21:55:04 Asia/Tokyo] デバッグ：5
+[21-Mar-2019 21:55:04 Asia/Tokyo] デバッグ：category_id
+[21-Mar-2019 21:55:04 Asia/Tokyo] デバッグ：5
+[21-Mar-2019 21:55:04 Asia/Tokyo] デバッグ：category_id
+[21-Mar-2019 21:55:04 Asia/Tokyo] デバッグ：5
+[21-Mar-2019 21:55:04 Asia/Tokyo] デバッグ：category_id
+[21-Mar-2019 21:55:04 Asia/Tokyo] デバッグ：5
+[21-Mar-2019 21:55:04 Asia/Tokyo] デバッグ：category_id
+[21-Mar-2019 21:55:04 Asia/Tokyo] デバッグ：5
+[21-Mar-2019 21:55:04 Asia/Tokyo] デバッグ：price
+[21-Mar-2019 21:55:04 Asia/Tokyo] デバッグ：5
+[21-Mar-2019 21:55:04 Asia/Tokyo] デバッグ：comment
+[21-Mar-2019 21:55:04 Asia/Tokyo] デバッグ：5
+[21-Mar-2019 21:55:04 Asia/Tokyo] デバッグ：pic1
+[21-Mar-2019 21:55:04 Asia/Tokyo] デバッグ：6
+[21-Mar-2019 21:55:04 Asia/Tokyo] PHP Notice:  Undefined index: pic in /Applications/MAMP/htdocs/myshopping/function.php on line 323
+[21-Mar-2019 21:55:06 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 21:55:06 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 21:55:06 Asia/Tokyo] デバッグ：現在のセッションID：0sul1ljbi3g6lvcatil8ni8dmg
+[21-Mar-2019 21:55:06 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 21:55:06 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:55:06 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「マイページ「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:55:06 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:55:06 Asia/Tokyo] デバッグ：ログインユーザーです
+[21-Mar-2019 21:55:06 Asia/Tokyo] デバッグ：セッション有効期限内です
+[21-Mar-2019 21:55:07 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 21:55:07 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 21:55:07 Asia/Tokyo] デバッグ：現在のセッションID：tmbfviktu6lnijhkg33tf5nghh
+[21-Mar-2019 21:55:07 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 21:55:07 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:55:07 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 21:55:07 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 21:55:07 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 21:55:07 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 21:55:07 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 21:55:07 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [category_id] => 2
+    [category_name] => パソコン
+    [user_id] => 27
+)
+
+[21-Mar-2019 22:03:54 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 22:03:54 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 22:03:54 Asia/Tokyo] デバッグ：現在のセッションID：qrbuaifj83vubna1v9a09q56s6
+[21-Mar-2019 22:03:54 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 22:03:54 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 22:03:54 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 22:03:54 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 22:03:54 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 22:03:54 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 22:03:54 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 22:03:54 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [category_id] => 2
+    [category_name] => パソコン
+    [user_id] => 27
+)
+
+[21-Mar-2019 22:03:59 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 22:03:59 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 22:03:59 Asia/Tokyo] デバッグ：現在のセッションID：t9bjvmmsgp3nab6j7e6thq9r9l
+[21-Mar-2019 22:03:59 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 22:03:59 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 22:03:59 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 22:03:59 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 22:03:59 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 22:03:59 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 22:03:59 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 22:03:59 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [category_id] => 2
+    [category_name] => パソコン
+    [user_id] => 27
+)
+
+[21-Mar-2019 22:04:26 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 22:04:26 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 22:04:26 Asia/Tokyo] デバッグ：現在のセッションID：kd5tlc5o1sni94b541ovtlgqvi
+[21-Mar-2019 22:04:26 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 22:04:26 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 22:04:26 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 22:04:26 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 22:04:26 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 22:04:26 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 22:04:26 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 22:04:26 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [category_id] => 2
+    [category_name] => パソコン
+    [user_id] => 27
+)
+
+[21-Mar-2019 22:04:41 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 22:04:41 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 22:04:41 Asia/Tokyo] デバッグ：現在のセッションID：6ri65hck170q9ae4ekd62mir5l
+[21-Mar-2019 22:04:41 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 22:04:41 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 22:04:41 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 22:04:41 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 22:04:41 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 22:04:41 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 22:04:41 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 22:04:41 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [category_id] => 2
+    [category_name] => パソコン
+    [user_id] => 27
+)
+
+[21-Mar-2019 22:05:55 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 22:05:55 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 22:05:55 Asia/Tokyo] デバッグ：現在のセッションID：hcn8i268i0gqb0mjov718ujoqn
+[21-Mar-2019 22:05:55 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 22:05:55 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 22:05:55 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 22:05:55 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 22:05:55 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 22:05:55 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 22:05:55 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 22:05:55 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [category_id] => 2
+    [category_name] => パソコン
+    [user_id] => 27
+)
+
+[21-Mar-2019 22:06:13 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 22:06:13 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 22:06:13 Asia/Tokyo] デバッグ：現在のセッションID：tdpa7mu8r0jb3he452sjnfhfvi
+[21-Mar-2019 22:06:13 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 22:06:13 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 22:06:13 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 22:06:13 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 22:06:13 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 22:06:13 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 22:06:13 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 22:06:13 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [category_id] => 2
+    [category_name] => パソコン
+    [user_id] => 27
+)
+
+[21-Mar-2019 22:12:08 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 22:12:08 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 22:12:08 Asia/Tokyo] デバッグ：現在のセッションID：tg4i30tmaj2lerrsn173ic93gg
+[21-Mar-2019 22:12:08 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 22:12:08 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 22:12:08 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 22:12:08 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 22:12:08 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 22:12:08 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 22:12:08 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 22:12:08 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [category_id] => 2
+    [category_name] => パソコン
+    [user_id] => 27
+)
+
+[21-Mar-2019 22:12:24 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 22:12:24 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 22:12:24 Asia/Tokyo] デバッグ：現在のセッションID：jfid80oiv7bhup0de8jao8ofdj
+[21-Mar-2019 22:12:24 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 22:12:24 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 22:12:24 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 22:12:24 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 22:12:24 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 22:12:24 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 22:12:24 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 22:12:24 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [category_id] => 2
+    [category_name] => パソコン
+    [user_id] => 27
+)
+
+[21-Mar-2019 22:12:38 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 22:12:38 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 22:12:38 Asia/Tokyo] デバッグ：現在のセッションID：ggke15p5uhrva7f2djcolvjoj4
+[21-Mar-2019 22:12:38 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 22:12:38 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 22:12:38 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 22:12:38 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 22:12:38 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 22:12:38 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 22:12:38 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 22:12:38 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [category_id] => 2
+    [category_name] => パソコン
+    [user_id] => 27
+)
+
+[21-Mar-2019 22:12:54 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 22:12:54 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 22:12:54 Asia/Tokyo] デバッグ：現在のセッションID：hbl2iilfnkalcqf9i0ji1c97pi
+[21-Mar-2019 22:12:54 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 22:12:54 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 22:12:54 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 22:12:54 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 22:12:54 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 22:12:54 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 22:12:54 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 22:12:54 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [category_id] => 2
+    [category_name] => パソコン
+    [user_id] => 27
+)
+
+[21-Mar-2019 22:12:57 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 22:12:57 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 22:12:57 Asia/Tokyo] デバッグ：現在のセッションID：j4utubmuaem9j5b3p51tpi7kos
+[21-Mar-2019 22:12:57 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 22:12:57 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 22:12:57 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 22:12:57 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 22:12:57 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 22:12:57 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 22:12:57 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 22:12:57 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [category_id] => 2
+    [category_name] => パソコン
+    [user_id] => 27
+)
+
+[21-Mar-2019 22:13:34 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 22:13:34 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 22:13:34 Asia/Tokyo] デバッグ：現在のセッションID：1q3chs6ekcal6lfunakfjarj99
+[21-Mar-2019 22:13:34 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 22:13:34 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 22:13:34 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 22:13:34 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 22:13:34 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 22:13:34 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 22:13:34 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 22:13:34 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [category_id] => 2
+    [category_name] => パソコン
+    [user_id] => 27
+)
+
+[21-Mar-2019 22:14:03 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 22:14:03 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 22:14:03 Asia/Tokyo] デバッグ：現在のセッションID：0eu7jc03a5g32ur0vn8tdqk21b
+[21-Mar-2019 22:14:03 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 22:14:03 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 22:14:03 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 22:14:03 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 22:14:03 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 22:14:03 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 22:14:03 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 22:14:03 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [category_id] => 2
+    [category_name] => パソコン
+    [user_id] => 27
+)
+
+[21-Mar-2019 22:14:06 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 22:14:06 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 22:14:06 Asia/Tokyo] デバッグ：現在のセッションID：oa3h2v95dda3dp5mlqnui4b78s
+[21-Mar-2019 22:14:06 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 22:14:06 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 22:14:06 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 22:14:06 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 22:14:06 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 22:14:06 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 22:14:06 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 22:14:06 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [category_id] => 2
+    [category_name] => パソコン
+    [user_id] => 27
+)
+
+[21-Mar-2019 22:14:20 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 22:14:20 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 22:14:20 Asia/Tokyo] デバッグ：現在のセッションID：p684b0t96ijrssrp0cvmji30kq
+[21-Mar-2019 22:14:20 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 22:14:20 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 22:14:20 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 22:14:20 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 22:14:20 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 22:14:20 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 22:14:20 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 22:14:20 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [category_id] => 2
+    [category_name] => パソコン
+    [user_id] => 27
+)
+
+[21-Mar-2019 22:18:08 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 22:18:08 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 22:18:08 Asia/Tokyo] デバッグ：現在のセッションID：ds9rgpsb7390kren5c5ds7gvc4
+[21-Mar-2019 22:18:08 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 22:18:08 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 22:18:08 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 22:18:08 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 22:18:08 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 22:18:08 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 22:18:08 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 22:18:08 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [category_id] => 2
+    [category_name] => パソコン
+    [user_id] => 27
+)
+
+[21-Mar-2019 22:18:20 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 22:18:20 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 22:18:20 Asia/Tokyo] デバッグ：現在のセッションID：44333hukuq11lqcfr4a5g211gf
+[21-Mar-2019 22:18:20 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 22:18:20 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 22:18:20 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 22:18:20 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 22:18:20 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 22:18:20 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 22:18:20 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 22:18:20 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [category_id] => 2
+    [category_name] => パソコン
+    [user_id] => 27
+)
+
+[21-Mar-2019 22:18:53 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 22:18:53 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 22:18:53 Asia/Tokyo] デバッグ：現在のセッションID：02gisc7fun2he2e8bf2lfhg1vn
+[21-Mar-2019 22:18:53 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 22:18:53 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 22:18:53 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 22:18:53 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 22:18:53 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 22:18:53 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 22:18:53 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 22:18:53 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [category_id] => 2
+    [category_name] => パソコン
+    [user_id] => 27
+)
+
+[21-Mar-2019 22:19:41 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 22:19:41 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 22:19:41 Asia/Tokyo] デバッグ：現在のセッションID：blq9s4vmgbm5bgesu0r5t8lgdq
+[21-Mar-2019 22:19:41 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 22:19:41 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 22:19:41 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 22:19:41 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 22:19:41 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 22:19:41 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 22:19:41 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 22:19:41 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [category_id] => 2
+    [category_name] => パソコン
+    [user_id] => 27
+)
+
+[21-Mar-2019 22:19:55 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 22:19:55 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 22:19:55 Asia/Tokyo] デバッグ：現在のセッションID：1s6phngcr10j16365iijr1lo6b
+[21-Mar-2019 22:19:55 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 22:19:55 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 22:19:55 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 22:19:55 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 22:19:55 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 22:19:55 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 22:19:55 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 22:19:55 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [category_id] => 2
+    [category_name] => パソコン
+    [user_id] => 27
+)
+
+[21-Mar-2019 22:20:01 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 22:20:01 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 22:20:01 Asia/Tokyo] デバッグ：現在のセッションID：31gqrdcrusol6iep79c6l7bp4n
+[21-Mar-2019 22:20:01 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 22:20:01 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 22:20:01 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 22:20:01 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 22:20:01 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 22:20:01 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 22:20:01 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 22:20:01 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [category_id] => 2
+    [category_name] => パソコン
+    [user_id] => 27
+)
+
+[21-Mar-2019 22:20:12 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 22:20:12 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 22:20:12 Asia/Tokyo] デバッグ：現在のセッションID：3m942rmkm6vdkt9hkqh73ufhoe
+[21-Mar-2019 22:20:12 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 22:20:12 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 22:20:12 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 22:20:12 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 22:20:12 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 22:20:12 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 22:20:12 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 22:20:12 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [category_id] => 2
+    [category_name] => パソコン
+    [user_id] => 27
+)
+
+[21-Mar-2019 22:20:28 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 22:20:28 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 22:20:28 Asia/Tokyo] デバッグ：現在のセッションID：dsqmmh1obctdbilqtdj63l5et3
+[21-Mar-2019 22:20:28 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 22:20:28 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 22:20:28 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 22:20:28 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 22:20:28 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 22:20:28 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 22:20:28 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 22:20:28 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [category_id] => 2
+    [category_name] => パソコン
+    [user_id] => 27
+)
+
+[21-Mar-2019 22:20:51 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 22:20:51 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 22:20:51 Asia/Tokyo] デバッグ：現在のセッションID：dij5ss1c9h7j12dspln8kk3ild
+[21-Mar-2019 22:20:51 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 22:20:51 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 22:20:51 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 22:20:51 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 22:20:51 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 22:20:51 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 22:20:51 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 22:20:51 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [category_id] => 2
+    [category_name] => パソコン
+    [user_id] => 27
+)
+
+[21-Mar-2019 22:21:01 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 22:21:01 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 22:21:01 Asia/Tokyo] デバッグ：現在のセッションID：3bpsuh2i37dd0vv14u5oel2o96
+[21-Mar-2019 22:21:01 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 22:21:01 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 22:21:01 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 22:21:01 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 22:21:01 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 22:21:01 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 22:21:01 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 22:21:01 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [category_id] => 2
+    [category_name] => パソコン
+    [user_id] => 27
+)
+
+[21-Mar-2019 22:21:54 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 22:21:54 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 22:21:54 Asia/Tokyo] デバッグ：現在のセッションID：hiet0c60j601mgtmtjjh9sgn7c
+[21-Mar-2019 22:21:54 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 22:21:54 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 22:21:54 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 22:21:54 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 22:21:54 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 22:21:54 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 22:21:54 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 22:21:54 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [category_id] => 2
+    [category_name] => パソコン
+    [user_id] => 27
+)
+
+[21-Mar-2019 22:24:33 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 22:24:33 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 22:24:33 Asia/Tokyo] デバッグ：現在のセッションID：6pge9ci3lppguu7gmbcv1eeh8s
+[21-Mar-2019 22:24:33 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 22:24:33 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 22:24:33 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 22:24:33 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 22:24:33 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 22:24:33 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 22:24:33 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 22:24:33 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [category_id] => 2
+    [category_name] => パソコン
+    [user_id] => 27
+)
+
+[21-Mar-2019 23:00:06 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 23:00:06 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 23:00:06 Asia/Tokyo] デバッグ：現在のセッションID：46kn41jdkl52unvltj5kk992u0
+[21-Mar-2019 23:00:06 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 23:00:06 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:00:06 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 23:00:06 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:00:06 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 23:00:06 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 23:00:06 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 23:00:06 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [category_id] => 2
+    [category_name] => パソコン
+    [user_id] => 27
+)
+
+[21-Mar-2019 23:00:27 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 23:00:27 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 23:00:27 Asia/Tokyo] デバッグ：現在のセッションID：khvu9q3mrlv4vf0u18066jmc7e
+[21-Mar-2019 23:00:27 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 23:00:27 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:00:27 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 23:00:27 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:00:27 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 23:00:27 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 23:00:27 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 23:00:27 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [category_id] => 2
+    [category_name] => パソコン
+    [user_id] => 27
+)
+
+[21-Mar-2019 23:00:48 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 23:00:48 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 23:00:48 Asia/Tokyo] デバッグ：現在のセッションID：5i14m17bl6rgkt3rfgv9pe4jk7
+[21-Mar-2019 23:00:48 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 23:00:48 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:00:48 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 23:00:48 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:00:48 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 23:00:48 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 23:00:48 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 23:00:48 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [category_id] => 2
+    [category_name] => パソコン
+    [user_id] => 27
+)
+
+[21-Mar-2019 23:01:01 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 23:01:01 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 23:01:01 Asia/Tokyo] デバッグ：現在のセッションID：h42k52aglmhhdm0lbqejui1k4c
+[21-Mar-2019 23:01:01 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 23:01:01 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:01:01 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 23:01:01 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:01:01 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 23:01:01 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 23:01:01 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 23:01:01 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [category_id] => 2
+    [category_name] => パソコン
+    [user_id] => 27
+)
+
+[21-Mar-2019 23:01:14 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 23:01:14 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 23:01:14 Asia/Tokyo] デバッグ：現在のセッションID：16bdo5valo9ipp0viclvigfkje
+[21-Mar-2019 23:01:14 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 23:01:14 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:01:14 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 23:01:14 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:01:14 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 23:01:14 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 23:01:14 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 23:01:14 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [category_id] => 2
+    [category_name] => パソコン
+    [user_id] => 27
+)
+
+[21-Mar-2019 23:01:56 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 23:01:56 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 23:01:56 Asia/Tokyo] デバッグ：現在のセッションID：1guhf4p0a66hb4d8gs22vgifkb
+[21-Mar-2019 23:01:56 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 23:01:56 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:01:56 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 23:01:56 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:01:56 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 23:01:56 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 23:01:56 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 23:01:56 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [category_id] => 2
+    [category_name] => パソコン
+    [user_id] => 27
+)
+
+[21-Mar-2019 23:02:18 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 23:02:18 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 23:02:18 Asia/Tokyo] デバッグ：現在のセッションID：j19igqpdl46inotko99gnrnn48
+[21-Mar-2019 23:02:18 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 23:02:18 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:02:18 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 23:02:18 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:02:18 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 23:02:18 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 23:02:18 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 23:02:18 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [category_id] => 2
+    [category_name] => パソコン
+    [user_id] => 27
+)
+
+[21-Mar-2019 23:02:30 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 23:02:30 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 23:02:30 Asia/Tokyo] デバッグ：現在のセッションID：k8l0rlqdofg7jt20i3duqj0ais
+[21-Mar-2019 23:02:30 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 23:02:30 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:02:30 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 23:02:30 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:02:30 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 23:02:30 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 23:02:30 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 23:02:30 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [category_id] => 2
+    [category_name] => パソコン
+    [user_id] => 27
+)
+
+[21-Mar-2019 23:04:09 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 23:04:09 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 23:04:09 Asia/Tokyo] デバッグ：現在のセッションID：mktj61h9ph39bcchdbgqe63eve
+[21-Mar-2019 23:04:09 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 23:04:09 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:04:09 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 23:04:09 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:04:09 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 23:04:09 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 23:04:09 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 23:04:09 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [category_id] => 2
+    [category_name] => パソコン
+    [user_id] => 27
+)
+
+[21-Mar-2019 23:06:53 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 23:06:53 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 23:06:53 Asia/Tokyo] デバッグ：現在のセッションID：tnk1s51p7dee9jrknn61k8oftm
+[21-Mar-2019 23:06:53 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 23:06:53 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:06:53 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 23:06:53 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:06:53 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 23:06:53 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 23:06:53 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 23:06:53 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [category_id] => 2
+    [category_name] => パソコン
+    [user_id] => 27
+)
+
+[21-Mar-2019 23:07:15 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 23:07:15 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 23:07:15 Asia/Tokyo] デバッグ：現在のセッションID：m3s41qubv1ogt8t4h3vm7ch6up
+[21-Mar-2019 23:07:15 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 23:07:15 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:07:15 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 23:07:15 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:07:15 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 23:07:15 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 23:07:15 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 23:07:15 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [category_id] => 2
+    [category_name] => パソコン
+    [user_id] => 27
+)
+
+[21-Mar-2019 23:10:40 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 23:10:40 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 23:10:40 Asia/Tokyo] デバッグ：現在のセッションID：8c65ddndfgeqaob1fn8oi3nrjv
+[21-Mar-2019 23:10:40 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 23:10:40 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:10:40 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 23:10:40 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:10:40 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 23:10:40 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 23:10:40 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 23:10:40 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [category_id] => 2
+    [category_name] => パソコン
+    [user_id] => 27
+)
+
+[21-Mar-2019 23:10:44 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 23:10:44 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 23:10:44 Asia/Tokyo] デバッグ：現在のセッションID：mh4sod1ej1b11kjei7dmu4bjch
+[21-Mar-2019 23:10:44 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 23:10:44 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:10:44 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 23:10:44 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:10:44 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 23:10:44 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 23:10:44 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 23:10:44 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [category_id] => 2
+    [category_name] => パソコン
+    [user_id] => 27
+)
+
+[21-Mar-2019 23:14:22 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 23:14:22 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 23:14:22 Asia/Tokyo] デバッグ：現在のセッションID：agjte56lrujfs9m6f5iecv0h4n
+[21-Mar-2019 23:14:22 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 23:14:22 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:14:22 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 23:14:22 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:14:22 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 23:14:22 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 23:14:22 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 23:14:22 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [category_id] => 2
+    [category_name] => パソコン
+    [user_id] => 27
+)
+
+[21-Mar-2019 23:15:53 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 23:15:53 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 23:15:53 Asia/Tokyo] デバッグ：現在のセッションID：ore4u3mg60p8pvfom17lqj0gq8
+[21-Mar-2019 23:15:53 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 23:15:53 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:15:53 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 23:15:53 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:15:53 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 23:15:53 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 23:15:53 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 23:15:53 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [category_id] => 2
+    [category_name] => パソコン
+    [user_id] => 27
+)
+
+[21-Mar-2019 23:16:48 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 23:16:48 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 23:16:48 Asia/Tokyo] デバッグ：現在のセッションID：agbqmc6sim4miut627akvjuno4
+[21-Mar-2019 23:16:48 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 23:16:48 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:16:48 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 23:16:48 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:16:48 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 23:16:48 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 23:16:48 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 23:16:48 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [category_id] => 2
+    [category_name] => パソコン
+    [user_id] => 27
+)
+
+[21-Mar-2019 23:17:42 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 23:17:42 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 23:17:42 Asia/Tokyo] デバッグ：現在のセッションID：1a7j5vhmdtktkd1j4ljc0qcg2r
+[21-Mar-2019 23:17:42 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 23:17:42 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:17:42 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 23:17:42 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:17:42 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 23:17:42 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 23:17:42 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 23:17:42 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [category_id] => 2
+    [category_name] => パソコン
+    [user_id] => 27
+)
+
+[21-Mar-2019 23:19:51 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 23:19:51 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 23:19:51 Asia/Tokyo] デバッグ：現在のセッションID：hclr0v9irbp61767o0q79ktjok
+[21-Mar-2019 23:19:51 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 23:19:51 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:19:51 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 23:19:51 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:19:51 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 23:19:51 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 23:19:51 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 23:19:51 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [category_id] => 2
+    [category_name] => パソコン
+    [user_id] => 27
+)
+
+[21-Mar-2019 23:20:36 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 23:20:36 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 23:20:36 Asia/Tokyo] デバッグ：現在のセッションID：9ne6c9qqfaicdiig06q77uaahf
+[21-Mar-2019 23:20:36 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 23:20:36 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:20:36 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 23:20:36 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:20:36 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 23:20:36 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 23:20:36 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 23:20:36 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [category_id] => 2
+    [category_name] => パソコン
+    [user_id] => 27
+)
+
+[21-Mar-2019 23:20:44 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 23:20:44 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 23:20:44 Asia/Tokyo] デバッグ：現在のセッションID：636oud350sovhju8jehjov7h76
+[21-Mar-2019 23:20:44 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 23:20:44 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:20:44 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 23:20:44 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:20:44 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 23:20:44 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 23:20:44 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 23:20:44 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [category_id] => 2
+    [category_name] => パソコン
+    [user_id] => 27
+)
+
+[21-Mar-2019 23:21:29 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 23:21:29 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 23:21:29 Asia/Tokyo] デバッグ：現在のセッションID：2oh75pv86mdqanc8oma5frj86k
+[21-Mar-2019 23:21:29 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 23:21:29 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:21:29 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 23:21:29 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:21:29 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 23:21:29 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 23:21:29 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 23:21:29 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [category_id] => 2
+    [category_name] => パソコン
+    [user_id] => 27
+)
+
+[21-Mar-2019 23:21:44 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 23:21:44 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 23:21:44 Asia/Tokyo] デバッグ：現在のセッションID：5ulc2pjpp889lu6fsrm6qo3lro
+[21-Mar-2019 23:21:44 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 23:21:44 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:21:44 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 23:21:44 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:21:44 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 23:21:44 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 23:21:44 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 23:21:44 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [category_id] => 2
+    [category_name] => パソコン
+    [user_id] => 27
+)
+
+[21-Mar-2019 23:23:29 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 23:23:29 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 23:23:29 Asia/Tokyo] デバッグ：現在のセッションID：3pbpcovqsq63igas1j6grhmj9q
+[21-Mar-2019 23:23:29 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 23:23:29 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:23:29 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 23:23:29 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:23:29 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 23:23:29 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 23:23:29 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 23:23:29 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [category_id] => 2
+    [category_name] => パソコン
+    [user_id] => 27
+)
+
+[21-Mar-2019 23:23:34 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 23:23:34 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 23:23:34 Asia/Tokyo] デバッグ：現在のセッションID：d5qm1c9hjae0h9oru9gvqgq3do
+[21-Mar-2019 23:23:34 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 23:23:34 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:23:34 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 23:23:34 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:23:34 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 23:23:34 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 23:23:34 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 23:23:34 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [category_id] => 2
+    [category_name] => パソコン
+    [user_id] => 27
+)
+
+[21-Mar-2019 23:26:11 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 23:26:11 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 23:26:11 Asia/Tokyo] デバッグ：現在のセッションID：tpb5hid97hdkpkpiraj44emeo3
+[21-Mar-2019 23:26:11 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 23:26:11 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:26:11 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 23:26:11 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:26:11 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 23:26:11 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 23:26:11 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 23:26:11 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [category_id] => 2
+    [category_name] => パソコン
+    [user_id] => 27
+)
+
+[21-Mar-2019 23:27:01 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 23:27:01 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 23:27:01 Asia/Tokyo] デバッグ：現在のセッションID：7rubv4veh5jro3rhhocgu8d5ac
+[21-Mar-2019 23:27:01 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 23:27:01 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:27:01 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 23:27:01 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:27:01 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 23:27:01 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 23:27:01 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 23:27:01 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [category_id] => 2
+    [category_name] => パソコン
+    [user_id] => 27
+)
+
+[21-Mar-2019 23:27:28 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 23:27:28 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 23:27:28 Asia/Tokyo] デバッグ：現在のセッションID：314u88g0ljlkkfkncuomfgjou9
+[21-Mar-2019 23:27:28 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 23:27:28 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:27:28 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 23:27:28 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:27:28 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 23:27:28 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 23:27:28 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 23:27:28 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [category_id] => 2
+    [category_name] => パソコン
+    [user_id] => 27
+)
+
+[21-Mar-2019 23:27:39 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 23:27:39 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 23:27:39 Asia/Tokyo] デバッグ：現在のセッションID：o4n6n531jp8u2v2rtg27roebut
+[21-Mar-2019 23:27:39 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 23:27:39 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:27:39 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 23:27:39 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:27:39 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 23:27:39 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 23:27:39 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 23:27:39 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [category_id] => 2
+    [category_name] => パソコン
+    [user_id] => 27
+)
+
+[21-Mar-2019 23:27:46 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 23:27:46 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 23:27:46 Asia/Tokyo] デバッグ：現在のセッションID：3ub266iqm96u42ip2s2kknnslr
+[21-Mar-2019 23:27:46 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 23:27:46 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:27:46 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 23:27:46 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:27:46 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 23:27:46 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 23:27:46 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 23:27:46 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [category_id] => 2
+    [category_name] => パソコン
+    [user_id] => 27
+)
+
+[21-Mar-2019 23:28:41 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 23:28:41 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 23:28:41 Asia/Tokyo] デバッグ：現在のセッションID：efrvq0mucpij6gq5t94p7p48pn
+[21-Mar-2019 23:28:41 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 23:28:41 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:28:41 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 23:28:41 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:28:41 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 23:28:41 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 23:28:41 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 23:28:41 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [category_id] => 2
+    [category_name] => パソコン
+    [user_id] => 27
+)
+
+[21-Mar-2019 23:29:08 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 23:29:08 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 23:29:08 Asia/Tokyo] デバッグ：現在のセッションID：gnuiakpl69a4g6bu72p74co9dr
+[21-Mar-2019 23:29:08 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 23:29:08 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:29:08 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 23:29:08 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:29:08 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 23:29:08 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 23:29:08 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 23:29:08 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [category_id] => 2
+    [category_name] => パソコン
+    [user_id] => 27
+)
+
+[21-Mar-2019 23:29:10 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 23:29:10 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 23:29:10 Asia/Tokyo] デバッグ：現在のセッションID：9rv798ukb0a2e55dqs418d7g9u
+[21-Mar-2019 23:29:10 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 23:29:10 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:29:10 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 23:29:10 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:29:10 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 23:29:10 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 23:29:10 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 23:29:10 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [category_id] => 2
+    [category_name] => パソコン
+    [user_id] => 27
+)
+
+[21-Mar-2019 23:29:10 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 23:29:10 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 23:29:10 Asia/Tokyo] デバッグ：現在のセッションID：bbus8r1p8h4uiuip5n6dq36net
+[21-Mar-2019 23:29:10 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 23:29:10 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:29:10 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 23:29:10 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:29:10 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 23:29:10 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 23:29:10 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 23:29:10 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [category_id] => 2
+    [category_name] => パソコン
+    [user_id] => 27
+)
+
+[21-Mar-2019 23:29:11 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 23:29:11 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 23:29:11 Asia/Tokyo] デバッグ：現在のセッションID：31bd82fqs840v6mfdjieni2b31
+[21-Mar-2019 23:29:11 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 23:29:11 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:29:11 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 23:29:11 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:29:11 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 23:29:11 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 23:29:11 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 23:29:11 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [category_id] => 2
+    [category_name] => パソコン
+    [user_id] => 27
+)
+
+[21-Mar-2019 23:29:11 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 23:29:11 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 23:29:11 Asia/Tokyo] デバッグ：現在のセッションID：hih8e475h8ur01l1cqb5uab50s
+[21-Mar-2019 23:29:11 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 23:29:11 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:29:11 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 23:29:11 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:29:11 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 23:29:11 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 23:29:11 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 23:29:11 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [category_id] => 2
+    [category_name] => パソコン
+    [user_id] => 27
+)
+
+[21-Mar-2019 23:29:11 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 23:29:11 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 23:29:11 Asia/Tokyo] デバッグ：現在のセッションID：rc46dut5571gbe2dfjf8kg9up2
+[21-Mar-2019 23:29:11 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 23:29:11 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:29:11 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 23:29:11 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:29:11 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 23:29:11 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 23:29:11 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 23:29:11 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [category_id] => 2
+    [category_name] => パソコン
+    [user_id] => 27
+)
+
+[21-Mar-2019 23:29:12 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 23:29:12 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 23:29:12 Asia/Tokyo] デバッグ：現在のセッションID：8ddgqesq50jjmpae4k7dpunquc
+[21-Mar-2019 23:29:12 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 23:29:12 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:29:12 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 23:29:12 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:29:12 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 23:29:12 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 23:29:12 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 23:29:12 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [category_id] => 2
+    [category_name] => パソコン
+    [user_id] => 27
+)
+
+[21-Mar-2019 23:29:12 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 23:29:12 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 23:29:12 Asia/Tokyo] デバッグ：現在のセッションID：ele4t59kthl476sbdr8r69o033
+[21-Mar-2019 23:29:12 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 23:29:12 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:29:12 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 23:29:12 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:29:12 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 23:29:12 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 23:29:12 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 23:29:12 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [category_id] => 2
+    [category_name] => パソコン
+    [user_id] => 27
+)
+
+[21-Mar-2019 23:29:13 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 23:29:13 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 23:29:13 Asia/Tokyo] デバッグ：現在のセッションID：htg64ao48bn2jdn01ah0jsajim
+[21-Mar-2019 23:29:13 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 23:29:13 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:29:13 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 23:29:13 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:29:13 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 23:29:13 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 23:29:13 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 23:29:13 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [category_id] => 2
+    [category_name] => パソコン
+    [user_id] => 27
+)
+
+[21-Mar-2019 23:29:49 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 23:29:49 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 23:29:49 Asia/Tokyo] デバッグ：現在のセッションID：lcgu5kdu88v2mlf71q0fr123ed
+[21-Mar-2019 23:29:49 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 23:29:49 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:29:49 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 23:29:49 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:29:49 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 23:29:49 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 23:29:49 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 23:29:49 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [category_id] => 2
+    [category_name] => パソコン
+    [user_id] => 27
+)
+
+[21-Mar-2019 23:30:06 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 23:30:06 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 23:30:06 Asia/Tokyo] デバッグ：現在のセッションID：c4v3rj82ncv4u3tnbi8t2bi0vq
+[21-Mar-2019 23:30:06 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 23:30:06 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:30:06 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 23:30:06 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:30:06 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 23:30:06 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 23:30:06 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 23:30:06 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [category_id] => 2
+    [category_name] => パソコン
+    [user_id] => 27
+)
+
+[21-Mar-2019 23:30:15 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 23:30:15 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 23:30:15 Asia/Tokyo] デバッグ：現在のセッションID：4fegla10i446qr0khbh717h10e
+[21-Mar-2019 23:30:15 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 23:30:15 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:30:15 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 23:30:15 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:30:15 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 23:30:15 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 23:30:15 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 23:30:15 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [category_id] => 2
+    [category_name] => パソコン
+    [user_id] => 27
+)
+
+[21-Mar-2019 23:31:39 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 23:31:39 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 23:31:39 Asia/Tokyo] デバッグ：現在のセッションID：mogjloufo6kvum511uiq06ghmo
+[21-Mar-2019 23:31:39 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 23:31:39 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:31:39 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 23:31:39 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:31:39 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 23:31:39 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 23:31:39 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 23:31:39 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [category_id] => 2
+    [category_name] => パソコン
+    [user_id] => 27
+)
+
+[21-Mar-2019 23:34:29 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 23:34:29 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 23:34:29 Asia/Tokyo] デバッグ：現在のセッションID：v455hvqditoo167mhbvidmeo9r
+[21-Mar-2019 23:34:29 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 23:34:29 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:34:29 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 23:34:29 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:34:29 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 23:34:29 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 23:34:29 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 23:34:29 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [category_id] => 2
+    [category_name] => パソコン
+    [user_id] => 27
+)
+
+[21-Mar-2019 23:44:16 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 23:44:16 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 23:44:16 Asia/Tokyo] デバッグ：現在のセッションID：vmmhl31ujot78qn1edlhpjfg2v
+[21-Mar-2019 23:44:16 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 23:44:16 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:44:16 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 23:44:16 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:44:16 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 23:44:16 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 23:44:16 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 23:44:16 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [category_id] => 2
+    [category_name] => パソコン
+    [user_id] => 27
+)
+
+[21-Mar-2019 23:44:17 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 23:44:17 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 23:44:17 Asia/Tokyo] デバッグ：現在のセッションID：k8b7pcg82s5atlal515e6al9hb
+[21-Mar-2019 23:44:17 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 23:44:17 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:44:17 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 23:44:17 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:44:17 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 23:44:17 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 23:44:17 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 23:44:17 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [category_id] => 2
+    [category_name] => パソコン
+    [user_id] => 27
+)
+
+[21-Mar-2019 23:44:47 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 23:44:47 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 23:44:47 Asia/Tokyo] デバッグ：現在のセッションID：ioqumnue0qs2knv84btf9g4hqu
+[21-Mar-2019 23:44:47 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 23:44:47 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:44:47 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 23:44:47 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:44:47 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 23:44:47 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 23:44:47 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 23:44:47 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [category_id] => 2
+    [category_name] => パソコン
+    [user_id] => 27
+)
+
+[21-Mar-2019 23:44:58 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 23:44:58 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 23:44:58 Asia/Tokyo] デバッグ：現在のセッションID：87tm0a3tglhdemeed5hn16efll
+[21-Mar-2019 23:44:58 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 23:44:58 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:44:58 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 23:44:58 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:44:58 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 23:44:58 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 23:44:58 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 23:44:58 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [category_id] => 2
+    [category_name] => パソコン
+    [user_id] => 27
+)
+
+[21-Mar-2019 23:45:49 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 23:45:49 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 23:45:49 Asia/Tokyo] デバッグ：現在のセッションID：74p9a03e5b6ukabouu8gt3qqva
+[21-Mar-2019 23:45:49 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 23:45:49 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:45:49 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 23:45:49 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:45:49 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 23:45:49 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 23:45:49 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 23:45:49 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [category_id] => 2
+    [category_name] => パソコン
+    [user_id] => 27
+)
+
+[21-Mar-2019 23:47:00 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 23:47:00 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 23:47:00 Asia/Tokyo] デバッグ：現在のセッションID：mv9sn0281rc9pc7i1jlhmstlkj
+[21-Mar-2019 23:47:00 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 23:47:00 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:47:00 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 23:47:00 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:47:00 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 23:47:00 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 23:47:00 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 23:47:00 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [category_id] => 2
+    [category_name] => パソコン
+    [user_id] => 27
+)
+
+[21-Mar-2019 23:47:22 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 23:47:22 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 23:47:22 Asia/Tokyo] デバッグ：現在のセッションID：k7k9gs0tsc2ens0nrkrfv5ngdt
+[21-Mar-2019 23:47:22 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 23:47:22 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:47:22 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 23:47:22 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:47:22 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 23:47:22 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 23:47:22 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 23:47:22 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [category_id] => 2
+    [category_name] => パソコン
+    [user_id] => 27
+)
+
+[21-Mar-2019 23:47:40 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 23:47:40 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 23:47:40 Asia/Tokyo] デバッグ：現在のセッションID：24lj63227bcmtmsig6agcqadbf
+[21-Mar-2019 23:47:40 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 23:47:40 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:47:40 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 23:47:40 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:47:40 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 23:47:40 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 23:47:40 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 23:47:40 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [category_id] => 2
+    [category_name] => パソコン
+    [user_id] => 27
+)
+
+[21-Mar-2019 23:47:53 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 23:47:53 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 23:47:53 Asia/Tokyo] デバッグ：現在のセッションID：6bh0vdq1e56s464j0bmm7lvbev
+[21-Mar-2019 23:47:53 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 23:47:53 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:47:53 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 23:47:53 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:47:53 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 23:47:53 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 23:47:53 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 23:47:53 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [category_id] => 2
+    [category_name] => パソコン
+    [user_id] => 27
+)
+
+[21-Mar-2019 23:47:55 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 23:47:55 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 23:47:55 Asia/Tokyo] デバッグ：現在のセッションID：5ru5ljr80af6uli56m0s6srnup
+[21-Mar-2019 23:47:55 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 23:47:55 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:47:55 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 23:47:55 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:47:55 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 23:47:55 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 23:47:55 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 23:47:55 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [category_id] => 2
+    [category_name] => パソコン
+    [user_id] => 27
+)
+
+[21-Mar-2019 23:48:28 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 23:48:28 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 23:48:28 Asia/Tokyo] デバッグ：現在のセッションID：31foa7vvc5cdj9t4ea3pvrtae7
+[21-Mar-2019 23:48:28 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 23:48:28 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:48:28 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 23:48:28 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:48:28 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 23:48:28 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 23:48:28 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 23:48:28 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [category_id] => 2
+    [category_name] => パソコン
+    [user_id] => 27
+)
+
+[21-Mar-2019 23:48:47 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 23:48:47 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 23:48:47 Asia/Tokyo] デバッグ：現在のセッションID：j2gj66dhim1fu0fdviqvk33tkt
+[21-Mar-2019 23:48:47 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 23:48:47 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:48:47 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 23:48:47 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:48:47 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 23:48:47 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 23:48:47 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 23:48:47 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [category_id] => 2
+    [category_name] => パソコン
+    [user_id] => 27
+)
+
+[21-Mar-2019 23:49:05 Asia/Tokyo] デバッグ：セッション開始
+[21-Mar-2019 23:49:05 Asia/Tokyo] デバッグ：ーーーーーーーーーーーセッションチェックーーーーーーーーーーーーーーーー
+[21-Mar-2019 23:49:05 Asia/Tokyo] デバッグ：現在のセッションID：org7uvddv559m4s9kmstrv3566
+[21-Mar-2019 23:49:05 Asia/Tokyo] デバッグ：セッション情報：Array
+(
+    [user_id] => 27
+    [login_date] => 1553171092
+    [login_limit] => 1553174692
+)
+
+[21-Mar-2019 23:49:05 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:49:05 Asia/Tokyo] デバッグ：「「「「「「「「「「「商品詳細ページ「「「「「「「「「「「「「「「
+[21-Mar-2019 23:49:05 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[21-Mar-2019 23:49:05 Asia/Tokyo] デバッグ：プリペアーステートメントを作成
+[21-Mar-2019 23:49:05 Asia/Tokyo] デバッグ：クエリー実行しました
+[21-Mar-2019 23:49:05 Asia/Tokyo] デバッグ：GET情報：Array
+(
+    [product_id] => 3
+)
+
+[21-Mar-2019 23:49:05 Asia/Tokyo] デバッグ：商品詳細情報：Array
+(
+    [id] => 3
+    [name] => カーディガン
+    [price] => 4444
+    [comment] => 僕の洋服です！
+    [pic1] => img/chromehearts-outfit-m.jpg
+    [category_id] => 2
+    [category_name] => パソコン
+    [user_id] => 27
+)
+
