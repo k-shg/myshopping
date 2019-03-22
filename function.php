@@ -323,9 +323,22 @@ function getFormImageData($str) {
         return 'img/'.$_FILES['pic']['name'];
 
     }
-
 }
 
+
+
+
+// ===========================
+//　商品データを一覧で取得
+//============================
+function getProductList($offset_num) {
+    $dbh = dbConnect();
+
+    $sql = 'SELECT * FROM product WHERE delete_flg = 0 LIMIT 20 OFFSET :offset_num';
+    $data = [':offset_num'=> $offset_num];
+    $stmt = postQuery($dbh, $sql, $data);
+    return $stmt->fetchAll();
+}
 
 
  ?>

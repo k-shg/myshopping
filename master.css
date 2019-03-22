@@ -137,6 +137,50 @@ header h1 a {
     margin: auto;
 }
 
+#main.products-container {
+    margin: auto;
+	box-sizing: border-box;
+	border: 5px solid #f1f1f1;
+}
+
+
+.search-title {
+	width: 100%;
+	height: 40px;
+	background: red;
+	margin-bottom: 30px;
+}
+
+.panel-list {
+	overflow: hidden;
+}
+
+.panel {
+	float: left;
+	width: 25%;
+	min-height: 250px;
+	color: #333;
+	text-decoration: none;
+	margin-bottom: 40px;
+}
+
+.panel-head {
+	height: 200px;
+}
+
+.panel-head img {
+	width: 100%;
+}
+/* ==================================
+      ページネーション
+===================================  */
+.pagination {
+	width: 100%;
+	height: 40px;
+	background: red;
+	margin-top: 30px;
+}
+
 /* ==================================
       ボタン
 ===================================  */
@@ -183,7 +227,6 @@ footer {
 }
 
 form {
-    width: 450px;
     padding: 30px;
     box-sizing: border-box;
     overflow: hidden;
@@ -292,6 +335,32 @@ span.yen {
     float: left;
 }
 
+#sidebar form {
+	padding: 0;
+}
+
+#sidebar .title {
+	text-align: left;
+    font-size: 14px;
+	margin: 0;
+}
+
+#sidebar select {
+	font-size: 14px;
+	-webkit-appearance: none;
+	border: 1px solid #b9b0b0;
+	height: 40px;
+	padding: 10px;
+}
+
+#sidebar input {
+	width: 100%;
+	background: #333;
+	color: white;
+	padding: 15px 10px;
+	font-size: 14px;
+}
+
 
 /*========================================
   商品詳細レイアウト あとで修正必要
@@ -354,4 +423,8 @@ p.comment {
 
 .product-buy form {
 	display: inline;
+}
+.price {
+	display: block
+
 }

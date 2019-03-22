@@ -20,9 +20,8 @@ if(!$dbFormData) {
     debug('GET送信ないか、不正な値が入力されました');
     header('Location: index.php');
 }
-dump($_POST);
 if(!empty($_POST['submit'])) {
-    dump('購入');
+    debug('購入ボタンが押されました');
 }
 
 
