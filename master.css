@@ -431,6 +431,13 @@ p.comment {
 	display: block
 }
 
+
+
+
+/*========================================
+ 	トップページ
+========================================*/
+
 .search-left {
 	float: left;
 }
@@ -441,4 +448,9 @@ p.comment {
 }
 .search-right {
 	float: right;
+}
+
+.panel-list .title{
+	border-left: 6px solid #b6a489;
+	padding: 0 10px;
 }

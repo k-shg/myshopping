@@ -374,5 +374,18 @@ function getProductList($offset_num, $category, $order) {
     return $result;
 }
 
+// ===========================
+//　出品した商品データを一覧で取得
+//============================
 
+function getMyProductList($user_id) {
+
+    $dbh = dbConnect();
+
+    $sql = 'SELECT * FROM product WHERE user_id = :user_id AND delete_flg = 0';
+    $data = [':user_id' => $user_id];
+    $stmt = postQuery($dbh, $sql, $data);
+    return $stmt->fetchAll();
+
+}
  ?>
