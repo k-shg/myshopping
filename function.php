@@ -165,6 +165,7 @@ function postQuery($dbh, $sql, $data) {
     debug('プリペアーステートメントを作成');
     //プリペアーステートメントを作成
     $stmt = $dbh->prepare($sql);
+    debug(print_r($data, true));
 
     //流し込んでDB実行
     $stmt->execute($data);
@@ -331,13 +332,46 @@ function getFormImageData($str) {
 // ===========================
 //　商品データを一覧で取得
 //============================
-function getProductList($offset_num) {
+function getProductList($offset_num, $category, $order) {
     $dbh = dbConnect();
 
-    $sql = 'SELECT * FROM product WHERE delete_flg = 0 LIMIT 20 OFFSET :offset_num';
-    $data = [':offset_num'=> $offset_num];
+    $sql = 'SELECT * FROM product WHERE ';
+    $data = [];
+    $result = [];
+
+    //カテゴリーが選択されている場合
+    if(!empty($category)) {
+        $sql.= 'category_id = :category AND ';
+        $data [':category'] = (int)$category;
+    }
+
+    $sql = $sql.'delete_flg = 0 ';
+
+    //順序が選択されている場合
+    if(!empty($order)) {
+
+        switch($order) {
+            case 1:
+                $sql.= 'ORDER BY price DESC ';
+                break;
+            case 2:
+                $sql.= 'ORDER BY price ASC ';
+            }
+    }
+
     $stmt = postQuery($dbh, $sql, $data);
-    return $stmt->fetchAll();
+    $result['total'] = $stmt->rowCount();
+
+
+    //ページネーション用のSQL
+    $sql .= 'LIMIT 20 OFFSET :offset_num ';
+
+    $data['offset_num'] = $offset_num;
+
+    $stmt = postQuery($dbh, $sql, $data);
+    $result['data'] = $stmt->fetchAll();
+
+    return $result;
 }
 
 

@@ -26,16 +26,22 @@ debug('OFFEST値：'.$offset_num);
 debug('表示最大数：'.$max_item_num);
 
 
-//カテゴリーを取得
+//カテゴリーデータを取得
 $categoryData = getCategory();
 
+//リクエストされたカテゴチーを取得
+$category = (!empty($_GET['category_id']))? ($_GET['category_id']): '';
+debug('選択されたカテゴリー：'.$category);
 
-
+//リクエストされた表示順を取得
+$order = (!empty($_GET['order']))? ($_GET['order']): '';
+debug('選択された順序：'.$category);
 
 //商品一覧を取得
-$productList = getProductList($offset_num);
+$productList = getProductList($offset_num, $category, $order);
 debug('商品一覧を取得');
 //debug('商品一覧データ：'.print_r($productList, true));
+
 
 
 $title = 'トップページ';
@@ -51,10 +57,16 @@ require('head.php') ?>
                 <section id="main" class="products-container" style="float:right; margin-left: 20px;">
                     <div class="search-title">
                         <div class="search-left"></div>
-                        <div class="search-right"></div>
+                            <span class="total-num"><?php echo $productList['total'] ?></span>件の商品が見つかりました
+                        <div class="search-right">
+                            <span class="num"><?php echo $offset_num + 1?></span>
+                            -
+                            <span class="num"><?php echo $offset_num + $dispay_num?></span>件/
+                            <spna class="num"><?php echo $productList['total'] ?></spna>件中
+                        </div>
                     </div>
                     <div class="panel-list">
-                        <?php foreach ($productList as $key => $value):?>
+                        <?php foreach ($productList['data'] as $key => $value):?>
                             <a href="productDetail.php?product_id=<?php echo $value['id']?>" class="panel">
                                 <div class="panel-head">
                                     <img src="<?php echo (!empty($value['pic1']))? $value['pic1']: 'img/Noimage_image.png'; ?>" alt="">
@@ -75,18 +87,18 @@ require('head.php') ?>
                         <div class="select-box">
                             <h1 class="title">カテゴリー</h1>
                             <select name="category_id" id="">
-                                <option value="0">選択してください<span class="icon-select"></span></option>
-                                <?php foreach ($categoryData as $key => $category): ?>
-                                    <option value="<?php echo $category['id'] ?>"><?php echo $category['name'] ?></option>
+                                <option value="0"<?php if($category === '') echo 'selected' ?>>選択してください<span class="icon-select"></span></option>
+                                <?php foreach ($categoryData as $key => $value): ?>
+                                    <option value="<?php echo $value['id'] ?>"<?php if($category == $value['id']) echo 'selected' ?>><?php echo $value['name'] ?></option>
                                 <?php endforeach; ?>
                             </select>
                         </div>
                         <div class="select-box">
                             <h1 class="title">表示順</h1>
                             <select name="order" id="">
-                                <option value="0">選択してください</option>
-                                <option value="1">金額が高い順</option>
-                                <option value="2">金額が安い順</option>
+                                <option value="0"<?php if($order == 0 )echo 'selected' ?>>選択してください</option>
+                                <option value="1"<?php if($order == 1 )echo 'selected' ?>>金額が高い順</option>
+                                <option value="2"<?php if($order == 2 )echo 'selected' ?>>金額が安い順</option>
                             </select>
                         </div>
                         <input type="submit" name="" value="検索">
