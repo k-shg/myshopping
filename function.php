@@ -345,7 +345,7 @@ function getProductList($offset_num, $category, $order) {
         $data [':category'] = (int)$category;
     }
 
-    $sql = $sql.'delete_flg = 0 ';
+    $sql = $sql.'delete_flg = 0 AND purchase_flg = 0 ';
 
     //順序が選択されている場合
     if(!empty($order)) {
@@ -378,14 +378,74 @@ function getProductList($offset_num, $category, $order) {
 //　出品した商品データを一覧で取得
 //============================
 
-function getMyProductList($user_id) {
-
+function getSaleProductList($user_id) {
     $dbh = dbConnect();
-
     $sql = 'SELECT * FROM product WHERE user_id = :user_id AND delete_flg = 0';
     $data = [':user_id' => $user_id];
     $stmt = postQuery($dbh, $sql, $data);
     return $stmt->fetchAll();
-
 }
+
+// ===========================
+//　商品購入
+//============================
+
+function buyProduct($product_id, $buy_user, $sale_user) {
+    //DB接続
+    $dbh = dbConnect();
+
+    //クエリ発行
+    $sql = 'INSERT INTO orders (product_id, buy_user, sale_user, create_date) VALUES (:product_id, :buy_user, :sale_user, :create_date)';
+    $data = [
+        ':product_id' => $product_id,
+        ':buy_user' => $buy_user,
+        ':sale_user' => $sale_user,
+        ':create_date' => date('Y-m-d H:i:s')
+        ];
+
+    //クエリ実行
+    $stmt = postQuery($dbh, $sql, $data);
+    if($stmt) {
+        debug('DB情報を更新しました');
+        //header('Location: mypage.php');
+    } else {
+        debug('DB情報を更新できませんでした');
+    }
+    //商品の購入フラグを立てる
+    changeProductFlg($product_id);
+}
+
+// ===========================
+//　商品購入フラグ
+//============================
+    function changeProductFlg($product_id) {
+        //DB接続
+        $dbh = dbConnect();
+
+        $sql = 'UPDATE product SET purchase_flg = 1 WHERE id = :product_id';
+        $data = [
+            ':product_id' => $product_id,
+            ];
+        //クエリ実行
+        $stmt = postQuery($dbh, $sql, $data);
+        if($stmt) {
+            debug('DB情報を更新しました');
+        } else {
+            debug('DB情報を更新できませんでした');
+        }
+    }
+
+
+
+// ===========================
+//　購入した商品データを一覧で取得
+//============================
+function getBuyProductList($user_id) {
+    $dbh = dbConnect();
+    $sql = 'SELECT * FROM product as p INNER JOIN orders as o ON p.id = o.product_id WHERE o.buy_user = :buy_user AND p.delete_flg = 0';
+    $data = [':buy_user' => $user_id];
+    $stmt = postQuery($dbh, $sql, $data);
+    return $stmt->fetchAll();
+}
+
  ?>

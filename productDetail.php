@@ -17,11 +17,15 @@ debug('GET情報：'.print_r($_GET, true));
 debug('商品詳細情報：'.print_r($dbFormData, true));
 
 if(!$dbFormData) {
-    debug('GET送信ないか、不正な値が入力されました');
+    debug('GET送が信ないか、不正な値が入力されました');
     header('Location: index.php');
 }
 if(!empty($_POST['submit'])) {
     debug('購入ボタンが押されました');
+    //会員登録しているユーザーのみ購入できるようにする
+    require('auth.php');
+    buyProduct($product_id, $_SESSION['user_id'], $dbFormData['user_id']);
+    header('Location: mypage.php');
 }
 
 
