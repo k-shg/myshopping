@@ -8,6 +8,8 @@ debug('「「「「「「「「「「「「「「「「「「「「「「「「�
 debug('「「「「「「「「「「「トップページ「「「「「「「「「「「「「「「');
 debug('「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「');
 
+dump($_GET);
+
 //現在のページを取得
 $currentPage = (!empty($_GET['page']))? ($_GET['page']): 1;
 
@@ -54,6 +56,10 @@ $totalPageNum = ceil($productList['total'] / 20);
 //現在のページによって処理をわける
 $max_page = '';//最大ページ
 $min_page = ''; //最小ページ
+
+//検索条件がついていた場合、ページネーションのリンクに条件をつなげる
+$link = getConditionLink($category, $order);
+
 
     //1ページ目にいるとき。総ページ数が項目数以上の場合
 if($currentPage == 1 && $totalPageNum >= $pageColNum) {
@@ -123,13 +129,13 @@ require('head.php') ?>
                     <div class="pagination">
                         <ul class="pagination-list">
                             <?php if ($currentPage != 1): ?>
-                                <li class="list-item"><a href="?page=1"><</a></li>
+                                <li class="list-item"><a href="?<?php echo $link ?>page=1"><</a></li>
                             <?php endif; ?>
                             <?php for($i = $min_page; $i <= $max_page; $i++ ): ?>
-                            <li class="list-item <?php if($currentPage == $i) echo 'active' ?>"><a href="?page=<?php echo $i ?>"><?php echo $i ?></a></li>
+                            <li class="list-item <?php if($currentPage == $i) echo 'active' ?>"><a href="?<?php echo $link ?>page=<?php echo $i ?>"><?php echo $i ?></a></li>
                         <?php endfor ?>
                         <?php if ($currentPage != $totalPageNum): ?>
-                            <li class="list-item"><a href="?page=<?php echo $totalPageNum ?>">></a></li>
+                            <li class="list-item"><a href="?<?php echo $link ?>page=<?php echo $totalPageNum ?>">></a></li>
                         <?php endif; ?>
                         </ul>
                     </div>

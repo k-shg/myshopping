@@ -448,4 +448,25 @@ function getBuyProductList($user_id) {
     return $stmt->fetchAll();
 }
 
+
+// ===========================
+//　検索条件付きのリンクを生成
+//============================
+
+function getConditionLink($category, $order) {
+    $link = '';
+    if(!empty($category)) {
+        $link .= "category_id=$category&";
+    }
+    if(!empty($order)) {
+        $link .= "order=$order&";
+    }
+    if(empty($category) && empty($order)) {
+        $link .= '';
+    }
+    return $link;
+}
+
+
+
  ?>
