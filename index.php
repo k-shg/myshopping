@@ -76,15 +76,14 @@ require('head.php') ?>
                         <div class="search-left"></div>
                             <span class="total-num"><?php echo $productList['total'] ?></span>件の商品が見つかりました
                         <div class="search-right">
-                            <span class="num"><?php echo $offset_num + 1?></span>
-                            -
+                            <span class="num"><?php echo $offset_num + 1?></span>-
                             <span class="num"><?php echo $offset_num + $dispay_num?></span>件/
                             <spna class="num"><?php echo $productList['total'] ?></spna>件中
                         </div>
                     </div>
                     <div class="panel-list">
                         <?php foreach ($productList['data'] as $key => $value):?>
-                            <a href="productDetail.php?product_id=<?php echo $value['id']?>" class="panel">
+                            <a href="productDetail.php?<?php echo $link ?>page=<?php echo $currentPage ?>&product_id=<?php echo $value['id']?>" class="panel">
                                 <div class="panel-head">
                                     <img src="<?php echo (!empty($value['pic1']))? $value['pic1']: 'img/Noimage_image.png'; ?>" alt="">
                                 </div>
