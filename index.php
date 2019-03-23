@@ -9,7 +9,7 @@ debug('「「「「「「「「「「「トップページ「「「「「「「�
 debug('「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「');
 
 //現在のページを取得
-$currentPage = (!empty($_GET['page_id']))? ($_GET['page_id']): 1;
+$currentPage = (!empty($_GET['page']))? ($_GET['page']): 1;
 
 if(!(int)$currentPage) {
     debug('不正な値が入力されました');
@@ -42,6 +42,48 @@ $productList = getProductList($offset_num, $category, $order);
 debug('商品一覧を取得');
 //debug('商品一覧データ：'.print_r($productList, true));
 
+
+
+
+//ページネーション表示数
+$pageColNum = 5;
+//総ページ数
+$totalPageNum = ceil($productList['total'] / 20);
+
+
+//現在のページによって処理をわける
+$max_page = '';//最大ページ
+$min_page = ''; //最小ページ
+
+    //1ページ目にいるとき。総ページ数が項目数以上の場合
+if($currentPage == 1 && $totalPageNum >= $pageColNum) {
+    //右に5個カラムを表示させる
+    $min_page = $currentPage;
+    $max_page = $currentPage + 4;
+    //2ページ目にいるとき
+}else if($currentPage == 2 && $totalPageNum >= $pageColNum) {
+    $min_page = $currentPage - 1;
+    $max_page = $currentPage + 3;
+    //最終ページにいるとき
+}else if($currentPage == $totalPageNum && $totalPageNum >= $pageColNum) {
+    $min_page = $currentPage - 4;
+    $max_page = $totalPageNum;
+    //最終の１つ前にいるとき
+}else if($currentPage == $totalPageNum - 1 && $totalPageNum >= $pageColNum) {
+    $min_page = $currentPage - 3;
+    $max_page = $totalPageNum;
+
+    // 総ページ数が項目数より少ない場合。すべてのページを出す
+} else if($totalPageNum < $pageColNum) {
+    $min_page = 1;
+    $max_page = $totalPageNum;
+
+}else {
+    //それ以外。3ページ目、4ページ目のとき
+    //左右に２つづつ出す
+    $min_page = $currentPage - 2;
+    $max_page = $currentPage + 2;
+}
 
 
 $title = 'トップページ';
@@ -79,7 +121,17 @@ require('head.php') ?>
                         <?php endforeach; ?>
                     </div>
                     <div class="pagination">
-
+                        <ul class="pagination-list">
+                            <?php if ($currentPage != 1): ?>
+                                <li class="list-item"><a href="?page=1"><</a></li>
+                            <?php endif; ?>
+                            <?php for($i = $min_page; $i <= $max_page; $i++ ): ?>
+                            <li class="list-item <?php if($currentPage == $i) echo 'active' ?>"><a href="?page=<?php echo $i ?>"><?php echo $i ?></a></li>
+                        <?php endfor ?>
+                        <?php if ($currentPage != $totalPageNum): ?>
+                            <li class="list-item"><a href="?page=<?php echo $totalPageNum ?>">></a></li>
+                        <?php endif; ?>
+                        </ul>
                     </div>
                 </section>
                 <div id="sidebar">

@@ -174,15 +174,7 @@ header h1 a {
 .panel-head img {
 	width: 100%;
 }
-/* ==================================
-      ページネーション
-===================================  */
-.pagination {
-	width: 100%;
-	height: 40px;
-	background: red;
-	margin-top: 30px;
-}
+
 
 /* ==================================
       ボタン
@@ -453,4 +445,42 @@ p.comment {
 .panel-list .title{
 	border-left: 6px solid #b6a489;
 	padding: 0 10px;
+}
+
+
+/*========================================
+ 	ページネーション
+========================================*/
+
+
+.pagination {
+	width: 100%;
+	margin-top: 30px;
+}
+.pagination-list {
+	overflow: hidden;
+	list-style: none;
+	position: relative;
+	left: 40%;
+}
+
+.pagination-list .list-item a{
+	float: left;
+    background: #eee;
+    margin-left: 5px;
+}
+
+.list-item a {
+	text-decoration: none;
+	padding: 5px 10px;
+	color: black;
+}
+
+.list-item.active a , .list-item:hover a{
+	color: white;
+	padding: 5px 10px;
+	background: #333;
+}
+.list-item.active, .list-item:hover {
+	background: #333;
 }
