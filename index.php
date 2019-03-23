@@ -52,44 +52,13 @@ $pageColNum = 5;
 //総ページ数
 $totalPageNum = ceil($productList['total'] / 20);
 
-
-//現在のページによって処理をわける
-$max_page = '';//最大ページ
-$min_page = ''; //最小ページ
+//ページネーションに使う表示ページ数を取得
+$val = pagination($currentPage, $totalPageNum, $pageColNum);
+$min_page = $val['min'];
+$max_page = $val['max'];
 
 //検索条件がついていた場合、ページネーションのリンクに条件をつなげる
 $link = getConditionLink($category, $order);
-
-
-    //1ページ目にいるとき。総ページ数が項目数以上の場合
-if($currentPage == 1 && $totalPageNum >= $pageColNum) {
-    //右に5個カラムを表示させる
-    $min_page = $currentPage;
-    $max_page = $currentPage + 4;
-    //2ページ目にいるとき
-}else if($currentPage == 2 && $totalPageNum >= $pageColNum) {
-    $min_page = $currentPage - 1;
-    $max_page = $currentPage + 3;
-    //最終ページにいるとき
-}else if($currentPage == $totalPageNum && $totalPageNum >= $pageColNum) {
-    $min_page = $currentPage - 4;
-    $max_page = $totalPageNum;
-    //最終の１つ前にいるとき
-}else if($currentPage == $totalPageNum - 1 && $totalPageNum >= $pageColNum) {
-    $min_page = $currentPage - 3;
-    $max_page = $totalPageNum;
-
-    // 総ページ数が項目数より少ない場合。すべてのページを出す
-} else if($totalPageNum < $pageColNum) {
-    $min_page = 1;
-    $max_page = $totalPageNum;
-
-}else {
-    //それ以外。3ページ目、4ページ目のとき
-    //左右に２つづつ出す
-    $min_page = $currentPage - 2;
-    $max_page = $currentPage + 2;
-}
 
 
 $title = 'トップページ';

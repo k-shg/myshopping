@@ -468,5 +468,44 @@ function getConditionLink($category, $order) {
 }
 
 
+// ===========================
+//　ページネーション
+//============================
+function pagination($currentPage, $totalPageNum, $pageColNum) {
+        //1ページ目にいるとき。総ページ数が項目数以上の場合
+    if($currentPage == 1 && $totalPageNum >= $pageColNum) {
+        //右に5個カラムを表示させる
+        $min_page = $currentPage;
+        $max_page = $currentPage + 4;
+        //2ページ目にいるとき
+    }else if($currentPage == 2 && $totalPageNum >= $pageColNum) {
+        $min_page = $currentPage - 1;
+        $max_page = $currentPage + 3;
+        //最終ページにいるとき
+    }else if($currentPage == $totalPageNum && $totalPageNum >= $pageColNum) {
+        $min_page = $currentPage - 4;
+        $max_page = $totalPageNum;
+        //最終の１つ前にいるとき
+    }else if($currentPage == $totalPageNum - 1 && $totalPageNum >= $pageColNum) {
+        $min_page = $currentPage - 3;
+        $max_page = $totalPageNum;
+
+        // 総ページ数が項目数より少ない場合。すべてのページを出す
+    } else if($totalPageNum < $pageColNum) {
+        $min_page = 1;
+        $max_page = $totalPageNum;
+
+    }else {
+        //それ以外。3ページ目、4ページ目のとき
+        //左右に２つづつ出す
+        $min_page = $currentPage - 2;
+        $max_page = $currentPage + 2;
+    }
+    $val['min'] = $min_page;
+    $val['max'] = $max_page;
+
+    return $val;
+}
+
 
  ?>
