@@ -29,6 +29,10 @@ if(!empty($_POST['submit'])) {
 }
 
 
+//ゲットパラメータを取得し、前回のページに条件つきで戻れるようにする
+$param = appendGetParam('product_id');
+
+
 $title = '商品詳細ページ';
 require('head.php') ?>
     <body>
@@ -52,7 +56,7 @@ require('head.php') ?>
                 </section>
 
                 <section class="product-buy">
-                    <span class="item-left">>商品一覧に戻る</span>
+                    <a href="index.php?<?php echo $param ?>"><span class="item-left">>商品一覧に戻る</span></a>
                     <form method="post">
                         <input type="submit" name="submit" value="買う!" class="btn btn-primary">
                     </form>

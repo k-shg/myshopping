@@ -8,8 +8,6 @@ debug('「「「「「「「「「「「「「「「「「「「「「「「「�
 debug('「「「「「「「「「「「トップページ「「「「「「「「「「「「「「「');
 debug('「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「');
 
-dump($_GET);
-
 //現在のページを取得
 $currentPage = (!empty($_GET['page']))? ($_GET['page']): 1;
 
@@ -57,14 +55,10 @@ $val = pagination($currentPage, $totalPageNum, $pageColNum);
 $min_page = $val['min'];
 $max_page = $val['max'];
 
-//検索条件がついていた場合、ページネーションのリンクに条件をつなげる
-$link = getConditionLink($category, $order);
 
 
 $title = 'トップページ';
 require('head.php') ?>
-
-
 
     <body>
         <?php require('header.php') ?>
@@ -83,7 +77,7 @@ require('head.php') ?>
                     </div>
                     <div class="panel-list">
                         <?php foreach ($productList['data'] as $key => $value):?>
-                            <a href="productDetail.php?<?php echo $link ?>page=<?php echo $currentPage ?>&product_id=<?php echo $value['id']?>" class="panel">
+                            <a href="productDetail.php?<?php echo (!empty(appendGetParam()))? appendGetParam().'&': '';?>product_id=<?php echo $value['id']?>" class="panel">
                                 <div class="panel-head">
                                     <img src="<?php echo (!empty($value['pic1']))? $value['pic1']: 'img/Noimage_image.png'; ?>" alt="">
                                 </div>
@@ -97,13 +91,15 @@ require('head.php') ?>
                     <div class="pagination">
                         <ul class="pagination-list">
                             <?php if ($currentPage != 1): ?>
-                                <li class="list-item"><a href="?<?php echo $link ?>page=1"><</a></li>
+                                <!-- appendGetParam['page']　=  page以外の他のパラメータ条件を保持。&でパラメータをつなげてリンクをつくる -->
+                                <!-- appendGetParam()　GET情報がなければ空文字を出力。ページネーションの数字のみでリンクを作る -->
+                                <li class="list-item"><a href="?<?php echo (!empty(appendGetParam()))? appendGetParam('page').'&': '';?>page=1"><</a></li>
                             <?php endif; ?>
                             <?php for($i = $min_page; $i <= $max_page; $i++ ): ?>
-                            <li class="list-item <?php if($currentPage == $i) echo 'active' ?>"><a href="?<?php echo $link ?>page=<?php echo $i ?>"><?php echo $i ?></a></li>
+                            <li class="list-item <?php if($currentPage == $i) echo 'active' ?>"><a href="?<?php echo (!empty(appendGetParam()))? appendGetParam('page').'&': '';?>page=<?php echo $i ?>"><?php echo $i ?></a></li>
                         <?php endfor ?>
                         <?php if ($currentPage != $totalPageNum): ?>
-                            <li class="list-item"><a href="?<?php echo $link ?>page=<?php echo $totalPageNum ?>">></a></li>
+                            <li class="list-item"><a href="?<?php echo (!empty(appendGetParam()))? appendGetParam('page').'&': '';?>page=<?php echo $totalPageNum ?>">></a></li>
                         <?php endif; ?>
                         </ul>
                     </div>

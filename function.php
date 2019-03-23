@@ -452,7 +452,7 @@ function getBuyProductList($user_id) {
 // ===========================
 //　検索条件付きのリンクを生成
 //============================
-
+//appendGetParam関数を作ったことにより、使う必要性がなくなった
 function getConditionLink($category, $order) {
     $link = '';
     if(!empty($category)) {
@@ -505,6 +505,27 @@ function pagination($currentPage, $totalPageNum, $pageColNum) {
     $val['max'] = $max_page;
 
     return $val;
+}
+
+// ===========================
+//　GETパラメーターを付与
+//============================
+
+//$delete_param  = 削除したいパラメータ
+//GET情報がなければ空を返す
+function appendGetParam($delete_param = null) {
+
+    $param = "";
+
+    if(!empty($_GET)) {
+        if(!empty($delete_param)) unset($_GET[$delete_param]);
+        foreach ($_GET as $key => $value) {
+            $param .= "$key=$value&";
+        }
+        $param = substr($param, 0, -1);
+    }
+    debug($param);
+    return $param;
 }
 
 
