@@ -374,17 +374,7 @@ function getProductList($offset_num, $category, $order) {
     return $result;
 }
 
-// ===========================
-//　出品した商品データを一覧で取得
-//============================
 
-function getSaleProductList($user_id) {
-    $dbh = dbConnect();
-    $sql = 'SELECT * FROM product WHERE user_id = :user_id AND delete_flg = 0';
-    $data = [':user_id' => $user_id];
-    $stmt = postQuery($dbh, $sql, $data);
-    return $stmt->fetchAll();
-}
 
 // ===========================
 //　商品購入
@@ -436,17 +426,51 @@ function buyProduct($product_id, $buy_user, $sale_user) {
     }
 
 
+// ===========================
+//　出品した商品データを一覧で取得
+//============================
+
+function getMySellingProducts($user_id) {
+    $dbh = dbConnect();
+    $sql = 'SELECT * FROM product WHERE user_id = :user_id AND delete_flg = 0';
+    $data = [':user_id' => $user_id];
+    $stmt = postQuery($dbh, $sql, $data);
+    return $stmt->fetchAll();
+}
 
 // ===========================
 //　購入した商品データを一覧で取得
 //============================
-function getBuyProductList($user_id) {
+function getMyHavingProducts($user_id) {
     $dbh = dbConnect();
-    $sql = 'SELECT * FROM product as p INNER JOIN orders as o ON p.id = o.product_id WHERE o.buy_user = :buy_user AND p.delete_flg = 0';
+    $sql = 'SELECT p.id as product_id, p.name, p.price, p.pic1, o.id as order_id, o.buy_user, o.sale_user FROM product as p INNER JOIN orders as o ON p.id = o.product_id WHERE o.buy_user = :buy_user AND p.delete_flg = 0';
     $data = [':buy_user' => $user_id];
     $stmt = postQuery($dbh, $sql, $data);
+
     return $stmt->fetchAll();
 }
+
+// ===========================
+//　注文データとメッセージ情報を一覧で取得
+//============================
+function getMyOrdersAndMsg($user_id) {
+    $dbh = dbConnect();
+    $sql = 'SELECT * FROM orders WHERE buy_user = :user_id OR sale_user = :id AND delete_flg = 0';
+    $data = [':user_id' => $user_id, ':id' => $user_id];
+    $stmt = postQuery($dbh, $sql, $data);
+    $orders = $stmt->fetchAll();
+    $result = [];
+    foreach ($orders as $key => $value) {
+        $result[$key] = $value;
+        $sql = 'SELECT * FROM message WHERE id = :msg_id AND delete_flg = 0 ORDER BY create_date DESC';
+        $data = [':msg_id' => $value['id']];
+        $stmt = postQuery($dbh, $sql, $data);
+        $msg_list = $stmt->fetchAll();
+        $result[$key]['msg'] = $msg_list;
+    }
+    return $result;
+}
+
 
 
 // ===========================

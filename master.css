@@ -154,6 +154,10 @@ header h1 a {
 	overflow: hidden;
 }
 
+.list {
+	margin-bottom: 30px;
+}
+
 .panel-list {
 	overflow: hidden;
 }
@@ -175,6 +179,9 @@ header h1 a {
 	width: 100%;
 }
 
+.list-table {
+
+}
 
 /* ==================================
       ボタン
@@ -442,7 +449,7 @@ p.comment {
 	float: right;
 }
 
-.panel-list .title{
+.list .title{
 	border-left: 6px solid #b6a489;
 	padding: 0 10px;
 }
