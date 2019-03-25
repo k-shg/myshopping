@@ -240,7 +240,7 @@ function getProductDetail($product_id) {
 
     $dbh = dbConnect();
 
-    $sql = 'SELECT p.id, p.name, p.price, p.comment, p.pic1, p.category_id, c.name as category_name, p.user_id FROM product as p INNER JOIN category as c on p.category_id = c.id WHERE p.id = :product_id AND p.delete_flg = 0';
+    $sql = 'SELECT p.id, p.name, p.price, p.comment, p.pic, p.category_id, c.name as category_name, p.user_id FROM product as p INNER JOIN category as c on p.category_id = c.id WHERE p.id = :product_id AND p.delete_flg = 0';
     $data = [':product_id' => $product_id];
     $stmt = postQuery($dbh, $sql, $data);
     return $stmt->fetch();
@@ -439,7 +439,7 @@ function getMySellingProducts($user_id) {
 //============================
 function getMyHavingProducts($user_id) {
     $dbh = dbConnect();
-    $sql = 'SELECT p.id as product_id, p.name, p.price, p.pic1, o.id as order_id, o.buy_user, o.sale_user FROM product as p INNER JOIN orders as o ON p.id = o.product_id WHERE o.buy_user = :buy_user AND p.delete_flg = 0';
+    $sql = 'SELECT p.id as product_id, p.name, p.price, p.pic, o.id as order_id, o.buy_user, o.sale_user FROM product as p INNER JOIN orders as o ON p.id = o.product_id WHERE o.buy_user = :buy_user AND p.delete_flg = 0';
     $data = [':buy_user' => $user_id];
     $stmt = postQuery($dbh, $sql, $data);
     return $stmt->fetchAll();

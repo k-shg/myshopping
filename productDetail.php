@@ -43,7 +43,7 @@ require('head.php') ?>
                 <section id="main" class="product-container">
                     <span class="category"><?php echo $dbFormData['category_name'] ?></span>
                     <span class="product-name"><?php echo $dbFormData['name'] ?></span>
-                    <img src="<?php echo $dbFormData['pic1'] ?>" alt="">
+                    <img src="<?php echo $dbFormData['pic'] ?>" alt="">
                 </section>
                 <?php
                 require('sidebar.php');

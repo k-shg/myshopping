@@ -157,7 +157,7 @@ require('head.php') ?>
                         <div class="product-info">
                             <div class="left">
                                 取引商品<br>
-                                <img src="<?php echo showImg($product_data['pic1']) ?>" alt="">
+                                <img src="<?php echo showImg($product_data['pic']) ?>" alt="">
                             </div>
                             <div class="right">
                                 「<?php echo $product_data['name'] ?>」<br>

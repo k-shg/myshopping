@@ -45,7 +45,7 @@ if(!empty($_GET)) {
         $comment = (isset($_POST['comment'])) ? $_POST['comment']: null;
         $price = $_POST['price'];
         //画像が未選択の場合、データベースの情報を入れる
-        $pic = (!empty($_FILES['pic']['name'])) ? 'img/'.$_FILES['pic']['name']: $dbFormData['pic1'];
+        $pic = (!empty($_FILES['pic']['name'])) ? 'img/'.$_FILES['pic']['name']: $dbFormData['pic'];
 
         //画像アップロード
         move_uploaded_file($_FILES['pic']['tmp_name'], $pic);
@@ -91,7 +91,7 @@ if(!empty($_GET)) {
                 $dbh = dbConnect();
 
                 //クエリ発行
-                $sql = 'UPDATE product SET name = :name, price = :price, comment = :comment, category_id = :category_id, user_id = :user_id, pic1 = :pic WHERE id = :product_id';
+                $sql = 'UPDATE product SET name = :name, price = :price, comment = :comment, category_id = :category_id, user_id = :user_id, pic = :pic WHERE id = :product_id';
                 $data = [
                     ':name' => $name,
                     ':price' => (int)$price,
@@ -171,12 +171,12 @@ if(!empty($_GET)) {
                 $dbh = dbConnect();
 
                 //クエリ発行
-                $sql = 'INSERT INTO product (name, price, comment, pic1, category_id, user_id, create_date) VALUES (:name, :price, :comment, :pic1, :category_id, :user_id, :create_date)';
+                $sql = 'INSERT INTO product (name, price, comment, pic, category_id, user_id, create_date) VALUES (:name, :price, :comment, :pic, :category_id, :user_id, :create_date)';
                 $data = [
                     ':name' => $name,
                     ':price' => $price,
                     ':comment' => $comment,
-                    ':pic1' => $pic,
+                    ':pic' => $pic,
                     ':category_id' => $category_id,
                     ':user_id' => $_SESSION['user_id'],
                     ':create_date' => date('Y-m-d H:i:s')
@@ -263,7 +263,7 @@ require('head.php') ?>
                         <label class="area-drop">
                             <input type="file" name="pic" class="js-input-file"
                                 class="<?php if(!empty($error_msg['pic'])) echo 'error'?>">
-                            <img src="<?php echo getFormImageData('pic1')?>"
+                            <img src="<?php echo getFormImageData('pic')?>"
                             alt=""
                             class="pre-img">
                         </label>

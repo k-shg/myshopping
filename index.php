@@ -79,7 +79,7 @@ require('head.php') ?>
                         <?php foreach ($productList['data'] as $key => $value):?>
                             <a href="productDetail.php?<?php echo (!empty(appendGetParam()))? appendGetParam().'&': '';?>product_id=<?php echo $value['id']?>" class="panel">
                                 <div class="panel-head">
-                                    <img src="<?php echo (!empty($value['pic1']))? $value['pic1']: 'img/Noimage_image.png'; ?>" alt="">
+                                    <img src="<?php echo (!empty($value['pic']))? $value['pic']: 'img/Noimage_image.png'; ?>" alt="">
                                 </div>
                                 <div class="panel-body">
                                     <?php echo $value['name'] ?>

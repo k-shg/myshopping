@@ -30,7 +30,6 @@ if(!empty($_POST)) {
     //画像が選択されている場合、アップロード処理をしてパスを格納する
     $img_path = (!empty($_FILES['pic']['name'])) ? getUploadingImgPath($_FILES['pic'], 'pic'): '';
     //画像が未選択の場合、データベースの情報を入れる
-    dump($img_path);
     $img_path = (!empty($img_path)) ? $img_path: $dbFormData['pic'] ;
 
     //データベースとフォームの値が異なる場合に、バリデーションチェックを行う
