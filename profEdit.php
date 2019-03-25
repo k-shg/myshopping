@@ -32,6 +32,9 @@ if(!empty($_POST)) {
     //画像が未選択の場合、データベースの情報を入れる
     $img_path = (!empty($img_path)) ? $img_path: $dbFormData['pic'] ;
 
+    //画像変更したときに画像を表示させ続けるため、セッションにファイル名を保存する
+    $_SESSION['tmp_path'] = $img_path;
+
     //データベースとフォームの値が異なる場合に、バリデーションチェックを行う
     if($dbFormData['name'] !== $name) {
         //最大文字数チェック

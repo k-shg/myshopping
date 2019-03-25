@@ -329,7 +329,9 @@ function getFormImageData($str) {
                 //リクエストが成功しているとき。
                 //ここでDbの値を表示させようとすると、前回のデータが表示されるため、リクエストデータを表示
                 debug(3);
-                return 'img/'.$_FILES['pic']['name'];
+                $tmp_path = $_SESSION['tmp_path'];
+                unset($_SESSION['tmp_path']);
+                return $tmp_path;
             }
         }else {//画像は選択されていない
             debug(4);
