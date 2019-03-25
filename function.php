@@ -162,12 +162,10 @@ function dbConnect() {
 //　クエリー実行
 //============================
 function postQuery($dbh, $sql, $data) {
-    debug('プリペアーステートメントを作成');
     //プリペアーステートメントを作成
     $stmt = $dbh->prepare($sql);
     //流し込んでDB実行
     $stmt->execute($data);
-    debug('クエリー実行しました');
     return $stmt;
 }
 
@@ -482,7 +480,7 @@ function sendMessage($order_id, $msg, $from_user, $to_user) {
 // ===========================
 //　注文に関するメッセージ情報をすべて取得
 //============================
-function getOederdAndMeg($order_id) {
+function getOederdAndMsg($order_id) {
     $dbh = dbConnect();
     $sql = 'SELECT o.id AS order_id, o.product_id AS product_id, o.buy_user, o.sale_user, o.create_date AS order_date, m.id AS message_id, m.msg, m.from_user, m.to_user, m.create_date AS create_date FROM orders AS o LEFT JOIN message AS m ON o.id = m.order_id AND m.delete_flg = 0 WHERE o.id = :order_id AND o.delete_flg = 0';
     $data = [':order_id' => $order_id];
@@ -502,14 +500,15 @@ function getMyOrdersAndMsg($user_id) {
     $data = [':user_id' => $user_id, ':id' => $user_id];
     $stmt = postQuery($dbh, $sql, $data);
     $orders = $stmt->fetchAll();
+    //dump($orders);
     $result = [];
     foreach ($orders as $key => $value) {
         $result[$key] = $value;
-        $sql = 'SELECT * FROM message WHERE id = :msg_id AND delete_flg = 0 ORDER BY create_date DESC';
-        $data = [':msg_id' => $value['id']];
+        $sql = 'SELECT * FROM message WHERE order_id = :order_id AND delete_flg = 0 ORDER BY create_date DESC LIMIT 1';
+        $data = [':order_id' => $value['id']];
         $stmt = postQuery($dbh, $sql, $data);
-        $msg_list = $stmt->fetchAll();
-        $result[$key]['msg'] = $msg_list;
+        $latest_msg = $stmt->fetch();
+        $result[$key]['latest_msg'] = $latest_msg;
     }
     return $result;
 }

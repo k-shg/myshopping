@@ -11,7 +11,7 @@ require('auth.php');
 
 //注文情報とメッセージ情報を取得する
 $order_id =  ($_GET) ? $_GET['order_id']: '';
-$order_msg_data = getOederdAndMeg($order_id);
+$order_msg_data = getOederdAndMsg($order_id);
 
 
 $buy_user_id = $order_msg_data[0]['buy_user'];
