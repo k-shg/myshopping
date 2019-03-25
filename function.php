@@ -249,7 +249,7 @@ function getProductDetail($product_id) {
 
 
 // ===========================
-//　フォーム入力保持
+//　フォームデータ入力保持
 //============================
 function getFormData($str, $flg = false) {
 
@@ -308,7 +308,7 @@ function getFormData($str, $flg = false) {
 
 
 // ===========================
-//　画像フォーム入力保持
+//　画像データ入力保持
 //============================
 function getFormImageData($str) {
 
@@ -316,34 +316,37 @@ function getFormImageData($str) {
     global $error_msg;
     debug($str);
 
-    //新しく画像が選択されているとき
-    if(!empty($_FILES['pic']['name'])) {
-        debug(1);
-        //他の入力フォームにエラーがないとき
-        if(empty($error_msg)){
-            debug(2);
-            return 'img/'.$_FILES['pic']['name'];
-        }//他の入力フォームにエラーがあれば画像は未選択状態にする
-        else {
-            debug(3);
-            return '';
-        }
-    //データベースに情報があるとき
-    } elseif(!empty($dbFormData[$str])) {
-        debug(4);
-        return $dbFormData[$str];
-    }  else if(!empty($error_msg)) {//画像は選択されているが、他の入力フォームでエラーが起きたとき
-        debug(5);
-        return 'img/'.$_FILES['pic']['name'];
-    }
-    else {
+
+    //データベースに情報がある
+    if(!empty($dbFormData[$str])) {
+        //画像が選択されている
         if(!empty($_FILES['pic']['name'])) {
-            debug(6);
-            return 'img/'.$_FILES['pic']['name'];
-        } else {
-            //新規商品登録でまだpostしてない
-            debug(7);
+            //フォームにエラーがあったとき
+            if(!empty($error_msg)) {
+                debug(2);
+                return $dbFormData[$str];
+            } else {
+                //リクエストが成功しているとき。
+                //ここでDbの値を表示させようとすると、前回のデータが表示されるため、リクエストデータを表示
+                debug(3);
+                return 'img/'.$_FILES['pic']['name'];
+            }
+        }else {//画像は選択されていない
+            debug(4);
+            return $dbFormData[$str];
         }
+        //データベースに情報がない
+    } else {
+
+        //リクエストされた
+        if($_FILES['pic']['name']) {
+            debug(5);
+            return $_FILES['pic']['name'];
+        }
+        //リクエストされていない(新規ページを開いたまま)
+        debug(6);
+        return null;
+
     }
 }
 
