@@ -620,4 +620,58 @@ function showImg($path) {
     }
 }
 
+// ===========================
+//　アップロードした画像のパスを取得
+//============================
+
+function getUploadingImgPath($file, $key) {
+    debug('画像アップロード処理開始');
+    debug('FILE情報：'.print_r($file, true));
+
+    if(isset($file['error']) && is_int($file['error'])) {
+        try{
+            //バリデーション
+            switch ($file['error']) {
+                case UPLOAD_ERR_OK://ok
+                    break;
+                case UPLOAD_ERR_NO_FILE://未選択
+                    throw new RunTimeException('ファイルが選択されていません');
+                    break;
+                case UPLOAD_ERR_INI_SIZE:
+                    break;
+                case UPLOAD_ERR_FORM_SIZE:
+                    throw new RunTimeException('ファイルサイズが大きすぎます');
+                    break;
+                default:
+                    throw new RunTimeException('その他エラーが発生しました');
+                    break;
+            }
+
+            $tmp_path = $file['tmp_name'];
+
+            $type = @exif_imagetype($tmp_path);
+            if(!in_array($type,[IMAGETYPE_GIF, IMAGETYPE_PNG, IMAGETYPE_JPEG])) {
+                throw new RunTimeException('画像形式が非対応です');
+            }
+
+            $path = 'img/'.sha1_file($tmp_path).image_type_to_extension($type);
+
+            if(!move_uploaded_file($tmp_path, $path)) {//ファイル移動
+                throw new RunTimeException('ファイルアップロード時にエラーが発生しました');
+            }
+
+            chmod($path, '0644');//自分は読み書き。ブループ、他人は読み取りのみ
+            debug('ファイルは正常にアップロードされました');
+            debug('ファイルのpath：'.$path);
+            return $path;
+
+        }catch(RunTimeException $e) {
+            debug($e->getMessage());
+            global $error_msg;
+            $error_msg[$key] = $e->getMessage();
+        }
+    }
+
+}
+
  ?>

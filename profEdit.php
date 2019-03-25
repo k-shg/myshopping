@@ -21,18 +21,17 @@ debug('取得したユーザー情報：' .print_r($dbFormData, true));
 if(!empty($_POST)) {
     debug('POST送信があります');
     debug('POST情報：'.print_r($_POST, true));
-    debug('画像情報：'.print_r($_FILES, true));
+
     //変数定義
     $name = (!empty($_POST['name'])) ? $_POST['name']: null;
     $age = (isset($_POST['age'])) ? (int)$_POST['age']: null;
     $email = $_POST['email'];
 
+    //画像が選択されている場合、アップロード処理をしてパスを格納する
+    $img_path = (!empty($_FILES['pic']['name'])) ? getUploadingImgPath($_FILES['pic'], 'pic'): '';
     //画像が未選択の場合、データベースの情報を入れる
-    $pic = (!empty($_FILES['pic']['name'])) ? 'img/'.$_FILES['pic']['name']: $dbFormData['pic'];
-    //画像アップロード
-    move_uploaded_file($_FILES['pic']['tmp_name'], $pic);
-
-
+    dump($img_path);
+    $img_path = (!empty($img_path)) ? $img_path: $dbFormData['pic'] ;
 
     //データベースとフォームの値が異なる場合に、バリデーションチェックを行う
     if($dbFormData['name'] !== $name) {
@@ -67,7 +66,7 @@ if(!empty($_POST)) {
                 ':name' => $name,
                 ':age' => $age,
                 ':email' => $email,
-                ':pic' => $pic,
+                ':pic' => $img_path,
                 ':user_id' => $dbFormData['id']
                 ];
             //クエリ実行
@@ -131,6 +130,7 @@ require('head.php') ?>
                         </div>
                         プロフィール画像
                         <label class="area-drop">
+                            <input type="hidden" name="MAX_FILE_SIZE" value="30000">
                             <input type="file" name="pic" class="js-input-file"
                                 class="<?php if(!empty($error_msg['pic'])) echo 'error'?>">
                             <img src="<?php echo getFormImageData('pic')?>"
