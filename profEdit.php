@@ -26,6 +26,19 @@ if(!empty($_POST)) {
     $name = (!empty($_POST['name'])) ? $_POST['name']: null;
     $age = (isset($_POST['age'])) ? (int)$_POST['age']: null;
     $email = $_POST['email'];
+    $pass = (!empty($_POST['pass']))?  $_POST['pass']: '';
+    //パスワードが入力されていれば、バリデーションチェックを行い、ハッシュ化する
+    if(!empty($pass)) {
+        validLength($pass, 'pass');
+        validHalfAlpha($pass, 'pass');
+        if(empty($error_msg['pass'])) {
+            $pass = password_hash($pass, PASSWORD_BCRYPT);
+        }
+    } else {
+        //入力がなければ元のパスワードを使う
+        $pass = $dbFormData['password'];
+    }
+
 
     //画像が選択されている場合、アップロード処理をしてパスを格納する
     $img_path = (!empty($_FILES['pic']['name'])) ? getUploadingImgPath($_FILES['pic'], 'pic'): '';
@@ -53,8 +66,6 @@ if(!empty($_POST)) {
 
 
 
-
-
     if(empty($error_msg)) {
         try {
             debug('DB接続します');
@@ -63,12 +74,13 @@ if(!empty($_POST)) {
             $dbh = dbConnect();
 
             //クエリ発行
-            $sql = 'UPDATE users SET name = :name, age = :age, email = :email, pic = :pic WHERE id = :user_id';
+            $sql = 'UPDATE users SET name = :name, age = :age, email = :email, pic = :pic, password = :pass WHERE id = :user_id';
             $data = [
                 ':name' => $name,
                 ':age' => $age,
                 ':email' => $email,
                 ':pic' => $img_path,
+                ':pass' => $pass,
                 ':user_id' => $dbFormData['id']
                 ];
             //クエリ実行
@@ -129,6 +141,15 @@ require('head.php') ?>
                         </label>
                         <div class="area-msg">
                             <?php if(!empty($error_msg['email'])) echo $error_msg['email']?>
+                        </div>
+                        <label>
+                            パスワード
+                            <input type="password" name="pass"
+                                value="<?php if(!empty($_POST['pass'])) echo  $_POST['pass']?>"
+                                class="<?php if(!empty($error_msg['pass'])) echo 'error'?>">
+                        </label>
+                        <div class="area-msg">
+                            <?php if(!empty($error_msg['pass'])) echo $error_msg['pass']?>
                         </div>
                         プロフィール画像
                         <div class="area-msg">
