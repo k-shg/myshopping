@@ -172,7 +172,8 @@ header h1 a {
 }
 
 .panel-head {
-	height: 200px;
+	width: 150px;
+	height: auto;
 }
 
 .panel-head img {
@@ -280,7 +281,7 @@ form .area-msg {
 .errr {
 	background: #f7dcd9;
 }
-input[type="text"].error,input[type="number"].error {
+input[type="text"].error,input[type="number"].error, input[type="file"].error {
     background: #f7dcd9;
 }
 

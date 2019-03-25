@@ -105,7 +105,7 @@ if(!empty($_GET)) {
                 $stmt = postQuery($dbh, $sql, $data);
                 if($stmt) {
                     debug('DB情報を更新しました');
-                    //header('Location: mypage.php');
+                    header('Location: mypage.php');
                 } else {
                     debug('DB情報を更新できませんでした');
                 }

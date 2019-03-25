@@ -128,17 +128,18 @@ require('head.php') ?>
                             <?php if(!empty($error_msg['email'])) echo $error_msg['email']?>
                         </div>
                         プロフィール画像
-                        <label class="area-drop">
-                            <input type="hidden" name="MAX_FILE_SIZE" value="30000">
+                        <div class="area-msg">
+                            <?php if(!empty($error_msg['pic'])) echo $error_msg['pic']?>
+                        </div>
+                        <label class="area-drop"　<?php if(!empty($error_msg['pic'])) echo 'error'?>>
+                            <input type="hidden" name="MAX_FILE_SIZE" value="60000">
                             <input type="file" name="pic" class="js-input-file"
                                 class="<?php if(!empty($error_msg['pic'])) echo 'error'?>">
                             <img src="<?php echo getFormImageData('pic')?>"
                             alt=""
                             class="pre-img">
                         </label>
-                        <div class="area-msg">
-                            <?php if(!empty($error_msg['pic'])) echo $error_msg['pic']?>
-                        </div>
+
                         <div class="btn-container">
                             <input type="submit" name="" value="変更する" class="btn btn-mid">
                         </div>
