@@ -44,11 +44,11 @@ if(!empty($_GET)) {
         $category_id = $_POST['category_id'];
         $comment = (isset($_POST['comment'])) ? $_POST['comment']: null;
         $price = $_POST['price'];
-        //画像が未選択の場合、データベースの情報を入れる
-        $pic = (!empty($_FILES['pic']['name'])) ? 'img/'.$_FILES['pic']['name']: $dbFormData['pic'];
 
-        //画像アップロード
-        move_uploaded_file($_FILES['pic']['tmp_name'], $pic);
+        //画像が選択されている場合、アップロード処理をしてパスを格納する
+        $img_path = (!empty($_FILES['pic']['name'])) ? getUploadingImgPath($_FILES['pic'], 'pic'): '';
+        //画像が未選択の場合、データベースの情報を入れる
+        $img_path = (!empty($img_path)) ? $img_path: $dbFormData['pic'] ;
 
 
 
@@ -98,7 +98,7 @@ if(!empty($_GET)) {
                     ':comment' => $comment,
                     ':category_id' => $category_id,
                     ':user_id' => $_SESSION['user_id'],
-                    ':pic' => $pic,
+                    ':pic' => $img_path,
                     ':product_id' => $dbFormData['id'],
                     ];
                 //クエリ実行
@@ -134,12 +134,11 @@ if(!empty($_GET)) {
         $category_id = $_POST['category_id'];
         $comment = (isset($_POST['comment'])) ? $_POST['comment']: null;
         $price = $_POST['price'];
+
+        //画像が選択されている場合、アップロード処理をしてパスを格納する
+        $img_path = (!empty($_FILES['pic']['name'])) ? getUploadingImgPath($_FILES['pic'], 'pic'): '';
         //画像が未選択の場合、データベースの情報を入れる
-        $pic = (!empty($_FILES['pic']['name'])) ? 'img/'.$_FILES['pic']['name']: '';
-
-
-        //画像アップロード
-        move_uploaded_file($_FILES['pic']['tmp_name'], $pic);
+        $img_path = (!empty($img_path)) ? $img_path: $dbFormData['pic'] ;
 
 
 
@@ -176,7 +175,7 @@ if(!empty($_GET)) {
                     ':name' => $name,
                     ':price' => $price,
                     ':comment' => $comment,
-                    ':pic' => $pic,
+                    ':pic' => $img_path,
                     ':category_id' => $category_id,
                     ':user_id' => $_SESSION['user_id'],
                     ':create_date' => date('Y-m-d H:i:s')

@@ -659,8 +659,7 @@ function getUploadingImgPath($file, $key) {
             if(!move_uploaded_file($tmp_path, $path)) {//ファイル移動
                 throw new RunTimeException('ファイルアップロード時にエラーが発生しました');
             }
-
-            chmod($path, '0644');//自分は読み書き。ブループ、他人は読み取りのみ
+            chmod($path,  0644);//自分は読み書き。ブループ、他人は読み取りのみ
             debug('ファイルは正常にアップロードされました');
             debug('ファイルのpath：'.$path);
             return $path;
