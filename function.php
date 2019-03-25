@@ -50,8 +50,14 @@ const MSG_SELECTBOX_EMPTY = '選択必須です';
 // ===========================
 //　ログ出力デバッグ
 //============================
+
+$debug_flg = false;
+
 function debug($str) {
-    error_log('デバッグ：'.$str);
+    global $debug_flg;
+    if($debug_flg) {
+        error_log('デバッグ：'.$str);
+    }
 }
 
 // ===========================
