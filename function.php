@@ -165,8 +165,6 @@ function postQuery($dbh, $sql, $data) {
     debug('プリペアーステートメントを作成');
     //プリペアーステートメントを作成
     $stmt = $dbh->prepare($sql);
-    debug(print_r($data, true));
-
     //流し込んでDB実行
     $stmt->execute($data);
     debug('クエリー実行しました');
@@ -408,22 +406,22 @@ function buyProduct($product_id, $buy_user, $sale_user) {
 // ===========================
 //　商品購入フラグ
 //============================
-    function changeProductFlg($product_id) {
-        //DB接続
-        $dbh = dbConnect();
+function changeProductFlg($product_id) {
+    //DB接続
+    $dbh = dbConnect();
 
-        $sql = 'UPDATE product SET purchase_flg = 1 WHERE id = :product_id';
-        $data = [
-            ':product_id' => $product_id,
-            ];
-        //クエリ実行
-        $stmt = postQuery($dbh, $sql, $data);
-        if($stmt) {
-            debug('DB情報を更新しました');
-        } else {
-            debug('DB情報を更新できませんでした');
-        }
+    $sql = 'UPDATE product SET purchase_flg = 1 WHERE id = :product_id';
+    $data = [
+        ':product_id' => $product_id,
+        ];
+    //クエリ実行
+    $stmt = postQuery($dbh, $sql, $data);
+    if($stmt) {
+        debug('DB情報を更新しました');
+    } else {
+        debug('DB情報を更新できませんでした');
     }
+}
 
 
 // ===========================
@@ -446,12 +444,57 @@ function getMyHavingProducts($user_id) {
     $sql = 'SELECT p.id as product_id, p.name, p.price, p.pic1, o.id as order_id, o.buy_user, o.sale_user FROM product as p INNER JOIN orders as o ON p.id = o.product_id WHERE o.buy_user = :buy_user AND p.delete_flg = 0';
     $data = [':buy_user' => $user_id];
     $stmt = postQuery($dbh, $sql, $data);
-
     return $stmt->fetchAll();
 }
 
 // ===========================
-//　注文データとメッセージ情報を一覧で取得
+//　メッセージを送信
+//============================
+
+function sendMessage($order_id, $msg, $from_user, $to_user) {
+    //DB接続
+    $dbh = dbConnect();
+
+    //クエリ発行
+    $sql = 'INSERT INTO message (order_id, msg, from_user, to_user, create_date) VALUES (:order_id, :msg, :from_user, :to_user, :create_date)';
+    $data = [
+        ':order_id' => $order_id,
+        ':msg'=> $msg,
+        ':from_user' => $from_user,
+        ':to_user' => $to_user,
+        ':create_date' => date('Y-m-d H:i:s')
+        ];
+
+    //クエリ実行
+    $stmt = postQuery($dbh, $sql, $data);
+    if($stmt) {
+        debug('DB情報を更新しました');
+        //header('Location: mypage.php');
+    } else {
+        debug('DB情報を更新できませんでした');
+    }
+}
+
+
+
+
+
+// ===========================
+//　注文に関するメッセージ情報をすべて取得
+//============================
+function getOederdAndMeg($order_id) {
+    $dbh = dbConnect();
+    $sql = 'SELECT o.id AS order_id, o.product_id AS product_id, o.buy_user, o.sale_user, o.create_date AS order_date, m.id AS message_id, m.msg, m.from_user, m.to_user, m.create_date AS create_date FROM orders AS o LEFT JOIN message AS m ON o.id = m.order_id AND m.delete_flg = 0 WHERE o.id = :order_id AND o.delete_flg = 0';
+    $data = [':order_id' => $order_id];
+    $stmt = postQuery($dbh, $sql, $data);
+    return $stmt->fetchAll();
+}
+
+
+
+
+// ===========================
+//　自分に関わる注文データとメッセージ情報を一覧で取得
 //============================
 function getMyOrdersAndMsg($user_id) {
     $dbh = dbConnect();
@@ -469,6 +512,19 @@ function getMyOrdersAndMsg($user_id) {
         $result[$key]['msg'] = $msg_list;
     }
     return $result;
+}
+
+
+// ===========================
+//　メッセージデータを取得
+//============================
+
+function getBoardDetail($order_id) {
+    $dbh = dbConnect();
+    $sql = 'SELECT * FROM message WHERE order_id = :order_id AND delete_flg = 0';
+    $data = [':order_id' => $order_id];
+    $stmt = postQuery($dbh, $sql, $data);
+    return $stmt->fetch();
 }
 
 
@@ -548,9 +604,21 @@ function appendGetParam($delete_param = null) {
         }
         $param = substr($param, 0, -1);
     }
-    debug($param);
     return $param;
 }
 
+
+// ===========================
+//　画像表示
+//============================
+
+function showImg($path) {
+
+    if(!empty($path)) {
+        return $path;
+    } else {
+        return 'img/Noimage_image.png';
+    }
+}
 
  ?>

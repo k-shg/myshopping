@@ -267,6 +267,7 @@ input[type="number"] {
 input[type="submit"] {
     float: right;
     margin: 10px 0;
+
 }
 
 form .area-msg {
@@ -490,4 +491,31 @@ p.comment {
 }
 .list-item.active, .list-item:hover {
 	background: #333;
+}
+
+
+
+
+/*========================================
+ 	掲示板
+========================================*/
+
+.board-container {
+	min-height: 600px;
+	/* background: red; */
+}
+
+.area-board {
+	min-height: 500px;
+	background: #f6f5f4;
+	float: left;
+	width: 100%;
+}
+.area-send-msg {
+	min-height: 200px;
+	background: #f6f5f4;
+	float: left;
+	width: 100%;
+	margin-top: 20px;
+
 }
