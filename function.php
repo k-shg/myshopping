@@ -254,6 +254,8 @@ function getProductDetail($product_id) {
 function getFormData($str, $flg = false) {
 
     global $dbFormData;
+    global $error_msg;
+
 
     if($flg) {
         $method = $_GET;
@@ -262,24 +264,45 @@ function getFormData($str, $flg = false) {
     }
     debug($str);
 
-    //POSTされているとき
-    if($method) {
-        //データベースとPOST情報がちがうとき
-        if($dbFormData[$str] !== $method[$str]) {
-            debug(2);
+
+    //データベースに情報がある
+    if(!empty($dbFormData[$str])) {
+        //リクエストされた
+        if($method) {
+            //フォームにエラーがあったとき
+            if(!empty($error_msg)) {
+                debug('error_msg');
+                //データベースと入力が異なるとき
+                if($method[$str] != $dbFormData[$str]) {
+                    debug(1);
+                    return $method[$str];
+                }else {
+                    debug(2);
+                    return $dbFormData[$str];
+                }
+            } else {
+                //リクエストが成功しているとき。
+                //ここでDbの値を表示させようとすると、前回のデータが表示されるため、リクエストデータを表示
+                debug(3);
+                return $method[$str];
+            }
+        }else {//商品編集画面を開いただけ
+            debug(4);
+            return $dbFormData[$str];
+        }
+        //データベースに情報がない
+    } else {
+
+        //リクエストされた
+        if($method) {
+            debug(5);
             return $method[$str];
         }
-        debug(3);
-        return $dbFormData[$str];
+        //リクエストされていない(新規ページを開いたまま)
+        debug(6);
+        return null;
 
-    //データベースに情報があるとき
-    } elseif(!empty($dbFormData[$str])) {
-        debug(4);
-        return $dbFormData[$str];
-    } else {
-        debug(5);
     }
-
 }
 
 
@@ -305,8 +328,6 @@ function getFormImageData($str) {
             debug(3);
             return '';
         }
-
-
     //データベースに情報があるとき
     } elseif(!empty($dbFormData[$str])) {
         debug(4);
@@ -316,9 +337,13 @@ function getFormImageData($str) {
         return 'img/'.$_FILES['pic']['name'];
     }
     else {
-        debug(6);
-        return 'img/'.$_FILES['pic']['name'];
-
+        if(!empty($_FILES['pic']['name'])) {
+            debug(6);
+            return 'img/'.$_FILES['pic']['name'];
+        } else {
+            //新規商品登録でまだpostしてない
+            debug(7);
+        }
     }
 }
 

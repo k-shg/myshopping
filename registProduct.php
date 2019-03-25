@@ -137,8 +137,8 @@ if(!empty($_GET)) {
 
         //画像が選択されている場合、アップロード処理をしてパスを格納する
         $img_path = (!empty($_FILES['pic']['name'])) ? getUploadingImgPath($_FILES['pic'], 'pic'): '';
-        //画像が未選択の場合、データベースの情報を入れる
-        $img_path = (!empty($img_path)) ? $img_path: $dbFormData['pic'] ;
+        //画像が未選択の場合、新規のためデータベースに情報がないので。何も入れない
+        $img_path = (!empty($img_path)) ? $img_path: null ;
 
 
 
@@ -186,7 +186,7 @@ if(!empty($_GET)) {
                 $stmt = postQuery($dbh, $sql, $data);
                 if($stmt) {
                     debug('DB情報を更新しました');
-                    //header('Location: mypage.php');
+                    header('Location: mypage.php');
                 } else {
                     debug('DB情報を更新できませんでした');
                 }
