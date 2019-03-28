@@ -262,9 +262,7 @@ require('head.php') ?>
                         <label class="area-drop">
                             <input type="file" name="pic" class="js-input-file"
                                 class="<?php if(!empty($error_msg['pic'])) echo 'error'?>">
-                            <img src="<?php echo getFormImageData('pic')?>"
-                            alt=""
-                            class="pre-img">
+                            <img src="<?php echo getFormImageData('pic')?>" class="pre-img">
                         </label>
                         <div class="area-msg">
                             <?php if(!empty($error_msg['pic'])) echo $error_msg['pic']?>

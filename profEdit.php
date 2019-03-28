@@ -159,9 +159,8 @@ require('head.php') ?>
                             <input type="hidden" name="MAX_FILE_SIZE" value="60000">
                             <input type="file" name="pic" class="js-input-file"
                                 class="<?php if(!empty($error_msg['pic'])) echo 'error'?>">
-                            <img src="<?php echo getFormImageData('pic')?>"
-                            alt=""
-                            class="pre-img">
+                            <img src="<?php echo getFormImageData('pic')?>" class="pre-img">
+                            ドロップアンドドラッグ
                         </label>
 
                         <div class="btn-container">
