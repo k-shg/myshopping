@@ -79,15 +79,15 @@ require('head.php') ?>
     <body>
         <?php require('header.php') ?>
         <main id="contents" class="site-width">
-            <div class="form-container">
-                <form method="post">
+            <div class="form-container form-container-search">
+                <form class="form" method="post">
                     <h2 class="site-title">ログイン</h2>
                     <div class="area-msg">
                         <?php if(!empty($error_msg['common'])) echo $error_msg['common']?>
                     </div>
                     <label for="">
                         Email
-                        <input type="text" name="email"
+                        <input class="input" type="text" name="email"
                             value="<?php if(!empty($email)) echo $email?>"
                             class="<?php if(!empty($error_msg['email'])) echo 'error'?>">
                     </label>
@@ -96,7 +96,7 @@ require('head.php') ?>
                     </div>
                     <label for="">
                         パスワード
-                        <input type="password" name="password"
+                        <input class="input" type="password" name="password"
                             value="<?php if(!empty($pass)) echo $pass?>"
                             class="<?php if(!empty($error_msg['pass'])) echo 'error'?>">
                     </label>

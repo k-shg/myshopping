@@ -64,8 +64,36 @@ require('head.php') ?>
         <?php require('header.php') ?>
         <main id="contents">
             <div class="main-container site-width">
-                <h1 class="site-title">トップページ</h1>
-                <section id="main" class="products-container" style="float:right; margin-left: 20px;">
+                <div id="search">
+                    <form class="form form-search" method="get">
+                        <div class="select-box">
+                            <input class="select-input" type="text" placeholder="キーワードから探す">
+                        </div>
+                        <div class="select-box">
+                            カテゴリー：
+                            <select name="category_id" class="select">
+                                <option class="select-item" value="0"<?php if($category === '') echo 'selected' ?>>選択してください<span class="icon-select"></span></option>
+                                <?php foreach ($categoryData as $key => $value): ?>
+                                    <option value="<?php echo $value['id'] ?>"<?php if($category == $value['id']) echo 'selected' ?>><?php echo $value['name'] ?></option>
+                                <?php endforeach; ?>
+                            </select>
+                        </div>
+                        <div class="select-box">
+                            表示順：
+                            <select name="order" class="select">
+                                <option value="0"<?php if($order == 0 )echo 'selected' ?>>選択してください</option>
+                                <option value="1"<?php if($order == 1 )echo 'selected' ?>>金額が高い順</option>
+                                <option value="2"<?php if($order == 2 )echo 'selected' ?>>金額が安い順</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="button">
+                            <i class="fas fa-search-plus"></i>
+                            <span class="text">検索</span>
+                        </button>
+                    </form>
+                </div>
+                <hr>
+                <section class="products-container" style="float:right; margin-left: 20px;">
                     <div class="search-title">
                         <div class="search-left"></div>
                             <span class="total-num"><?php echo $productList['total'] ?></span>件の商品が見つかりました
@@ -104,28 +132,6 @@ require('head.php') ?>
                         </ul>
                     </div>
                 </section>
-                <div id="sidebar">
-                    <form method="get">
-                        <div class="select-box">
-                            <h1 class="title">カテゴリー</h1>
-                            <select name="category_id" id="">
-                                <option value="0"<?php if($category === '') echo 'selected' ?>>選択してください<span class="icon-select"></span></option>
-                                <?php foreach ($categoryData as $key => $value): ?>
-                                    <option value="<?php echo $value['id'] ?>"<?php if($category == $value['id']) echo 'selected' ?>><?php echo $value['name'] ?></option>
-                                <?php endforeach; ?>
-                            </select>
-                        </div>
-                        <div class="select-box">
-                            <h1 class="title">表示順</h1>
-                            <select name="order" id="">
-                                <option value="0"<?php if($order == 0 )echo 'selected' ?>>選択してください</option>
-                                <option value="1"<?php if($order == 1 )echo 'selected' ?>>金額が高い順</option>
-                                <option value="2"<?php if($order == 2 )echo 'selected' ?>>金額が安い順</option>
-                            </select>
-                        </div>
-                        <input type="submit" name="" value="検索">
-                    </form>
-                </div>
             </div>
         </main>
         <?php require('footer.php') ?>

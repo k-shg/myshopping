@@ -8,6 +8,11 @@
       color: #013156;
 }
 
+select {
+    border-radius: 0;
+	-webkit-appearance: none;
+
+}
 
 /* ==================================
       ヘッダー
@@ -178,7 +183,27 @@
     padding: 15px 40px;
 }
 
+.btn.search{
+	margin: 0;
+}
 
+.fas {
+	font-size: 20px;
+
+}
+
+.button {
+	/* background: white; */
+	-webkit-appearance: none;
+	height: 40px
+}
+
+.button .text{
+	padding: 0 10px;
+	font-size: 15px;
+
+
+}
 
 
 
@@ -207,19 +232,63 @@ footer {
 
 }
 
-form {
+.form-container.search{
+	width: 100%;
+}
+
+.form {
     padding: 30px;
     box-sizing: border-box;
     overflow: hidden;
     margin: 0 auto;
 }
 
-form .title {
+
+#search {
+	/* border: solid 1px #013156; */
+}
+
+.form-search {
+	padding: 10px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+
+.form .title {
     text-align: center;
     margin-bottom: 40px;
 }
 
-input[type="text"],
+.select-box {
+	float: left;
+	margin-right: 20px;
+}
+.select-box:first-child {
+	width: 30%;
+}
+
+.select-input {
+	width: 100%;
+	border: 1px solid #c6c6c6;
+	height: 40px;
+	font-size: 18px;
+    box-sizing: border-box;
+	padding: 10px;
+}
+.select {
+	margin-bottom: 0;
+	padding: 10px;
+	font-size: 14px;
+	display: inline-block;
+    height: 40px;
+	border: 1px solid #c6c6c6;
+	width: 150px;
+	background: #fff;
+}
+
+
+.input,
 input[type="password"],
 form select, form textarea {
     display: block;
@@ -228,7 +297,7 @@ form select, form textarea {
     font-size: 18px;
     box-sizing: border-box;
     margin-bottom: 20px;
-    background: #f6f5f5;
+	background: #f6f5f5;
     border: none;
 }
 
@@ -246,7 +315,6 @@ input[type="number"] {
 input[type="submit"] {
     float: right;
     margin: 10px 0;
-
 }
 
 form .area-msg {
