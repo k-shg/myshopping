@@ -79,7 +79,7 @@ require('head.php') ?>
         <main id="contents" class="site-width">
             <div class="form-container">
                 <form method="post">
-                    <h2 class="title">ユーザー登録</h2>
+                    <h2 class="site-title">ユーザー登録</h2>
                     <label for="">
                         Email
                         <input type="text" name="email"

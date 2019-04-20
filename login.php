@@ -81,7 +81,7 @@ require('head.php') ?>
         <main id="contents" class="site-width">
             <div class="form-container">
                 <form method="post">
-                    <h2 class="title">ログイン</h2>
+                    <h2 class="site-title">ログイン</h2>
                     <div class="area-msg">
                         <?php if(!empty($error_msg['common'])) echo $error_msg['common']?>
                     </div>

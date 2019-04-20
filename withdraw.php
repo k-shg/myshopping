@@ -19,9 +19,6 @@ if($_SESSION['login_limit'] < time()) {
     header('Location: login.php');
 }
 
-dump($_POST);
-
-
 
 if(!empty($_POST)) {
 
@@ -62,7 +59,7 @@ require('head.php') ?>
         <main id="contents" class="site-width">
             <div class="form-container">
                 <form method="post" style="text-align: center;">
-                    <h2 class="title">退会</h2>
+                    <h2 class="title">退会しますか？</h2>
                     <input type="submit" name="withdraw" value="退会する" class="btn btn-mid" style="float:none;">
                 </form>
             </div>

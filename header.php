@@ -1,14 +1,14 @@
-<header>
+<header class="header">
     <div class="site-width">
-        <h1><a href="index.php">MY SHOPPING</a></h1>
+        <h1 class="title"><a href="index.php">MY SHOPPING</a></h1>
         <nav id="nav-top">
-            <ul>
+            <ul class="menu">
                 <?php if(empty($_SESSION['user_id'])) :?>
-                <li><a href="signup.php" class="btn btn-primary">ユーザー登録</a></li>
-                <li><a href="login.php">ログイン</a></li>
+                <li class="menu-item"><a href="signup.php" class="btn btn-primary">ユーザー登録</a></li>
+                <li class="menu-item"><a href="login.php">ログイン</a></li>
                 <?php else :?>
-                    <li><a href="logout.php">ログアウト</a></li>
-                    <li><a href="mypage.php">マイページ</a></li>
+                    <li class="menu-item"><a href="logout.php">ログアウト</a></li>
+                    <li class="menu-item"><a href="mypage.php">マイページ</a></li>
                 <?php endif; ?>
             </ul>
         </nav>

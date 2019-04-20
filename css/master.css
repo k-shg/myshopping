@@ -1,0 +1,510 @@
+
+@import url("reset.css");
+
+/* ==================================
+      base
+===================================  */
+  a {
+      color: #013156;
+}
+
+
+/* ==================================
+      ヘッダー
+===================================  */
+.header {
+    background: #013156;
+    width: 100%;
+    height: 80px;
+}
+
+.header .title {
+    line-height: 80px;
+    float: left;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0;
+
+}
+
+.header .title  a {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+
+/* ==================================
+      ナビゲーション
+===================================  */
+
+#nav-top {
+    /* margin-right: 230px; */
+}
+
+#nav-top a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+
+}
+
+#nav-top ul {
+    line-height: 80px;
+    list-style: none;
+}
+
+#nav-top ul li {
+    float: right;
+    margin: 0 10px;
+}
+
+
+
+
+
+/* ==================================
+      レイアウト
+===================================  */
+
+.site-width {
+  width: 980px;
+  margin: 0 auto;
+  /* background: grey;
+  height: 900px; */
+}
+.main-container {
+    overflow: hidden;
+}
+
+#contents {
+    width: 100%;
+    min-height: 600px;
+    margin: 20px 0;
+    overflow: hidden;
+}
+
+
+#main {
+    width: 760px;
+    float: left;
+    min-height: 900px;
+}
+#sidebar {
+    width: 200px;
+    background: #f6f5f4;
+    float: right;
+    min-height: 500px;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+#sidebar a {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.site-title {
+    text-align: center;
+    margin-bottom: 50px;
+	font-size: 30px;
+}
+
+#main.form-container {
+    margin: auto;
+}
+
+#main.products-container {
+    margin: auto;
+	box-sizing: border-box;
+	/* border: 1px solid black; */
+}
+
+.search-title {
+	width: 100%;
+	height: 40px;
+	background: #eee;
+	margin-bottom: 30px;
+	padding: 5px 15px;
+	line-height: 40px;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+.list {
+	margin-bottom: 30px;
+}
+
+.panel-list {
+	overflow: hidden;
+}
+
+.panel {
+	float: left;
+	width: 25%;
+	min-height: 250px;
+	color: #013156;
+	text-decoration: none;
+	margin-bottom: 40px;
+}
+
+.panel-head {
+	width: 150px;
+	height: auto;
+}
+
+.panel-head img {
+	width: 100%;
+}
+
+.list-table {
+
+}
+
+/* ==================================
+      ボタン
+===================================  */
+
+.btn.btn-primary {
+    background: #446386;
+    color: white;
+}
+
+.btn.btn-mid {
+    color: white;
+    background: #0e3056;
+    font-size: 14px;
+    padding: 15px 40px;
+}
+
+
+
+
+
+/*========================================
+  フッター    中央寄せの仕組みが不明。あとで修正する
+========================================*/
+footer {
+    background: #013156;
+    width: 100%;
+    color: white;
+    line-height: 80px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+
+/*========================================
+  フォーム
+========================================*/
+
+
+.form-container {
+    width:450px;
+    margin: 80px auto;
+    border: 5px solid #f1f1f1;
+
+}
+
+form {
+    padding: 30px;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+form .title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+input[type="text"],
+input[type="password"],
+form select, form textarea {
+    display: block;
+    width: 100%;
+    height: 60px;
+    font-size: 18px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    background: #f6f5f5;
+    border: none;
+}
+
+input[type="number"] {
+    width: 180px;
+    height: 60px;
+    font-size: 18px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    background: #f6f5f5;
+    border: none;
+    display: block;
+}
+
+input[type="submit"] {
+    float: right;
+    margin: 10px 0;
+
+}
+
+form .area-msg {
+    color: red;
+    margin-bottom: 15px;
+    width: 50%;
+
+}
+
+.errr {
+	background: #f7dcd9;
+}
+input[type="text"].error,input[type="number"].error, input[type="file"].error {
+    background: #f7dcd9;
+}
+
+
+
+.area-drop {
+    position: relative;
+    display: block;
+    width: 70%;
+	height: 380px;
+	line-height: 380px;
+	background: #f6f5f5;
+	color: red;
+	text-align: center;
+}
+
+/* 透明度を下げると背景色も消えてしまうため後で修正が必要 */
+input[type="file"] {
+    height: 380px;
+    width: 100%;
+    border: none;
+    opacity: 0;
+    outline: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+
+}
+
+.area-drop .pre-img {
+    width: 100%;
+    position: absolute;
+    top: 0;
+	left: 0;
+}
+
+
+/* 画像を絶対表示にするための余白。あとで修正 */
+.area-drop .btn-container {
+    overflow: hidden;
+    margin-top: 120px;
+
+}
+
+
+span.required {
+    background: #fe8a8b;
+    color: white;
+    padding: 2px 6px;
+    margin: 0 3px;
+    font-size: 14px;
+}
+
+.form-group {
+    overflow: hidden;
+}
+span.yen {
+    display: block;
+    float: left;
+    position: relative;
+    top: 30px;
+    left: 5px;
+}
+.form-group input {
+    float: left;
+}
+
+#sidebar form {
+	padding: 0;
+}
+
+#sidebar .title {
+	text-align: left;
+    font-size: 14px;
+	margin: 0;
+}
+
+#sidebar select {
+	font-size: 14px;
+	-webkit-appearance: none;
+	border: 1px solid #b9b0b0;
+	height: 40px;
+	padding: 10px;
+}
+
+#sidebar input {
+	width: 100%;
+	background: #013156;
+	color: white;
+	padding: 15px 10px;
+	font-size: 14px;
+}
+
+
+/*========================================
+  商品詳細レイアウト あとで修正必要
+========================================*/
+
+#main.product-container {
+
+	border: 5px solid #f1f1f1;
+    box-sizing: border-box;
+}
+span.category {
+    background: #7acee6;
+    color: white;
+    padding: 2px 6px;
+    margin: 0 3px;
+    font-size: 14px;
+}
+.product-container img {
+	display: block;
+	width: 60%;
+}
+
+.product-comment {
+	padding: 10px;
+	background: #f6f5f4;
+	height: 200px;
+	width: 100%;
+	display: block;
+	float: left;
+	margin: 20px 0;
+	box-sizing: border-box;
+}
+p.comment {
+	margin-top: 30px;
+}
+
+.product-buy {
+	float: left;
+	width: 100%;
+	line-height: 52px;
+}
+
+
+.product-buy .item-left {
+	font-size: 18px;
+	display: block;
+	float: left;
+}
+
+.product-buy .item-right {
+	font-size: 25px;
+	display: block;
+	float: right;
+	margin-right: 30px;
+}
+.product-buy .btn {
+    font-size: 18px;
+}
+
+.product-buy form {
+	display: inline;
+}
+.price {
+	display: block
+}
+
+
+
+
+/*========================================
+ 	トップページ
+========================================*/
+
+.search-left {
+	float: left;
+}
+.search-left .total-num {
+	font-size: 16px;
+	font-weight: bold;
+	padding-right: 5px;
+}
+.search-right {
+	float: right;
+}
+
+.list .title{
+	border-left: 6px solid #b6a489;
+	padding: 0 10px;
+}
+
+
+/*========================================
+ 	ページネーション
+========================================*/
+
+
+.pagination {
+	width: 100%;
+	margin-top: 30px;
+}
+.pagination-list {
+	overflow: hidden;
+	list-style: none;
+	position: relative;
+	left: 40%;
+}
+
+.pagination-list .list-item a{
+	float: left;
+    background: #eee;
+    margin-left: 5px;
+}
+
+.list-item a {
+	text-decoration: none;
+	padding: 5px 10px;
+	color: black;
+}
+
+.list-item.active a , .list-item:hover a{
+	color: white;
+	padding: 5px 10px;
+	background: #013156;
+}
+.list-item.active, .list-item:hover {
+	background: #013156;
+}
+
+
+
+
+/*========================================
+ 	掲示板
+========================================*/
+
+.board-container {
+	min-height: 600px;
+	/* background: red; */
+}
+
+.area-board {
+	min-height: 500px;
+	background: #f6f5f4;
+	float: left;
+	width: 100%;
+}
+.area-send-msg {
+	min-height: 200px;
+	background: #f6f5f4;
+	float: left;
+	width: 100%;
+	margin-top: 20px;
+
+}
