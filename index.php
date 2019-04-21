@@ -93,7 +93,7 @@ require('head.php') ?>
                     </form>
                 </div>
                 <hr>
-                <section class="products-container" style="float:right; margin-left: 20px;">
+                <section class="products-container">
                     <div class="search-title">
                         <div class="search-left"></div>
                             <span class="total-num"><?php echo $productList['total'] ?></span>件の商品が見つかりました
@@ -105,10 +105,14 @@ require('head.php') ?>
                     </div>
                     <div class="panel-list">
                         <?php foreach ($productList['data'] as $key => $value):?>
-                            <a class="panel" href="productDetail.php?<?php echo (!empty(appendGetParam()))? appendGetParam().'&': '';?>product_id=<?php echo $value['id']?>">
+                            <a class="panel panel-index" href="productDetail.php?<?php echo (!empty(appendGetParam()))? appendGetParam().'&': '';?>product_id=<?php echo $value['id']?>">
                                 <div class="panel__head">
                                     <img class="panel__img" src="<?php echo (!empty($value['pic']))? $value['pic']: 'img/Noimage_image.png'; ?>" alt="">
+                                    <div class="panel-cover">
+                                        <i class="fas fa-link panel__icon-link"></i>
+                                    </div>
                                 </div>
+
                                 <div class="panel__body">
                                     <?php echo $value['name'] ?>
                                     <span class="price panel__price">¥<?php echo $value['price'] ?></span>

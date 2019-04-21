@@ -48,6 +48,9 @@ require('head.php') ?>
                         <a href="registProduct.php?product_id=<?php echo $value['id']?>" class="panel">
                             <div class="panel__head">
                                 <img class="panel__img" src="<?php echo (!empty($value['pic']))? $value['pic']: 'img/Noimage_image.png'; ?>" alt="">
+                                <div class="panel-cover">
+                                    <i class="fas fa-link panel__icon-link"></i>
+                                </div>
                             </div>
                             <div class="panel__body">
                                 <?php echo $value['name'] ?>
