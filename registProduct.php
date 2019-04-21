@@ -207,13 +207,13 @@ require('head.php') ?>
             <div class="main-container site-width">
                 <h1 class="site-title"><?php echo $title ?></h1>
                 <section id="main" class="form-container">
-                    <form method="post" enctype="multipart/form-data" style="width: 100%;">
+                    <form class="form" method="post" enctype="multipart/form-data" style="width: 100%;">
                         <div class="area-msg">
                             <?php if(!empty($error_msg['common'])) echo $error_msg['common']?>
                         </div>
                         <label>
                             商品名<span class="required">必須</span>
-                            <input type="text" name="name"
+                            <input class="input" type="text" name="name"
                                 value="<?php echo getFormData('name')?>"
                                 class="<?php if(!empty($error_msg['name'])) echo 'error'?>">
                         </label>
@@ -222,7 +222,7 @@ require('head.php') ?>
                         </div>
                         <label>
                             カテゴリー<span class="required">必須</span>
-                            <select name="category_id" style="<?php if(!empty($error_msg['category'])) echo 'background: #f7dcd9;'?>">
+                            <select class="select" name="category_id" style="<?php if(!empty($error_msg['category'])) echo 'background: #f7dcd9;'?>">
                                 <option value="0"
                                 <?php if(getFormData('category_id') == 0 ) echo 'selected'?>>選択してください</option>
                                 <?php foreach ($categoryData as $key => $category): ?>
@@ -242,7 +242,7 @@ require('head.php') ?>
                         <label>
                             金額<span class="required">必須</span>
                             <div class="form-group">
-                                <input type="number" name="price"
+                                <input class="form__input-num" type="number" name="price"
                                     value="<?php echo (getFormData('price'))? getFormData('price') : 0; ?>"
                                     class="<?php if(!empty($error_msg['price'])) echo 'error'?>">
                                     <span class="yen">円</span>

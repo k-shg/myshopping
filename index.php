@@ -65,13 +65,13 @@ require('head.php') ?>
         <main id="contents">
             <div class="main-container site-width">
                 <div id="search">
-                    <form class="form form-search" method="get">
+                    <form class="form search__form" method="get">
                         <div class="select-box">
                             <input class="select-input" type="text" placeholder="キーワードから探す">
                         </div>
                         <div class="select-box">
                             カテゴリー：
-                            <select name="category_id" class="select">
+                            <select name="category_id" class="search__select">
                                 <option class="select-item" value="0"<?php if($category === '') echo 'selected' ?>>選択してください<span class="icon-select"></span></option>
                                 <?php foreach ($categoryData as $key => $value): ?>
                                     <option value="<?php echo $value['id'] ?>"<?php if($category == $value['id']) echo 'selected' ?>><?php echo $value['name'] ?></option>
@@ -80,7 +80,7 @@ require('head.php') ?>
                         </div>
                         <div class="select-box">
                             表示順：
-                            <select name="order" class="select">
+                            <select name="order" class="search__select">
                                 <option value="0"<?php if($order == 0 )echo 'selected' ?>>選択してください</option>
                                 <option value="1"<?php if($order == 1 )echo 'selected' ?>>金額が高い順</option>
                                 <option value="2"<?php if($order == 2 )echo 'selected' ?>>金額が安い順</option>

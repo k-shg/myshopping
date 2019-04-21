@@ -111,13 +111,13 @@ require('head.php') ?>
             <div class="main-container site-width">
                 <h1 class="site-title">プロフィール編集</h1>
                 <section id="main" class="form-container">
-                    <form method="post" enctype="multipart/form-data">
+                    <form class="form" method="post" enctype="multipart/form-data">
                         <div class="area-msg">
                             <?php if(!empty($error_msg['common'])) echo $error_msg['common']?>
                         </div>
                         <label>
                             名前
-                            <input type="text" name="name"
+                            <input class="input" type="text" name="name"
                                 value="<?php echo getFormData('name') ?>"
                                 class="<?php if(!empty($error_msg['name'])) echo 'error'?>">
                         </label>
@@ -126,7 +126,7 @@ require('head.php') ?>
                         </div>
                         <label>
                             年齢
-                            <input type="number" name="age"
+                            <input class="form__input-num" type="number" name="age"
                                 value="<?php echo getFormData('age')?>"
                                 class="<?php if(!empty($error_msg['age'])) echo 'error'?>">
                         </label>
@@ -135,7 +135,7 @@ require('head.php') ?>
                         </div>
                         <label>
                             Email
-                            <input type="text" name="email"
+                            <input class="input" type="text" name="email"
                                 value="<?php echo getFormData('email')?>"
                                 class="<?php if(!empty($error_msg['email'])) echo 'error'?>">
                         </label>

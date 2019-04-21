@@ -58,8 +58,8 @@ require('head.php') ?>
         <?php require('header.php') ?>
         <main id="contents" class="site-width">
             <div class="form-container">
-                <form method="post" style="text-align: center;">
-                    <h2 class="title">退会しますか？</h2>
+                <form class="form" method="post" style="text-align: center;">
+                    <h2 class="site-title">退会しますか？</h2>
                     <input type="submit" name="withdraw" value="退会する" class="btn btn-mid" style="float:none;">
                 </form>
             </div>
