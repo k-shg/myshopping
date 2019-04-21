@@ -46,12 +46,12 @@ require('head.php') ?>
                         <h2 class="title">登録商品一覧</h2>
                         <?php foreach ($sale_product_list as $key => $value):?>
                         <a href="registProduct.php?product_id=<?php echo $value['id']?>" class="panel">
-                            <div class="panel-head">
-                                <img src="<?php echo (!empty($value['pic']))? $value['pic']: 'img/Noimage_image.png'; ?>" alt="">
+                            <div class="panel__head">
+                                <img class="panel__img" src="<?php echo (!empty($value['pic']))? $value['pic']: 'img/Noimage_image.png'; ?>" alt="">
                             </div>
-                            <div class="panel-body">
+                            <div class="panel__body">
                                 <?php echo $value['name'] ?>
-                                <span class="price">¥<?php echo $value['price'] ?></span>
+                                <span class="price panel__price">¥<?php echo $value['price'] ?></span>
                             </div>
                         </a>
                         <?php endforeach; ?>
@@ -59,11 +59,11 @@ require('head.php') ?>
                     <div class="list panel-list">
                         <h2 class="title">購入商品一覧</h2>
                         <?php foreach ($buy_product_list as $key => $value):?>
-                        <a href="productDetail.php?product_id=<?php echo $value['product_id']?>" class="panel">
-                            <div class="panel-head">
-                                <img src="<?php echo (!empty($value['pic']))? $value['pic']: 'img/Noimage_image.png'; ?>" alt="">
+                        <a class="panel" href="productDetail.php?product_id=<?php echo $value['product_id']?>">
+                            <div class="panel__head">
+                                <img class="panel__img" src="<?php echo (!empty($value['pic']))? $value['pic']: 'img/Noimage_image.png'; ?>" alt="">
                             </div>
-                            <div class="panel-body">
+                            <div class="panel__body">
                                 <?php echo $value['name'] ?>
                                 <span class="price">¥<?php echo $value['price'] ?></span>
                             </div>

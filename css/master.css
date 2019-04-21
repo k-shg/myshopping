@@ -140,6 +140,10 @@ select {
 .list {
 	margin-bottom: 30px;
 }
+/* ==================================
+      パネル
+===================================  */
+
 
 .panel-list {
 	overflow: hidden;
@@ -148,24 +152,26 @@ select {
 .panel {
 	float: left;
 	width: 25%;
-	min-height: 250px;
 	color: #013156;
 	text-decoration: none;
 	margin-bottom: 40px;
 }
 
-.panel-head {
+.panel__head {
 	width: 150px;
 	height: auto;
+	margin-bottom: 10px;
 }
 
-.panel-head img {
+.panel__img {
 	width: 100%;
+	height: 150px;
+	object-fit: cover;
+}
+.panel__price {
+	margin-top: 10px;
 }
 
-.list-table {
-
-}
 
 /* ==================================
       ボタン
