@@ -11,6 +11,21 @@
 
 $(function(){
 
+    //メッセージに値が入っていたらトグルする
+
+    var $msg = $('.js-flash-msg');
+    //メッセージがなくても空白が入ってしまうため、空白はすべて取り除く。
+    text = $msg.text().replace(/\s+/g, "");
+
+    if(text) {
+        $msg.slideToggle('slow');
+
+        setTimeout(function() {
+            $msg.slideToggle('slow');
+        }, 2000);
+    }
+
+
     var $inputFile = $('.js-input-file');
 
     //画像をアップロードして変更があったとき

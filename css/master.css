@@ -733,3 +733,14 @@ p.comment {
     font-size: 14px;
 	border-radius: 50px;
 }
+
+.flash-msg {
+	position: fixed;
+	display: none;
+	background: #4caf50;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	width: 100%;
+	opacity: .8;
+}

@@ -51,7 +51,7 @@ const MSG_SELECTBOX_EMPTY = '選択必須です';
 //　ログ出力デバッグ
 //============================
 
-$debug_flg = false;
+$debug_flg = true;
 
 function debug($str) {
     global $debug_flg;

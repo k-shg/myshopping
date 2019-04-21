@@ -13,6 +13,9 @@ require('auth.php');
 
 //ユーザーIDを取得
 $user_id = $_SESSION['user_id'];
+//セッションメッセージを取得
+$message = $_SESSION['message'];
+$_SESSION['message'] = '';
 
 //出品した商品一覧を取得
 $sale_product_list = getMySellingProducts($user_id);
@@ -37,10 +40,14 @@ require('head.php') ?>
                 background: #f6f5f4;
             }
         </style>
+        <div class="flash-msg js-flash-msg">
+            <?php if(!empty($message)) echo $message; ?>
+        </div>
         <?php require('header.php') ?>
         <main id="contents">
             <div class="main-container site-width">
                 <h1 class="site-title">マイページ</h1>
+
                 <section id="main" class="products-container">
                     <div class="list panel-list">
                         <h2 class="horizon-container">

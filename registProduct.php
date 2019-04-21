@@ -105,6 +105,7 @@ if(!empty($_GET)) {
                 $stmt = postQuery($dbh, $sql, $data);
                 if($stmt) {
                     debug('DB情報を更新しました');
+                    $_SESSION['message'] = '商品情報を変更しました';
                     header('Location: mypage.php');
                 } else {
                     debug('DB情報を更新できませんでした');
@@ -186,6 +187,7 @@ if(!empty($_GET)) {
                 $stmt = postQuery($dbh, $sql, $data);
                 if($stmt) {
                     debug('DB情報を更新しました');
+                    $_SESSION['message'] = '商品を出品しました';
                     header('Location: mypage.php');
                 } else {
                     debug('DB情報を更新できませんでした');

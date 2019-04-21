@@ -58,6 +58,9 @@ if(!empty($_POST)) {
                 $_SESSION['login_date'] = time();
                 //セッションに有効期限を保存
                 $_SESSION['login_limit'] = time() + 60*60;
+
+                $_SESSION['message'] = 'ユーザー登録しました';
+
                 header('Location: mypage.php');
             } else {
                 debug('データベースを更新できませんでした');
@@ -78,11 +81,11 @@ require('head.php') ?>
         <?php require('header.php') ?>
         <main id="contents" class="site-width">
             <div class="form-container">
-                <form method="post">
+                <form class="form" method="post">
                     <h2 class="site-title">ユーザー登録</h2>
                     <label for="">
                         Email
-                        <input type="text" name="email"
+                        <input class="input" type="text" name="email"
                             value="<?php if(!empty($email)) echo $email?>"
                             class="<?php if(!empty($error_msg['email'])) echo 'error'?>">
                     </label>

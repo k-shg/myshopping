@@ -19,6 +19,9 @@ $sale_user_id = $order_msg_data[0]['sale_user'];
 
 //自分のユーザーIDを取得
 $my_user_id = $_SESSION['user_id'];
+$message = $_SESSION['message'];
+$_SESSION['message'] = '';
+
 //取引相手のユーザーIDを取得する。(自分が購入者なら相手は販売者。)
 $partner_id = ($buy_user_id == $my_user_id)? $sale_user_id: $buy_user_id;
 
@@ -46,6 +49,7 @@ if(!empty($_POST)) {
     $msg = $_POST['msg'];
     //メッセージ情報に値を格納
     sendMessage($order_id, $msg, $my_user_id, $partner_id);
+    $_SESSION['message'] = 'メッセージを送信しました';
     header("Location: {$_SERVER['PHP_SELF']}?order_id=$order_id");
 }
 
@@ -139,6 +143,9 @@ require('head.php') ?>
             height: 70px;
         }
         </style>
+        <div class="flash-msg js-flash-msg">
+            <?php if(!empty($message)) echo $message; ?>
+        </div>
         <?php require('header.php') ?>
             <main id="contents">
                 <h1 class="site-title">連絡掲示板</h1>

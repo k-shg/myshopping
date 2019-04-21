@@ -60,6 +60,8 @@ if(!empty($_POST)) {
                 //セッションに有効期限を保存
                 $_SESSION['login_limit'] = time() + 60*60;
 
+                $_SESSION['message'] = 'ログインに成功しました';
+
                 header('Location: mypage.php');
             } else {
                 debug('パスワード合ってない');

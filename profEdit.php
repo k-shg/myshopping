@@ -87,7 +87,9 @@ if(!empty($_POST)) {
             $stmt = postQuery($dbh, $sql, $data);
             if($stmt) {
                 debug('DB情報を更新しました');
-                //header('Location: mypage.php');
+                $_SESSION['message'] = 'プロフィールを変更しました';
+                header('Location: mypage.php');
+
             } else {
                 debug('DB情報を更新できませんでした');
             }
