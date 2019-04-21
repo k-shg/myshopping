@@ -14,6 +14,10 @@ select {
 
 }
 
+body {
+	color: #333;
+}
+
 /* ==================================
       ヘッダー
 ===================================  */
@@ -159,7 +163,7 @@ select {
 }
 
 .panel-index {
-	width: 20%;	
+	width: 20%;
 }
 
 
@@ -305,7 +309,7 @@ footer {
 
 
 #search {
-	/* border: solid 1px #013156; */
+	margin-bottom: 40px;
 }
 
 .search__form {
@@ -588,10 +592,8 @@ p.comment {
 	float: right;
 }
 
-.list .title{
-	border-left: 6px solid #b6a489;
-	padding: 0 10px;
-}
+
+
 
 
 /*========================================
@@ -668,4 +670,28 @@ p.comment {
 .table__td, .table__th {
 	padding: 10px;
 
+}
+
+
+
+/*========================================
+ 	utility
+========================================*/
+.horizon-container {
+	margin-bottom: 20px;
+}
+
+.horizon-container .title{
+	padding: 5px 10px;
+	font-size: 25px;
+	margin-bottom: 10px;
+	display: inline-block;
+
+}
+
+.horizon-container::after{
+	content: '';
+	border-top: 1px solid #cccccc;
+	display: block;
+	top: 10px;
 }

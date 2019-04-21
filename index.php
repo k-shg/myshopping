@@ -92,7 +92,7 @@ require('head.php') ?>
                         </button>
                     </form>
                 </div>
-                <hr>
+                <div class="horizon-container"></div>
                 <section class="products-container">
                     <div class="search-title">
                         <div class="search-left"></div>

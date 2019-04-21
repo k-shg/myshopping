@@ -43,7 +43,9 @@ require('head.php') ?>
                 <h1 class="site-title">マイページ</h1>
                 <section id="main" class="products-container">
                     <div class="list panel-list">
-                        <h2 class="title">登録商品一覧</h2>
+                        <h2 class="horizon-container">
+                            <span class="title">登録商品一覧</span>
+                        </h2>
                         <?php foreach ($sale_product_list as $key => $value):?>
                         <a href="registProduct.php?product_id=<?php echo $value['id']?>" class="panel">
                             <div class="panel__head">
@@ -60,7 +62,9 @@ require('head.php') ?>
                         <?php endforeach; ?>
                     </div>
                     <div class="list panel-list">
-                        <h2 class="title">購入商品一覧</h2>
+                        <h2 class="horizon-container">
+                            <span class="title">購入商品一覧</span>
+                        </h2>
                         <?php foreach ($buy_product_list as $key => $value):?>
                         <a class="panel" href="productDetail.php?product_id=<?php echo $value['product_id']?>">
                             <div class="panel__head">
