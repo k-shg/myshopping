@@ -212,7 +212,9 @@ require('head.php') ?>
                             <?php if(!empty($error_msg['common'])) echo $error_msg['common']?>
                         </div>
                         <label>
-                            商品名<span class="required">必須</span>
+                            <div class="form__title">
+                                商品名<span class="required">必須</span>
+                            </div>
                             <input class="input" type="text" name="name"
                                 value="<?php echo getFormData('name')?>"
                                 class="<?php if(!empty($error_msg['name'])) echo 'error'?>">
@@ -221,7 +223,9 @@ require('head.php') ?>
                             <?php if(!empty($error_msg['name'])) echo $error_msg['name']?>
                         </div>
                         <label>
-                            カテゴリー<span class="required">必須</span>
+                            <div class="form__title">
+                                カテゴリー<span class="required">必須</span>
+                            </div>
                             <select class="select" name="category_id" style="<?php if(!empty($error_msg['category'])) echo 'background: #f7dcd9;'?>">
                                 <option value="0"
                                 <?php if(getFormData('category_id') == 0 ) echo 'selected'?>>選択してください</option>
@@ -240,7 +244,9 @@ require('head.php') ?>
                         </div>
 
                         <label>
-                            金額<span class="required">必須</span>
+                            <div class="form__title">
+                                金額<span class="required">必須</span>
+                            </div>
                             <div class="form-group">
                                 <input class="form__input-num" type="number" name="price"
                                     value="<?php echo (getFormData('price'))? getFormData('price') : 0; ?>"
@@ -252,13 +258,19 @@ require('head.php') ?>
                             <?php if(!empty($error_msg['price'])) echo $error_msg['price']?>
                         </div>
                         <label>
-                            詳細
+                            <div class="form__title">
+                                詳細
+                            </div>
                             <textarea name="comment" class="<?php if(!empty($error_msg['comment'])) echo 'error'?>" style="height: 150px;"><?php echo getFormData('comment')?></textarea>
+
                         </label>
                         <div class="area-msg">
                             <?php if(!empty($error_msg['comment'])) echo $error_msg['comment']?>
                         </div>
-                        商品画像
+
+                        <div class="form__title">
+                            商品画像
+                        </div>
                         <label class="area-drop">
                             <input type="file" name="pic" class="js-input-file"
                                 class="<?php if(!empty($error_msg['pic'])) echo 'error'?>">

@@ -335,6 +335,10 @@ footer {
     margin: 0 auto;
 }
 
+.form__title {
+	margin-bottom: 10px;
+}
+
 /*========================================
   検索エリア
 ========================================*/
@@ -491,13 +495,6 @@ input[type="file"] {
 }
 
 
-span.required {
-    background: #fe8a8b;
-    color: white;
-    padding: 2px 6px;
-    margin: 0 3px;
-    font-size: 14px;
-}
 
 .form-group {
     overflow: hidden;
@@ -726,4 +723,13 @@ p.comment {
 	border-top: 1px solid #cccccc;
 	display: block;
 	top: 10px;
+}
+
+.required {
+    background: #fe8a8b;
+    color: white;
+    padding: 7px 5px;
+	margin: 0 3px;
+    font-size: 14px;
+	border-radius: 50px;
 }
