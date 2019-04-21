@@ -52,16 +52,6 @@ require('head.php') ?>
 
 
     <body>
-        <style media="screen">
-            .table {
-                width: 100%;
-                border-spacing: 10px 10px;
-                border: 5px solid #f1f1f1;
-            }
-            .list-table .table td {
-                background: #f6f5f4;
-            }
-        </style>
         <?php require('header.php') ?>
         <main id="contents">
             <div class="main-container site-width">
@@ -70,19 +60,19 @@ require('head.php') ?>
                     <div class="list list-table">
                         <table class="table">
                             <thead>
-                                <tr>
-                                    <th>最新送信日時</th>
-                                    <th>取引相手</th>
-                                    <th>メッセージ</th>
+                                <tr class="table__tr">
+                                    <th class="table__th">最新送信日時</th>
+                                    <th class="table__th">取引相手</th>
+                                    <th class="table__th">メッセージ</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <?php foreach ($orders_and_msg as $key => $value) :?>
-                                    <tr>
-                                        <td><?php echo (!empty($value['latest_msg']))? $value['latest_msg']['create_date'] : '---' ; ?></td>
-                                        <td><?php echo $partner_name_list[$key] ?></td>
-                                        <td>
-                                            <a href="msg.php?order_id=<?php echo $value['id']?>">
+                                    <tr class="table__tr">
+                                        <td class="table__td"><?php echo (!empty($value['latest_msg']))? $value['latest_msg']['create_date'] : '---' ; ?></td>
+                                        <td class="table__td"><?php echo $partner_name_list[$key] ?></td>
+                                        <td class="table__td">
+                                            <a class="table__link" href="msg.php?order_id=<?php echo $value['id']?>">
                                                 <?php echo (!empty($value['latest_msg']))? $value['latest_msg']['msg'] : 'まだメッセージはありません' ; ?>
                                             </a>
                                         </td>
