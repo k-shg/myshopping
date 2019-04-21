@@ -164,7 +164,9 @@ require('head.php') ?>
                         </label>
 
                         <div class="btn-container">
-                            <input type="submit" name="" value="変更する" class="btn btn-mid">
+                            <button type="submit" name="" value="変更する" class="btn btn-mid">
+                                <span class="btn__text">変更する</span>
+                            </button>
                         </div>
                     </form>
                 </section>

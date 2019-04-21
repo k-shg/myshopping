@@ -268,9 +268,9 @@ require('head.php') ?>
                             <?php if(!empty($error_msg['pic'])) echo $error_msg['pic']?>
                         </div>
                         <div class="btn-container">
-                            <form method="post">
-                                <input type="submit" name="" value="出品する" class="btn btn-mid">
-                            </form>
+                            <button type="submit" name="" value="出品する" class="btn btn-mid">
+                                <span class="btn__text">出品する</span>
+                            </button>
                         </div>
                     </form>
                 </section>

@@ -60,7 +60,9 @@ require('head.php') ?>
             <div class="form-container">
                 <form class="form" method="post" style="text-align: center;">
                     <h2 class="site-title">退会しますか？</h2>
-                    <input type="submit" name="withdraw" value="退会する" class="btn btn-mid" style="float:none;">
+                    <button type="submit" name="withdraw" value="変更する" class="btn btn-mid">
+                        <span class="btn__text">退会する</span>
+                    </button>
                 </form>
             </div>
 

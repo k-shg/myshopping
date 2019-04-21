@@ -171,40 +171,42 @@ select {
       ボタン
 ===================================  */
 
-.btn.btn-primary {
-    background: #446386;
+
+.btn {
+	transition: all 0.6s;
+	padding: 15px 40px;
+	font-size: 14px;
+}
+.btn__text {
+	/* padding: 15px 40px;
+	font-size: 14px; */
+}
+
+
+.btn-primary {
     color: white;
 }
 
-.btn.btn-mid {
-    color: white;
-    background: #0e3056;
-    font-size: 14px;
-    padding: 15px 40px;
+.btn-mid {
+	-webkit-appearance: none;
+    color: rgb(0, 0, 0);
+    background: #f6f5f5;
+	transition: all 0.6s;
 }
 
-.btn.search{
-	margin: 0;
+.btn-mid:hover {
+	color: #fff;
+	cursor: pointer;
+	background: #0e3056;
+	transition: all 0.6s;
+	transform: scale(1.1);
 }
+
 
 .fas {
 	font-size: 20px;
 
 }
-
-.button {
-	/* background: white; */
-	-webkit-appearance: none;
-	height: 40px
-}
-
-.button .text{
-	padding: 0 10px;
-	font-size: 15px;
-
-
-}
-
 
 
 /*========================================
@@ -243,6 +245,10 @@ footer {
     margin: 0 auto;
 }
 
+/*========================================
+  検索エリア
+========================================*/
+
 
 #search {
 	/* border: solid 1px #013156; */
@@ -255,20 +261,20 @@ footer {
 }
 
 
-.form .title {
+/* .form .title {
     text-align: center;
     margin-bottom: 40px;
-}
+} */
 
-.select-box {
+.search__select-box {
 	float: left;
 	margin-right: 20px;
 }
-.select-box:first-child {
+.search__select-box:first-child {
 	width: 30%;
 }
 
-.select-input {
+.search__input {
 	width: 100%;
 	border: 1px solid #c6c6c6;
 	height: 40px;
@@ -285,6 +291,27 @@ footer {
 	border: 1px solid #c6c6c6;
 	width: 150px;
 	background: #fff;
+}
+
+.search__button {
+	-webkit-appearance: none;
+	height: 40px;
+	transition: all .6s;
+}
+
+.search__button:hover {
+	cursor: pointer;
+	transform: translate(0, -5px);
+	background: #0e3056;
+	/* transform: scale(1.2); */
+	transition: all .6s;
+	color: #fff;
+}
+
+
+.search__button-title{
+	padding: 0 10px;
+	font-size: 15px;
 }
 
 

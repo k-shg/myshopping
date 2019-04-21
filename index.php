@@ -66,29 +66,29 @@ require('head.php') ?>
             <div class="main-container site-width">
                 <div id="search">
                     <form class="form search__form" method="get">
-                        <div class="select-box">
-                            <input class="select-input" type="text" placeholder="キーワードから探す">
+                        <div class="search__select-box">
+                            <input class="search__input" type="text" placeholder="キーワードから探す">
                         </div>
-                        <div class="select-box">
+                        <div class="search__select-box">
                             カテゴリー：
                             <select name="category_id" class="search__select">
-                                <option class="select-item" value="0"<?php if($category === '') echo 'selected' ?>>選択してください<span class="icon-select"></span></option>
+                                <option class="search__item" value="0"<?php if($category === '') echo 'selected' ?>>選択してください<span class="icon-select"></span></option>
                                 <?php foreach ($categoryData as $key => $value): ?>
                                     <option value="<?php echo $value['id'] ?>"<?php if($category == $value['id']) echo 'selected' ?>><?php echo $value['name'] ?></option>
                                 <?php endforeach; ?>
                             </select>
                         </div>
-                        <div class="select-box">
+                        <div class="search__select-box">
                             表示順：
                             <select name="order" class="search__select">
-                                <option value="0"<?php if($order == 0 )echo 'selected' ?>>選択してください</option>
-                                <option value="1"<?php if($order == 1 )echo 'selected' ?>>金額が高い順</option>
-                                <option value="2"<?php if($order == 2 )echo 'selected' ?>>金額が安い順</option>
+                                <option class="search__item" value="0"<?php if($order == 0 )echo 'selected' ?>>選択してください</option>
+                                <option class="search__item" value="1"<?php if($order == 1 )echo 'selected' ?>>金額が高い順</option>
+                                <option class="search__item" value="2"<?php if($order == 2 )echo 'selected' ?>>金額が安い順</option>
                             </select>
                         </div>
-                        <button type="submit" class="button">
+                        <button type="submit" class="search__button">
                             <i class="fas fa-search-plus"></i>
-                            <span class="text">検索</span>
+                            <span class="search__button-title">検索</span>
                         </button>
                     </form>
                 </div>
