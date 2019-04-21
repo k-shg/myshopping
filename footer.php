@@ -22,7 +22,7 @@ $(function(){
 
         setTimeout(function() {
             $msg.slideToggle('slow');
-        }, 2000);
+        }, 1200);
     }
 
 
@@ -42,8 +42,6 @@ $(function(){
         }
         //ファイルを読み込む
         Reader.readAsDataURL(file);
-
-
     });
 });
 

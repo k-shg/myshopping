@@ -27,7 +27,7 @@ body {
     height: 80px;
 }
 
-.header .title {
+.header__title {
     line-height: 80px;
     float: left;
     font-weight: bold;
@@ -36,11 +36,17 @@ body {
 
 }
 
-.header .title  a {
+.header__link {
     color: #fff;
     text-decoration: none;
 	font-family: 'Courgette', cursive;
+	transition: all .7s;
 
+}
+.header__link:hover {
+    color: skyblue;
+	transition: all .7s;
+	transform: scale(1.1);
 }
 
 
@@ -48,28 +54,31 @@ body {
       ナビゲーション
 ===================================  */
 
-#nav-top {
+.nav {
     /* margin-right: 230px; */
 }
 
-#nav-top a {
-    color: white;
-    text-decoration: none;
-    padding: 10px;
 
-}
-
-#nav-top ul {
+.nav__menu {
     line-height: 80px;
     list-style: none;
 }
 
-#nav-top ul li {
+.nav__menu-item  {
     float: right;
     margin: 0 10px;
 }
 
-
+.nav__link {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+	background: #f6f5f4;
+}
+.nav__link:hover {
+    color: white;
+	background: skyblue;
+}
 
 
 
@@ -274,7 +283,10 @@ body {
 
 
 .btn-primary {
-    color: white;
+	-webkit-appearance: none;
+    color: rgb(0, 0, 0);
+    background: #fff;
+	transition: all 0.6s;
 }
 
 .btn-mid {
