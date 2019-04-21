@@ -100,19 +100,7 @@ body {
     float: left;
     min-height: 900px;
 }
-#sidebar {
-    width: 200px;
-    background: #f6f5f4;
-    float: right;
-    min-height: 500px;
-    padding: 15px;
-    box-sizing: border-box;
-}
 
-#sidebar a {
-    display: block;
-    margin-bottom: 10px;
-}
 
 .site-title {
     text-align: center;
@@ -144,6 +132,50 @@ body {
 .list {
 	margin-bottom: 30px;
 }
+
+/* ==================================
+      サイドバー
+===================================  */
+
+.sidebar-container {
+    width: 200px;
+    background: #f6f5f4;
+    float: right;
+    min-height: 500px;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.sidebar {
+	transition: all .7s;
+}
+
+.sidebar__btn {
+	display: block;
+	margin-bottom: 10px;
+	width: 100%;
+	-webkit-appearance: none;
+	background: #f6f5f4;
+}
+
+.sidebar__btn:hover {
+	background: #0e3056;
+}
+
+
+.sidebar__link {
+	text-decoration: none;
+	display: block;
+	height: 50px;
+	line-height: 50px;
+	font-size: 15px;
+}
+.sidebar__link:hover {
+	color: #fff;
+	transform: scale(1.1);
+}
+
+
 /* ==================================
       パネル
 ===================================  */
