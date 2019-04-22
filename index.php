@@ -103,7 +103,8 @@ require('head.php') ?>
                             <span class="total-num"><?php echo $productList['total'] ?></span>件の商品が見つかりました
                         <div class="search-right">
                             <span class="num"><?php echo $offset_num + 1?></span>-
-                            <span class="num"><?php echo $offset_num + $dispay_num?></span>件/
+                            <!-- 合計商品数が表示数(20)よりが少ない場合、合計商品数を表示する -->
+                            <span class="num"><?php echo (($offset_num + $dispay_num) < $productList['total'])? $offset_num + $dispay_num : $productList['total']; ?></span>件/
                             <spna class="num"><?php echo $productList['total'] ?></spna>件中
                         </div>
                     </div>
