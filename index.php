@@ -25,6 +25,8 @@ $max_item_num = ($currentPage * $dispay_num);
 debug('OFFEST値：'.$offset_num);
 debug('表示最大数：'.$max_item_num);
 
+//検索キーワードを取得
+$search_keyword = (!empty($_GET['search_name']))? ($_GET['search_name']): '';
 
 //カテゴリーデータを取得
 $categoryData = getCategory();
@@ -38,7 +40,7 @@ $order = (!empty($_GET['order']))? ($_GET['order']): '';
 debug('選択された順序：'.$category);
 
 //商品一覧を取得
-$productList = getProductList($offset_num, $category, $order);
+$productList = getProductList($offset_num, $category, $order, $search_keyword);
 debug('商品一覧を取得');
 //debug('商品一覧データ：'.print_r($productList, true));
 
@@ -66,7 +68,10 @@ require('head.php') ?>
                 <div id="search">
                     <form class="form search__form" method="get">
                         <div class="search__select-box">
-                            <input class="search__input" type="text" placeholder="キーワードから探す">
+                            <input
+                            value="<?php echo getFormData('search_name', true) ?>"
+                            class="search__input" type="text"
+                            name="search_name" placeholder="キーワードから探す">
                         </div>
                         <div class="search__select-box">
                             カテゴリー：

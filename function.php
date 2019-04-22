@@ -238,6 +238,7 @@ function getProduct($product_id) {
     return $stmt->fetch();
 }
 
+
 // ===========================
 //　商品詳細データ取得
 //============================
@@ -268,8 +269,6 @@ function getFormData($str, $flg = false) {
     } else {
         $method = $_POST;
     }
-    debug($str);
-
 
     //データベースに情報がある
     if(!empty($dbFormData[$str])) {
@@ -364,12 +363,18 @@ function getFormImageData($str) {
 // ===========================
 //　商品データを一覧で取得
 //============================
-function getProductList($offset_num, $category, $order) {
+function getProductList($offset_num, $category, $order, $keyword ) {
     $dbh = dbConnect();
 
     $sql = 'SELECT * FROM product WHERE ';
     $data = [];
     $result = [];
+
+    //キーワードが選択されている場合
+    if(!empty($keyword)) {
+        $sql.= 'name LIKE :product_name AND ';
+        $data [':product_name'] = sprintf('%%%s%%', addcslashes($keyword, '\_%'));
+    }
 
     //カテゴリーが選択されている場合
     if(!empty($category)) {
