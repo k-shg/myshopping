@@ -263,8 +263,10 @@ require('head.php') ?>
                             <div class="form__title">
                                 詳細
                             </div>
-                            <textarea name="comment" class="<?php if(!empty($error_msg['comment'])) echo 'error'?>" style="height: 150px;"><?php echo getFormData('comment')?></textarea>
-
+                            <textarea name="comment" class="js-get-count <?php if(!empty($error_msg['comment'])) echo 'error'?>" style="height: 150px;"><?php echo getFormData('comment')?></textarea>
+                            <div class="count-countainer" style="float:right;">
+                                <span class="js-show-count">0</span>/255文字
+                            </div>
                         </label>
                         <div class="area-msg">
                             <?php if(!empty($error_msg['comment'])) echo $error_msg['comment']?>

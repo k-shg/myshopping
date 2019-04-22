@@ -11,6 +11,15 @@
 
 $(function(){
 
+
+    //入力文字数カウント
+    $('.js-get-count').on('keyup', function(e) {
+        $('.js-show-count').text($(this).val().length);
+    });
+
+
+
+
     //メッセージに値が入っていたらトグルする
 
     var $msg = $('.js-flash-msg');
