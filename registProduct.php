@@ -277,6 +277,7 @@ require('head.php') ?>
                             <input type="file" name="pic" class="js-input-file"
                                 class="<?php if(!empty($error_msg['pic'])) echo 'error'?>">
                             <img src="<?php echo getFormImageData('pic')?>" class="pre-img">
+                            ドロップアンドドラッグ
                         </label>
                         <div class="area-msg">
                             <?php if(!empty($error_msg['pic'])) echo $error_msg['pic']?>

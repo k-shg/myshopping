@@ -105,9 +105,11 @@ require('head.php') ?>
                     <div class="area-msg">
                         <?php if(!empty($error_msg['pass'])) echo $error_msg['pass']?>
                     </div>
-                    <button type="submit" class="btn btn-mid">
-                        <span class="btn__text">ログイン</span>
-                    </button>
+                    <div class="btn-container-login">
+                        <button type="submit" class="btn btn-mid">
+                            <span class="btn__text">ログイン</span>
+                        </button>
+                    </div>
                 </form>
             </div>
 

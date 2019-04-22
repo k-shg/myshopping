@@ -117,17 +117,23 @@ require('head.php') ?>
                         <div class="area-msg">
                             <?php if(!empty($error_msg['common'])) echo $error_msg['common']?>
                         </div>
+
                         <label>
-                            名前
-                            <input class="input" type="text" name="name"
+                            <div class="form__title">
+                                名前
+                            </div>
+                            <input class="input form__input" type="text" name="name"
                                 value="<?php echo getFormData('name') ?>"
                                 class="<?php if(!empty($error_msg['name'])) echo 'error'?>">
                         </label>
                         <div class="area-msg">
                             <?php if(!empty($error_msg['name'])) echo $error_msg['name']?>
                         </div>
+
                         <label>
-                            年齢
+                            <div class="form__title">
+                                年齢
+                            </div>
                             <input class="form__input-num" type="number" name="age"
                                 value="<?php echo getFormData('age')?>"
                                 class="<?php if(!empty($error_msg['age'])) echo 'error'?>">
@@ -136,7 +142,9 @@ require('head.php') ?>
                             <?php if(!empty($error_msg['age'])) echo $error_msg['age']?>
                         </div>
                         <label>
-                            Email
+                            <div class="form__title">
+                                Email
+                            </div>
                             <input class="input" type="text" name="email"
                                 value="<?php echo getFormData('email')?>"
                                 class="<?php if(!empty($error_msg['email'])) echo 'error'?>">
@@ -145,7 +153,11 @@ require('head.php') ?>
                             <?php if(!empty($error_msg['email'])) echo $error_msg['email']?>
                         </div>
                         <label>
-                            パスワード
+                            <div class="form__title">
+                                パスワード
+                                <i class="fas fa-exclamation-circle"></i>
+                                (未入力=>現在のパスワードのまま, 入力=>現在のパスワードを変更)
+                            </div>
                             <input type="password" name="pass"
                                 value="<?php if(!empty($_POST['pass'])) echo  $_POST['pass']?>"
                                 class="<?php if(!empty($error_msg['pass'])) echo 'error'?>">
@@ -153,23 +165,25 @@ require('head.php') ?>
                         <div class="area-msg">
                             <?php if(!empty($error_msg['pass'])) echo $error_msg['pass']?>
                         </div>
-                        プロフィール画像
+                        <div class="form__title">
+                            プロフィール画像
+                        </div>
                         <div class="area-msg">
                             <?php if(!empty($error_msg['pic'])) echo $error_msg['pic']?>
                         </div>
                         <label class="area-drop"　<?php if(!empty($error_msg['pic'])) echo 'error'?>>
-                            <input type="hidden" name="MAX_FILE_SIZE" value="60000">
                             <input type="file" name="pic" class="js-input-file"
                                 class="<?php if(!empty($error_msg['pic'])) echo 'error'?>">
                             <img src="<?php echo getFormImageData('pic')?>" class="pre-img">
                             ドロップアンドドラッグ
                         </label>
-
                         <div class="btn-container">
                             <button type="submit" name="" value="変更する" class="btn btn-mid">
                                 <span class="btn__text">変更する</span>
                             </button>
                         </div>
+
+
                     </form>
                 </section>
                 <?php

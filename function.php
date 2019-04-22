@@ -347,7 +347,7 @@ function getFormImageData($str) {
     } else {
 
         //リクエストされた
-        if($_FILES['pic']['name']) {
+        if(!empty($_FILES['pic']['name'])) {
             debug(5);
             return $_FILES['pic']['name'];
         }
