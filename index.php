@@ -56,7 +56,6 @@ $min_page = $val['min'];
 $max_page = $val['max'];
 
 
-
 $title = 'トップページ';
 require('head.php') ?>
 

@@ -25,7 +25,7 @@ debug('購入商品一覧を取得');
 //取引情報と最新メッセージを取得
 $orders_and_msg = getMyOrdersAndMsg($user_id);
 debug('最新メッセージ一覧を取得');
-//debug('取引情報：'.print_r($orders_and_msg, true));
+debug('取引情報：'.print_r($orders_and_msg, true));
 
 //取引相手のユーザーIDリストを取得
 $partner_id_list = [];
@@ -39,7 +39,7 @@ foreach ($orders_and_msg as $key => $value) {
     $partner_id_list[$key] = $partner_id;
 }
 
-//取引商品一覧を取得
+//取引相手一覧を取得
 $partner_name_list = [];
 foreach ($partner_id_list as $key => $value) {
     $partner_data = getUser($value);
@@ -61,21 +61,31 @@ require('head.php') ?>
                         <table class="table">
                             <thead>
                                 <tr class="table__tr">
-                                    <th class="table__th">最新送信日時</th>
+                                    <th class="table__th">注文番号</th>
                                     <th class="table__th">取引相手</th>
                                     <th class="table__th">メッセージ</th>
+                                    <th class="table__th">最新送信日時</th>
+                                    <th class="table__th"></th>
+
                                 </tr>
                             </thead>
                             <tbody>
                                 <?php foreach ($orders_and_msg as $key => $value) :?>
                                     <tr class="table__tr">
-                                        <td class="table__td"><?php echo (!empty($value['latest_msg']))? $value['latest_msg']['create_date'] : '---' ; ?></td>
+                                        <td class="table__td"><?php echo $value['id'] ?></td>
                                         <td class="table__td"><?php echo $partner_name_list[$key] ?></td>
                                         <td class="table__td">
                                             <a class="table__link" href="msg.php?order_id=<?php echo $value['id']?>">
                                                 <?php echo (!empty($value['latest_msg']))? $value['latest_msg']['msg'] : 'まだメッセージはありません' ; ?>
                                             </a>
                                         </td>
+                                        <td class="table__td"><?php echo (!empty($value['latest_msg']))? $value['latest_msg']['create_date'] : '---' ; ?></td>
+                                        <td class="table__td">
+                                            <a href="msg.php?order_id=<?php echo $value['id']?>">
+                                                <i class="fas fa-link table__icon"></i>
+                                            </a>
+                                        </td>
+
                                     </tr>
                                 <?php endforeach; ?>
                             </tbody>
