@@ -107,7 +107,6 @@ body {
 #main {
     width: 760px;
     float: left;
-    min-height: 900px;
 }
 
 
@@ -575,21 +574,28 @@ span.yen {
   商品詳細レイアウト あとで修正必要
 ========================================*/
 
-#main.product-container {
-
-	border: 5px solid #f1f1f1;
-    box-sizing: border-box;
+.product {
 }
-span.category {
+.product__category {
     background: #7acee6;
     color: white;
     padding: 2px 6px;
     margin: 0 3px;
-    font-size: 14px;
+    font-size: 25px;
 }
-.product-container img {
+.product__name {
+	font-size: 25px;
+}
+
+.product__img-container {
+	padding: 10px;
+}
+.product__img {
 	display: block;
-	width: 60%;
+	width: 100%;
+	max-height: 600px;
+	object-fit: cover;
+
 }
 
 .product-comment {
@@ -613,28 +619,35 @@ p.comment {
 }
 
 
-.product-buy .item-left {
+.product-buy__item-left {
 	font-size: 18px;
 	display: block;
 	float: left;
 }
 
-.product-buy .item-right {
+.product-buy__item-right {
 	font-size: 25px;
 	display: block;
 	float: right;
-	margin-right: 30px;
+	margin-right: 50px;
 }
-.product-buy .btn {
+.product-buy__btn {
     font-size: 18px;
 }
 
-.product-buy form {
+.product-buy__btn:hover {
+    background: #ff5722;
+	transform: scale(1.2);
+}
+
+
+
+/* .product-buy form {
 	display: inline;
 }
 .price {
 	display: block
-}
+} */
 
 
 

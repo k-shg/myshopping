@@ -40,10 +40,12 @@ require('head.php') ?>
         <main id="contents">
             <div class="site-width">
                 <h1 class="site-title">商品詳細ページ</h1>
-                <section id="main" class="product-container">
-                    <span class="category"><?php echo $dbFormData['category_name'] ?></span>
-                    <span class="product-name"><?php echo $dbFormData['name'] ?></span>
-                    <img src="<?php echo $dbFormData['pic'] ?>" alt="">
+                <section id="main" class="product">
+                    <span class="product__category"><?php echo $dbFormData['category_name'] ?></span>
+                    <span class="product__name"><?php echo $dbFormData['name'] ?></span>
+                    <div class="product__img-container">
+                        <img class="product__img" src="<?php echo $dbFormData['pic'] ?>" alt="">
+                    </div>
                 </section>
                 <?php
                 require('sidebar.php');
@@ -51,16 +53,16 @@ require('head.php') ?>
                 <section class="product-comment">
                     <div class="product-comment-container">
                         <p style="text-align:center;">商品説明文</p>
-                        <p class="comment"><?php echo $dbFormData['comment'] ?></p>
+                        <p class="comment"><?php echo ($dbFormData['comment']) ?></p>
                     </div>
                 </section>
 
                 <section class="product-buy">
-                    <a href="index.php?<?php echo $param ?>"><span class="item-left">>商品一覧に戻る</span></a>
+                    <a href="index.php?<?php echo $param ?>"><span class="product-buy__item-left">>商品一覧に戻る</span></a>
                     <form method="post">
-                        <input type="submit" name="submit" value="買う!" class="btn btn-primary">
+                        <input type="submit" name="submit" value="購入する" class="btn-mid product-buy__btn">
                     </form>
-                    <span class="item-right">¥<?php echo $dbFormData['price'] ?></span>
+                    <span class="product-buy__item-right">¥<?php echo $dbFormData['price'] ?></span>
                 </section>
             </div>
         </main>
