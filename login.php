@@ -13,8 +13,6 @@ if(isset($_SESSION['user_id'])) {
 }
 
 
-
-
 if(!empty($_POST)) {
 
     //変数を定義
