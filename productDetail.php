@@ -25,6 +25,7 @@ if(!empty($_POST['submit'])) {
     //会員登録しているユーザーのみ購入できるようにする
     require('auth.php');
     buyProduct($product_id, $_SESSION['user_id'], $dbFormData['user_id']);
+    $_SESSION['message'] = '商品を購入しました';
     header('Location: mypage.php');
 }
 
