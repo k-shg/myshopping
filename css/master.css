@@ -435,7 +435,7 @@ footer {
 }
 
 
-.input,
+.input[type="text"],
 input[type="password"],
 .select, form textarea {
     display: block;
@@ -444,7 +444,6 @@ input[type="password"],
     font-size: 18px;
     box-sizing: border-box;
     margin-bottom: 20px;
-	background: #fff;
     border: none;
 	border-radius: 5px;
 }
@@ -459,6 +458,10 @@ input[type="password"],
     display: block;
 }
 
+
+.form__select {
+    background: #fff;
+}
 input[type="submit"] {
     float: right;
     margin: 10px 0;
@@ -467,16 +470,9 @@ input[type="submit"] {
 form .area-msg {
     color: red;
     margin-bottom: 15px;
-    width: 50%;
-
 }
 
-.errr {
-	background: #f7dcd9;
-}
-input[type="text"].error,input[type="number"].error, input[type="file"].error {
-    background: #f7dcd9;
-}
+
 
 
 
@@ -770,6 +766,16 @@ p.comment {
 /*========================================
  	utility
 ========================================*/
+
+.error {
+	background: #f7dcd9;
+}
+input[type="text"].error,
+input[type="number"].error,
+input[type="file"].error {
+    background: #f7dcd9;
+}
+
 .horizon-container {
 	margin-bottom: 20px;
 }

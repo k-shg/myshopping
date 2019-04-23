@@ -80,9 +80,6 @@ if(!empty($_GET)) {
             }
         }
 
-
-
-
         if(empty($error_msg)) {
             try {
                 debug('DB接続します');
@@ -151,7 +148,15 @@ if(!empty($_GET)) {
             validMaxLen($comment, 'comment');
         }
         //数値チェック
-        validNumber((int)$price, 'price');//必須項目
+
+        //POSTされると文字列になるためキャスト
+        validNumber((int)$price, 'price');
+        //金額未入力の場合
+        if($price === '') {
+            validRequired($price, 'price');//必須項目
+        }
+
+
 
 
         //空文字チェック
@@ -160,7 +165,6 @@ if(!empty($_GET)) {
         if($price != 0) {
             validRequired($price, 'price');
         }
-
 
 
         if(empty($error_msg)) {
@@ -218,11 +222,9 @@ require('head.php') ?>
                                 商品名<span class="required">必須</span>
                             </div>
                             <input
-                                class="input"
-                                style="<?php if(!empty($error_msg['name'])) echo 'background: #f7dcd9;'?>"
                                 type="text" name="name"
                                 value="<?php echo getFormData('name')?>"
-                                class="<?php if(!empty($error_msg['name'])) echo 'error'?>">
+                                class="input <?php if(!empty($error_msg['name'])) echo 'error'?>">
                         </label>
                         <div class="area-msg">
                             <?php if(!empty($error_msg['name'])) echo $error_msg['name']?>
@@ -231,7 +233,9 @@ require('head.php') ?>
                             <div class="form__title">
                                 カテゴリー<span class="required">必須</span>
                             </div>
-                            <select class="select" name="category_id" style="<?php if(!empty($error_msg['category'])) echo 'background: #f7dcd9;'?>">
+                            <select
+                                class="form__select select <?php if(!empty($error_msg['category'])) echo 'error'?>"
+                                name="category_id">
                                 <option value="0"
                                 <?php if(getFormData('category_id') == 0 ) echo 'selected'?>>選択してください</option>
                                 <?php foreach ($categoryData as $key => $category): ?>
@@ -254,10 +258,10 @@ require('head.php') ?>
                             </div>
                             <div class="form-group">
                                 <input
-                                    style="<?php if(!empty($error_msg['price'])) echo 'background: #f7dcd9;'?>"
-                                    class="form__input-num" type="number" name="price"
-                                    value="<?php echo (getFormData('price'))? getFormData('price') : 0; ?>"
-                                    class="<?php if(!empty($error_msg['price'])) echo 'error'?>">
+                                    class="form__input-num <?php if(!empty($error_msg['price'])) echo 'error'?>"
+                                    type="number"
+                                    name="price"
+                                    value="<?php echo (getFormData('price'))? getFormData('price') : 0; ?>">
                                     <span class="yen">円</span>
                             </div>
                         </label>

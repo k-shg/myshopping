@@ -29,8 +29,6 @@ if(!empty($_POST)) {
     validRequired($email, 'email');
     validRequired($pass, 'pass');
 
-    dump($error_msg);
-
 
     if(empty($error_msg)) {
         try {
@@ -89,18 +87,20 @@ require('head.php') ?>
                     </div>
                     <label for="">
                         Email
-                        <input class="input" type="text" name="email"
+                        <input
+                            type="text" name="email"
                             value="<?php if(!empty($email)) echo $email?>"
-                            class="<?php if(!empty($error_msg['email'])) echo 'error'?>">
+                            class="input <?php if(!empty($error_msg['email'])) echo 'error'?>">
                     </label>
                     <div class="area-msg">
                         <?php if(!empty($error_msg['email'])) echo $error_msg['email']?>
                     </div>
                     <label for="">
                         パスワード
-                        <input class="input" type="password" name="password"
+                        <input
+                            type="password" name="password"
                             value="<?php if(!empty($pass)) echo $pass?>"
-                            class="<?php if(!empty($error_msg['pass'])) echo 'error'?>">
+                            class="input <?php if(!empty($error_msg['pass'])) echo 'error'?>">
                     </label>
                     <div class="area-msg">
                         <?php if(!empty($error_msg['pass'])) echo $error_msg['pass']?>
