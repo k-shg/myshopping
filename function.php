@@ -149,16 +149,25 @@ function validSelectBox($str, $key) {
 
 function dbConnect() {
     try {
-        $dsn = 'mysql:dbname=myshopping;host=localhost;charset=utf8mb4';
-        $username = 'root';
-        $password = 'root';
-        $options = [
-            PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
-            PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
-            PDO::ATTR_EMULATE_PREPARES => false
-        ];
-        $dbh = new PDO($dsn, $username, $password, $options);
-        return $dbh;
+
+        //heroku接続用
+        $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+
+        $server = $url["host"];
+        $username = $url["user"];
+        $password = $url["pass"];
+        $db = substr($url["path"], 1);
+
+        $pdo = new PDO(
+            'mysql:host=' . $server . ';dbname=' . $db . ';charset=utf8mb4',
+            $username,
+            $password,
+            [
+                PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+                PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
+                PDO::ATTR_EMULATE_PREPARES => false
+        ]);
+        return $pdo;
     } catch(Exception $e) {
         debug('データベース接続エラー：'.$e->getMessage());
     }
