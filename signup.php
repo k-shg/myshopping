@@ -29,9 +29,6 @@ if(!empty($_POST)) {
 
     validMatch($pass, $re_pass);
 
-    dump($error_msg);
-
-
     if(empty($error_msg)) {
         try {
             //DB接続
@@ -85,9 +82,10 @@ require('head.php') ?>
                     <h2 class="site-title">ユーザー登録</h2>
                     <label for="">
                         Email
-                        <input class="input" type="text" name="email"
+                        <input 
+                            type="text" name="email"
                             value="<?php if(!empty($email)) echo $email?>"
-                            class="<?php if(!empty($error_msg['email'])) echo 'error'?>">
+                            class="input <?php if(!empty($error_msg['email'])) echo 'error'?>">
                     </label>
                     <div class="area-msg">
                         <?php if(!empty($error_msg['email'])) echo $error_msg['email']?>
