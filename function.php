@@ -306,21 +306,23 @@ function getFormData($str, $flg = false) {
         }
         //データベースに情報がない
     } else {
+        debug(print_r($_FILES, true));
 
         //リクエストされた
-        if($method) {
-            //送信されている値のみ返す
-            if(!empty($method[$str])) {
-                return $method[$str];
-            }
-            //リクエストはされているが、送信されてない値はnullを返す
-            return null;
+        if(!empty($_FILES['pic']['name'])) {
 
+            //フォームにエラーがある
+            if(!empty($error_msg)) {
+                debug(5);
+                return null;
+            } else {
+                debug(6);
+                return $_FILES['pic']['name'];
+            }
         }
         //リクエストされていない(新規ページを開いたまま)
-        debug(6);
+        debug(7);
         return null;
-
     }
 }
 
