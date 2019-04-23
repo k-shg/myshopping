@@ -77,7 +77,7 @@ $title = 'ログインページ';
 require('head.php') ?>
     <body>
         <?php require('header.php') ?>
-        <main id="contents" class="site-width">
+        <main class="site-width">
             <div class="test-user">
                 <div class="test-user__title">
                     テストユーザー
