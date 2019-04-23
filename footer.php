@@ -12,6 +12,13 @@
 $(function(){
 
 
+    $('.js-login-button').on('click', function() {
+
+        $('.js-set-email').val($('.js-get-email').text());
+        $('.js-set-pass').val($('.js-get-pass').text());
+    });
+
+
     //入力文字数カウント
     $('.js-get-count').on('keyup', function(e) {
         $('.js-show-count').text($(this).val().length);

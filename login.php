@@ -14,6 +14,7 @@ if(isset($_SESSION['user_id'])) {
 
 
 
+
 if(!empty($_POST)) {
 
     //変数を定義
@@ -79,7 +80,21 @@ require('head.php') ?>
     <body>
         <?php require('header.php') ?>
         <main id="contents" class="site-width">
-            <div class="form-container form-container-search">
+            <div class="test-user">
+                <div class="test-user__title">
+                    テストユーザー
+                </div>
+                <div>
+                    email : <span class="test-user__email js-get-email">one@one.com</span>
+                </div>
+                <div>
+                    password : <span class="test-user__password js-get-pass">aaaaaa</span>
+                </div>
+                <button class="test-user__btn btn-mid js-login-button">
+                    自動入力
+                </button>
+            </div>
+            <div class="form-container">
                 <form class="form" method="post">
                     <h2 class="site-title">ログイン</h2>
                     <div class="area-msg">
@@ -90,7 +105,7 @@ require('head.php') ?>
                         <input
                             type="text" name="email"
                             value="<?php if(!empty($email)) echo $email?>"
-                            class="input <?php if(!empty($error_msg['email'])) echo 'error'?>">
+                            class="input <?php if(!empty($error_msg['email'])) echo 'error'?> js-set-email">
                     </label>
                     <div class="area-msg">
                         <?php if(!empty($error_msg['email'])) echo $error_msg['email']?>
@@ -100,7 +115,7 @@ require('head.php') ?>
                         <input
                             type="password" name="password"
                             value="<?php if(!empty($pass)) echo $pass?>"
-                            class="input <?php if(!empty($error_msg['pass'])) echo 'error'?>">
+                            class="input <?php if(!empty($error_msg['pass'])) echo 'error'?> js-set-pass">
                     </label>
                     <div class="area-msg">
                         <?php if(!empty($error_msg['pass'])) echo $error_msg['pass']?>
@@ -112,7 +127,6 @@ require('head.php') ?>
                     </div>
                 </form>
             </div>
-
         </main>
         <?php require('footer.php') ?>
 

@@ -814,3 +814,23 @@ input[type="file"].error {
 	width: 100%;
 	opacity: .8;
 }
+
+/*========================================
+ 	その他
+========================================*/
+.test-user {
+    width: 20%;
+    background: #f6f5f4;
+    border: 2px solid #bababa;
+    margin-left: 200px;
+
+}
+.test-user div {
+    margin: 15px;
+}
+.test-user__btn {
+    margin: 10px auto;
+    display: block;
+    width: 100px;
+    padding: 5px;
+}
