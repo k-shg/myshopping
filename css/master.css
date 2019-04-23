@@ -141,6 +141,10 @@ body {
 	margin-bottom: 30px;
 }
 
+::placeholder  {
+    opacity: .6;
+}
+
 /* ==================================
       サイドバー
 ===================================  */
@@ -724,24 +728,7 @@ p.comment {
  	掲示板
 ========================================*/
 
-.board-container {
-	min-height: 600px;
-	/* background: red; */
-}
 
-.area-board {
-	min-height: 500px;
-	background: #f6f5f4;
-	float: left;
-	width: 100%;
-}
-.area-send-msg {
-	min-height: 200px;
-	background: #f6f5f4;
-	float: left;
-	width: 100%;
-	margin-top: 20px;
-}
 .table {
 	width: 100%;
 	border-spacing: 15px 10px;
