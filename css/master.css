@@ -822,8 +822,7 @@ input[type="file"].error {
     width: 20%;
     background: #f6f5f4;
     border: 2px solid #bababa;
-    margin-left: 200px;
-
+    margin-left: 14%;
 }
 .test-user div {
     margin: 15px;
