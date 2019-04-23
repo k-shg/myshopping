@@ -217,7 +217,10 @@ require('head.php') ?>
                             <div class="form__title">
                                 商品名<span class="required">必須</span>
                             </div>
-                            <input class="input" type="text" name="name"
+                            <input
+                                class="input"
+                                style="<?php if(!empty($error_msg['name'])) echo 'background: #f7dcd9;'?>"
+                                type="text" name="name"
                                 value="<?php echo getFormData('name')?>"
                                 class="<?php if(!empty($error_msg['name'])) echo 'error'?>">
                         </label>
@@ -238,7 +241,7 @@ require('head.php') ?>
                                     if(getFormData('category_id') == $category['id']) echo 'selected' ?>>
                                     <?php echo $category['name'] ?>
                                 </option>
-                            <?php endforeach; ?>
+                                <?php endforeach; ?>
                             </select>
                         </label>
                         <div class="area-msg">
@@ -250,7 +253,9 @@ require('head.php') ?>
                                 金額<span class="required">必須</span>
                             </div>
                             <div class="form-group">
-                                <input class="form__input-num" type="number" name="price"
+                                <input
+                                    style="<?php if(!empty($error_msg['price'])) echo 'background: #f7dcd9;'?>"
+                                    class="form__input-num" type="number" name="price"
                                     value="<?php echo (getFormData('price'))? getFormData('price') : 0; ?>"
                                     class="<?php if(!empty($error_msg['price'])) echo 'error'?>">
                                     <span class="yen">円</span>

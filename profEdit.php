@@ -143,9 +143,11 @@ require('head.php') ?>
                         </div>
                         <label>
                             <div class="form__title">
-                                Email
+                                Email<span class="required">必須</span>
                             </div>
-                            <input class="input" type="text" name="email"
+                            <input
+                                style="<?php if(!empty($error_msg['email'])) echo 'background: #f7dcd9;'?>"
+                                class="input" type="text" name="email"
                                 value="<?php echo getFormData('email')?>"
                                 class="<?php if(!empty($error_msg['email'])) echo 'error'?>">
                         </label>
