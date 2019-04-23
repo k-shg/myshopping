@@ -300,8 +300,13 @@ function getFormData($str, $flg = false) {
 
         //リクエストされた
         if($method) {
-            debug(5);
-            return $method[$str];
+            //送信されている値のみ返す
+            if(!empty($method[$str])) {
+                return $method[$str];
+            }
+            //リクエストはされているが、送信されてない値はnullを返す
+            return null;
+
         }
         //リクエストされていない(新規ページを開いたまま)
         debug(6);
